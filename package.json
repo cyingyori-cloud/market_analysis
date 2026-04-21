@@ -15,7 +15,6 @@
     "scraper": "python3 server/crawler/scheduler.py"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.32.0",
     "axios": "^1.7.0",
     "cheerio": "^1.0.0",
     "clsx": "^2.1.1",
