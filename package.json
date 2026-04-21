@@ -1,0 +1,44 @@
+{
+  "name": "4s-competitive-intelligence",
+  "version": "1.0.0",
+  "description": "4S竞品情报系统 - 智能竞品情报监测与分析平台",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "api": "node server/index.cjs",
+    "api:dev": "concurrently \"npm run api\" \"npm run dev\"",
+    "mcp": "node server/mcp/intelligence-mcp.cjs",
+    "docker:build": "docker build -t 4s-intelligence-api .",
+    "docker:up": "docker-compose up -d"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.7.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.13.2",
+    "recharts": "^3.8.1",
+    "tailwind-merge": "^3.4.0",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.2.0",
+    "autoprefixer": "^10.4.17",
+    "concurrently": "^9.1.2",
+    "dotenv": "^17.4.1",
+    "json-server": "^0.17.4",
+    "playwright": "^1.59.1",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-singlefile": "^2.3.0"
+  }
+}
