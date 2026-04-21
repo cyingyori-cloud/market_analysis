@@ -82,6 +82,59 @@ app.get('/api/news', async (req, res) => {
   }
 });
 
+// 别名：competitor-news -> news
+app.get('/api/competitor-news', async (req, res) => {
+  try {
+    const { competitorId, tag, date, page = 1, limit = 50 } = req.query;
+    
+    const filter: any = {};
+    
+    if (competitorId && competitorId !== 'all') {
+      filter.competitorId = competitorId;
+    }
+    
+    if (tag && tag !== 'all') {
+      filter.tag = tag;
+    }
+    
+    if (date && date !== 'all') {
+      const now = new Date();
+      const start = new Date();
+      
+      switch (date) {
+        case 'today':
+          start.setHours(0, 0, 0, 0);
+          break;
+        case 'week':
+          start.setDate(now.getDate() - 7);
+          break;
+        case 'month':
+          start.setDate(now.getDate() - 30);
+          break;
+      }
+      
+      filter.publishedAt = { $gte: start };
+    }
+    
+    const news = await News.find(filter)
+      .sort({ publishedAt: -1 })
+      .skip((Number(page) - 1) * Number(limit))
+      .limit(Number(limit));
+    
+    const total = await News.countDocuments(filter);
+    
+    res.json(news);
+  } catch (error) {
+    console.error('获取竞品动态失败:', error);
+    res.status(500).json({ error: '获取竞品动态失败' });
+  }
+});
+
+// 触发扫描（手动）- 别名
+app.post('/api/crawler/run', async (req, res) => {
+  req.url = '/api/scan';
+});
+
 // 触发扫描（手动）
 app.post('/api/scan', async (req, res) => {
   try {
