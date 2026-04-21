@@ -1,0 +1,10 @@
+[railway]
+  builder = "nixpacks"
+
+[nixpacks]
+  build_cmd = "npm install && npm install -D tsx typescript @types/node"
+  start_cmd = "npx tsx server/index.ts"
+
+[variables]
+  PORT = "3001"
+  NODE_ENV = "production"
