@@ -192,6 +192,19 @@ export const useAppStore = create<AppState>((set) => ({
   setLoading: (loading) => set({ isLoading: loading }),
 }));
 
+// 转换 MongoDB _id 为前端 id
+function convertMongoId(item: any) {
+  if (item._id) {
+    item.id = item._id.toString();
+    delete item._id;
+  }
+  return item;
+}
+
+function convertList(items: any[]) {
+  return items.map(convertMongoId);
+}
+
 // API Functions
 export async function fetchCompetitors() {
   let data: Competitor[];
@@ -200,7 +213,8 @@ export async function fetchCompetitors() {
     data = db.competitors;
   } else {
     const res = await fetch(`${API_BASE}/competitors`);
-    data = await res.json();
+    const json = await res.json();
+    data = convertList(json);
   }
   useAppStore.getState().setCompetitors(data);
   return data;
@@ -219,7 +233,8 @@ export async function fetchCompetitorNews(params?: { competitorId?: string; date
     if (params?.date) searchParams.set('date', params.date);
     if (params?.tag) searchParams.set('tag', params.tag);
     const res = await fetch(`${API_BASE}/competitor-news?${searchParams}`);
-    data = await res.json();
+    const json = await res.json();
+    data = convertList(json);
   }
   useAppStore.getState().setCompetitorNews(data);
   return data;
