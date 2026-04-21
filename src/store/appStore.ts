@@ -153,6 +153,15 @@ interface AppState {
 }
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
+const USE_STATIC = import.meta.env.VITE_USE_STATIC_DATA === 'true';
+let staticDataCache: Record<string, any> | null = null;
+
+async function loadStaticData() {
+  if (staticDataCache) return staticDataCache;
+  const res = await fetch('/db.json');
+  staticDataCache = await res.json();
+  return staticDataCache;
+}
 
 export const useAppStore = create<AppState>((set) => ({
   // Initial state
@@ -178,47 +187,81 @@ export const useAppStore = create<AppState>((set) => ({
 
 // API Functions
 export async function fetchCompetitors() {
-  const res = await fetch(`${API_BASE}/competitors`);
-  const data = await res.json();
+  let data: Competitor[];
+  if (USE_STATIC) {
+    const db = await loadStaticData();
+    data = db.competitors;
+  } else {
+    const res = await fetch(`${API_BASE}/competitors`);
+    data = await res.json();
+  }
   useAppStore.getState().setCompetitors(data);
   return data;
 }
 
 export async function fetchCompetitorNews(params?: { competitorId?: string; date?: string; tag?: string }) {
-  const searchParams = new URLSearchParams();
-  if (params?.competitorId) searchParams.set('competitorId', params.competitorId);
-  if (params?.date) searchParams.set('date', params.date);
-  if (params?.tag) searchParams.set('tag', params.tag);
-  
-  const res = await fetch(`${API_BASE}/competitor-news?${searchParams}`);
-  const data = await res.json();
+  let data: CompetitorNews[];
+  if (USE_STATIC) {
+    const db = await loadStaticData();
+    data = db.competitorNews;
+    if (params?.competitorId) data = data.filter((n: CompetitorNews) => n.competitorId === params.competitorId);
+    if (params?.tag) data = data.filter((n: CompetitorNews) => n.tag === params.tag);
+  } else {
+    const searchParams = new URLSearchParams();
+    if (params?.competitorId) searchParams.set('competitorId', params.competitorId);
+    if (params?.date) searchParams.set('date', params.date);
+    if (params?.tag) searchParams.set('tag', params.tag);
+    const res = await fetch(`${API_BASE}/competitor-news?${searchParams}`);
+    data = await res.json();
+  }
   useAppStore.getState().setCompetitorNews(data);
   return data;
 }
 
 export async function fetchPolicies(impactLevel?: string) {
-  const url = impactLevel ? `${API_BASE}/policies?impactLevel=${impactLevel}` : `${API_BASE}/policies`;
-  const res = await fetch(url);
-  const data = await res.json();
+  let data: Policy[];
+  if (USE_STATIC) {
+    const db = await loadStaticData();
+    data = db.policies;
+    if (impactLevel) data = data.filter((p: Policy) => p.impactLevel === impactLevel);
+  } else {
+    const url = impactLevel ? `${API_BASE}/policies?impactLevel=${impactLevel}` : `${API_BASE}/policies`;
+    const res = await fetch(url);
+    data = await res.json();
+  }
   useAppStore.getState().setPolicies(data);
   return data;
 }
 
 export async function fetchBidResults(params?: { competitorId?: string; projectType?: string }) {
-  const searchParams = new URLSearchParams();
-  if (params?.competitorId) searchParams.set('competitorId', params.competitorId);
-  if (params?.projectType) searchParams.set('projectType', params.projectType);
-  
-  const res = await fetch(`${API_BASE}/bid-results?${searchParams}`);
-  const data = await res.json();
+  let data: BidResult[];
+  if (USE_STATIC) {
+    const db = await loadStaticData();
+    data = db.bidResults;
+    if (params?.competitorId) data = data.filter((b: BidResult) => b.competitorId === params.competitorId);
+    if (params?.projectType) data = data.filter((b: BidResult) => b.projectType === params.projectType);
+  } else {
+    const searchParams = new URLSearchParams();
+    if (params?.competitorId) searchParams.set('competitorId', params.competitorId);
+    if (params?.projectType) searchParams.set('projectType', params.projectType);
+    const res = await fetch(`${API_BASE}/bid-results?${searchParams}`);
+    data = await res.json();
+  }
   useAppStore.getState().setBidResults(data);
   return data;
 }
 
 export async function fetchAlerts(level?: string) {
-  const url = level ? `${API_BASE}/alerts?level=${level}` : `${API_BASE}/alerts`;
-  const res = await fetch(url);
-  const data = await res.json();
+  let data: Alert[];
+  if (USE_STATIC) {
+    const db = await loadStaticData();
+    data = db.alerts || [];
+    if (level) data = data.filter((a: Alert) => a.level === level);
+  } else {
+    const url = level ? `${API_BASE}/alerts?level=${level}` : `${API_BASE}/alerts`;
+    const res = await fetch(url);
+    data = await res.json();
+  }
   useAppStore.getState().setAlerts(data);
   return data;
 }

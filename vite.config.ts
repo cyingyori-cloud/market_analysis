@@ -8,6 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
+  base: '/market_analysis/',
   plugins: [react(), tailwindcss()],
   server: {
     port: 5173,
