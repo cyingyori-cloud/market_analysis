@@ -158,7 +158,8 @@ let staticDataCache: Record<string, any> | null = null;
 
 async function loadStaticData() {
   if (staticDataCache) return staticDataCache;
-  const res = await fetch('/db.json');
+  const base = (import.meta.env.BASE_URL || '').replace(/\/$/, '');
+  const res = await fetch(`${base}/db.json`);
   staticDataCache = await res.json();
   return staticDataCache;
 }
