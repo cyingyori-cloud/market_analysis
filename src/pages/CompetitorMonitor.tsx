@@ -67,7 +67,7 @@ export function CompetitorMonitor() {
           { label: '今日采集', value: competitorNews.filter(n => n.publishedAt.startsWith(new Date().toISOString().split('T')[0])).length },
           { label: '已标注', value: competitorNews.filter(n => n.status === 'published').length },
           { label: '重大信号', value: competitorNews.filter(n => n.tag === 'major').length },
-          { label: '涉及竞品', value: competitorsWithNews.length },
+          { label: '监测竞品', value: competitors.length },
           { label: '标注准确率', value: '98%' },
         ].map((stat, i) => (
           <div key={i} className="bg-white rounded-xl border border-slate-200 p-4 text-center">
@@ -112,7 +112,7 @@ export function CompetitorMonitor() {
             className="px-3 py-1.5 text-sm border border-slate-200 rounded-lg"
           >
             <option value="all">全部竞品</option>
-            {competitorsWithNews.map(c => (
+            {competitors.map(c => (
               <option key={c.id} value={c.id}>{c.name}</option>
             ))}
           </select>

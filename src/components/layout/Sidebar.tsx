@@ -5,7 +5,7 @@ import { useAppStore } from '../../store/appStore';
 
 
 const navItems = [
-  { id: 'competitor-monitor', label: '竞品动态监测', icon: Radio, badge: 8 },
+  { id: 'competitor-monitor', label: '竞品动态监测', icon: Radio, badge: 83 },
   { id: 'policy-analysis', label: '政策信号解读', icon: FileText, badge: 5 },
 ];
 
