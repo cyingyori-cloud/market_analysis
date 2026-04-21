@@ -141,23 +141,23 @@ export function CompetitorMonitor() {
     setIsScanning(true);
     showToast('正在扫描竞品官网...');
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/crawler/run`, {
-        method: 'POST',
-      });
-      const result = await res.json();
-      showToast(result.message || '扫描完成！');
-      // 刷新数据
-      await fetchCompetitorNews({ competitorId: selectedCompetitor === 'all' ? undefined : selectedCompetitor });
-    } catch {
-      showToast('扫描失败，请检查网络');
-    }
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/crawler/run`, {
+      method: 'POST',
+    });
+    const result = await res.json();
+    showToast(result.message || '扫描完成！');
+    // 刷新数据
+    await fetchCompetitorNews({ competitorId: filterCompetitor === 'all' ? undefined : filterCompetitor });
+  } catch {
+    showToast('扫描失败，请检查网络');
+  }
     setIsScanning(false);
   };
 
   // 刷新 - 重新加载数据
   const handleRefresh = async () => {
     showToast('正在刷新数据...');
-    await fetchCompetitorNews({ competitorId: selectedCompetitor === 'all' ? undefined : selectedCompetitor });
+    await fetchCompetitorNews({ competitorId: filterCompetitor === 'all' ? undefined : filterCompetitor });
     showToast('数据已刷新');
   };
 
