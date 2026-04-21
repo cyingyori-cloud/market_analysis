@@ -64,11 +64,16 @@ export function CompetitorMonitor() {
       {/* Stats */}
       <div className="grid grid-cols-5 gap-4">
         {[
-          { label: '今日采集', value: competitorNews.filter(n => n.publishedAt.startsWith(new Date().toISOString().split('T')[0])).length },
+          { label: '最近7天', value: competitorNews.filter(n => {
+            const pubDate = new Date(n.publishedAt);
+            const now = new Date();
+            const diffDays = (now.getTime() - pubDate.getTime()) / (1000 * 60 * 60 * 24);
+            return diffDays <= 7;
+          }).length },
           { label: '已标注', value: competitorNews.filter(n => n.status === 'published').length },
           { label: '重大信号', value: competitorNews.filter(n => n.tag === 'major').length },
           { label: '监测竞品', value: competitors.length },
-          { label: '标注准确率', value: '98%' },
+          { label: '待处理', value: competitorNews.filter(n => n.status === 'draft').length },
         ].map((stat, i) => (
           <div key={i} className="bg-white rounded-xl border border-slate-200 p-4 text-center">
             <div className="text-2xl font-bold text-slate-900">{stat.value}</div>
