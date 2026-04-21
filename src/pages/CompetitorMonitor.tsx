@@ -135,6 +135,32 @@ export function CompetitorMonitor() {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
+  // 立即扫描 - 调用后端爬虫
+  const [isScanning, setIsScanning] = useState(false);
+  const handleScan = async () => {
+    setIsScanning(true);
+    showToast('正在扫描竞品官网...');
+    try {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/crawler/run`, {
+        method: 'POST',
+      });
+      const result = await res.json();
+      showToast(result.message || '扫描完成！');
+      // 刷新数据
+      await fetchCompetitorNews({ competitorId: selectedCompetitor === 'all' ? undefined : selectedCompetitor });
+    } catch {
+      showToast('扫描失败，请检查网络');
+    }
+    setIsScanning(false);
+  };
+
+  // 刷新 - 重新加载数据
+  const handleRefresh = async () => {
+    showToast('正在刷新数据...');
+    await fetchCompetitorNews({ competitorId: selectedCompetitor === 'all' ? undefined : selectedCompetitor });
+    showToast('数据已刷新');
+  };
+
   return (
     <div className="p-6 space-y-6">
       {/* Toast */}
@@ -173,9 +199,13 @@ export function CompetitorMonitor() {
               </button>
             ))}
           </div>
-          <button className="px-4 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center gap-2">
-            <RefreshCw size={16} />
-            立即扫描
+          <button 
+            onClick={handleScan}
+            disabled={isScanning}
+            className="px-4 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center gap-2 disabled:opacity-50"
+          >
+            <RefreshCw size={16} className={isScanning ? 'animate-spin' : ''} />
+            {isScanning ? '扫描中...' : '立即扫描'}
           </button>
         </div>
       </div>
