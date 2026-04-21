@@ -1,23 +1,18 @@
-FROM node:20-alpine
+FROM node:20-slim
 
 WORKDIR /app
 
 # 复制 package.json
-COPY package*.json ./
+COPY server/package*.json ./
 
-# 安装生产依赖
-RUN npm ci --only=production
-
-# 安装 tsx 用于运行 TypeScript
-RUN npm install -g tsx
+# 安装所有依赖（包括 devDependencies）
+RUN npm install
 
 # 复制后端代码
-COPY server ./server
+COPY server/ ./
 
-ENV PORT=3001
-ENV NODE_ENV=production
-
+# 暴露端口
 EXPOSE 3001
 
-# 使用 tsx 运行 TypeScript
-CMD ["npx", "tsx", "server/index.ts"]
+# 启动命令（使用 tsx 运行 TypeScript）
+CMD ["npx", "tsx", "index.ts"]

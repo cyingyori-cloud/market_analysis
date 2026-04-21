@@ -1,9 +1,5 @@
 [railway]
-  builder = "nixpacks"
-
-[nixpacks]
-  build_cmd = "cd server && npm install"
-  start_cmd = "cd server && npm start"
+  builder = "dockerfile"
 
 [variables]
   PORT = "3001"
