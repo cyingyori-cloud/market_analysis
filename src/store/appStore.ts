@@ -146,6 +146,7 @@ interface AppState {
   setCurrentRole: (role: string) => void;
   setCompetitors: (data: Competitor[]) => void;
   setCompetitorNews: (data: CompetitorNews[]) => void;
+  updateNews: (id: string, updates: Partial<CompetitorNews>) => void;
   setPolicies: (data: Policy[]) => void;
   setBidResults: (data: BidResult[]) => void;
   setAlerts: (data: Alert[]) => void;
@@ -180,6 +181,11 @@ export const useAppStore = create<AppState>((set) => ({
   setCurrentRole: (role) => set({ currentRole: role }),
   setCompetitors: (data) => set({ competitors: data }),
   setCompetitorNews: (data) => set({ competitorNews: data }),
+  updateNews: (id, updates) => set((state) => ({
+    competitorNews: state.competitorNews.map(n => 
+      n.id === id ? { ...n, ...updates } : n
+    )
+  })),
   setPolicies: (data) => set({ policies: data }),
   setBidResults: (data) => set({ bidResults: data }),
   setAlerts: (data) => set({ alerts: data }),
