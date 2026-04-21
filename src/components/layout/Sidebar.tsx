@@ -1,16 +1,12 @@
-import { 
-  LayoutDashboard, Radio, Target, FileText, FileBarChart,
-  Users, Settings, Bell
+import {
+  Radio, FileText, Settings, Bell
 } from 'lucide-react';
 import { useAppStore } from '../../store/appStore';
 import clsx from 'clsx';
 
 const navItems = [
-  { id: 'dashboard', label: '总览仪表盘', icon: LayoutDashboard },
-  { id: 'competitor-monitor', label: '竞品动态监测', icon: Radio, badge: 12 },
-  { id: 'bid-intelligence', label: '投标情报包', icon: Target, badge: 3 },
+  { id: 'competitor-monitor', label: '竞品动态监测', icon: Radio, badge: 8 },
   { id: 'policy-analysis', label: '政策信号解读', icon: FileText, badge: 5 },
-  { id: 'report-center', label: '竞品分析报告', icon: FileBarChart },
 ];
 
 const competitorList = [
@@ -44,6 +40,7 @@ export function Sidebar() {
         <div className="px-4 mb-3">
           <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider">系统导航</div>
         </div>
+
         {navItems.map((item) => {
           const Icon = item.icon;
           return (
@@ -96,7 +93,7 @@ export function Sidebar() {
       {/* Footer */}
       <div className="p-4 border-t border-slate-200">
         <div className="text-xs text-slate-400 text-center">
-          4S Intelligence v1.0
+          4S Intelligence v2.0
         </div>
       </div>
     </div>

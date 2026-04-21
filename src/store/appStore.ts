@@ -171,7 +171,7 @@ export const useAppStore = create<AppState>((set) => ({
   policies: [],
   bidResults: [],
   alerts: [],
-  activeTab: 'dashboard',
+  activeTab: 'competitor-monitor',
   currentRole: 'sales',
   isLoading: false,
   

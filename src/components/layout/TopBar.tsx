@@ -2,11 +2,8 @@ import { Bell, RefreshCw, User } from 'lucide-react';
 import { useAppStore } from '../../store/appStore';
 
 const tabNames: Record<string, string> = {
-  dashboard: '总览仪表盘',
-  'competitor-monitor': '竞品动态实时监测',
-  'bid-intelligence': '投标情报包',
-  'policy-analysis': '行业政策信号解读',
-  'report-center': '竞品分析报告',
+  'competitor-monitor': '竞品动态监测',
+  'policy-analysis': '政策信号解读',
 };
 
 export function TopBar() {
