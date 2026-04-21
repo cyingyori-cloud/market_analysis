@@ -22,11 +22,9 @@ export default defineConfig({
     },
   },
   define: {
-    'import.meta.env.VITE_USE_STATIC_DATA': JSON.stringify(
-      process.env.VITE_USE_STATIC_DATA || 'true'
-    ),
+    'import.meta.env.VITE_USE_STATIC_DATA': JSON.stringify('false'),
     'import.meta.env.VITE_API_BASE_URL': JSON.stringify(
-      process.env.VITE_API_BASE_URL || '/api'
+      'https://marketanalysis-production-9ede.up.railway.app/api'
     ),
   },
 });
