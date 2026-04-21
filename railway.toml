@@ -2,8 +2,8 @@
   builder = "nixpacks"
 
 [nixpacks]
-  build_cmd = "npm install && npm install -D tsx typescript @types/node"
-  start_cmd = "npx tsx server/index.ts"
+  build_cmd = "cd server && npm install"
+  start_cmd = "cd server && npm start"
 
 [variables]
   PORT = "3001"
