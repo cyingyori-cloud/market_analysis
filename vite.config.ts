@@ -13,12 +13,20 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      "/api": "http://127.0.0.1:3002",
+      "/api": "http://127.0.0.1:3001",
     },
   },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
+  },
+  define: {
+    'import.meta.env.VITE_USE_STATIC_DATA': JSON.stringify(
+      process.env.VITE_USE_STATIC_DATA || 'true'
+    ),
+    'import.meta.env.VITE_API_BASE_URL': JSON.stringify(
+      process.env.VITE_API_BASE_URL || '/api'
+    ),
   },
 });

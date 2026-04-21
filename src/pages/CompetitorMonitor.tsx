@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Radio, Filter, RefreshCw, ExternalLink, Bookmark, Share2 } from 'lucide-react';
+import { Radio, RefreshCw, ExternalLink, Bookmark, Share2 } from 'lucide-react';
 import { useAppStore, fetchCompetitorNews, fetchCompetitors } from '../store/appStore';
 import clsx from 'clsx';
 
@@ -16,6 +16,34 @@ export function CompetitorMonitor() {
   const { competitors, competitorNews, setLoading, isLoading } = useAppStore();
   const [filterTag, setFilterTag] = useState<string>('all');
   const [filterCompetitor, setFilterCompetitor] = useState<string>('all');
+  const [filterTimeRange, setFilterTimeRange] = useState<string>('week');
+
+  const timeRanges = [
+    { value: 'today', label: '今天' },
+    { value: 'week', label: '最近7天' },
+    { value: 'month', label: '本月' },
+    { value: 'all', label: '全部' },
+  ];
+
+  const getDateRange = () => {
+    const now = new Date();
+    const start = new Date();
+    switch (filterTimeRange) {
+      case 'today':
+        start.setHours(0, 0, 0, 0);
+        break;
+      case 'week':
+        start.setDate(now.getDate() - 7);
+        break;
+      case 'month':
+        start.setDate(now.getDate() - 30);
+        break;
+      case 'all':
+      default:
+        return null;
+    }
+    return start;
+  };
 
   useEffect(() => {
     setLoading(true);
@@ -25,9 +53,12 @@ export function CompetitorMonitor() {
     ]).finally(() => setLoading(false));
   }, []);
 
+  const dateRange = getDateRange();
+
   const filteredNews = competitorNews.filter(news => {
     if (filterTag !== 'all' && news.tag !== filterTag) return false;
     if (filterCompetitor !== 'all' && news.competitorId !== filterCompetitor) return false;
+    if (dateRange && new Date(news.publishedAt) < dateRange) return false;
     return true;
   });
 
@@ -50,10 +81,22 @@ export function CompetitorMonitor() {
           </p>
         </div>
         <div className="flex gap-2">
-          <button className="px-4 py-2 text-sm bg-white border border-slate-200 rounded-lg hover:bg-slate-50 flex items-center gap-2">
-            <Filter size={16} />
-            筛选
-          </button>
+          <div className="px-1">
+            {timeRanges.map(range => (
+              <button
+                key={range.value}
+                onClick={() => setFilterTimeRange(range.value)}
+                className={clsx(
+                  'px-3 py-2 text-sm rounded-lg transition-colors',
+                  filterTimeRange === range.value
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-50'
+                )}
+              >
+                {range.label}
+              </button>
+            ))}
+          </div>
           <button className="px-4 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center gap-2">
             <RefreshCw size={16} />
             立即扫描
@@ -64,16 +107,11 @@ export function CompetitorMonitor() {
       {/* Stats */}
       <div className="grid grid-cols-5 gap-4">
         {[
-          { label: '最近7天', value: competitorNews.filter(n => {
-            const pubDate = new Date(n.publishedAt);
-            const now = new Date();
-            const diffDays = (now.getTime() - pubDate.getTime()) / (1000 * 60 * 60 * 24);
-            return diffDays <= 7;
-          }).length },
-          { label: '已标注', value: competitorNews.filter(n => n.status === 'published').length },
-          { label: '重大信号', value: competitorNews.filter(n => n.tag === 'major').length },
+          { label: timeRanges.find(t => t.value === filterTimeRange)?.label || '全部', value: filteredNews.length },
+          { label: '已标注', value: filteredNews.filter(n => n.status === 'published').length },
+          { label: '重大信号', value: filteredNews.filter(n => n.tag === 'major').length },
           { label: '监测竞品', value: competitors.length },
-          { label: '待处理', value: competitorNews.filter(n => n.status === 'draft').length },
+          { label: '待处理', value: filteredNews.filter(n => n.status === 'draft').length },
         ].map((stat, i) => (
           <div key={i} className="bg-white rounded-xl border border-slate-200 p-4 text-center">
             <div className="text-2xl font-bold text-slate-900">{stat.value}</div>
