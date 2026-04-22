@@ -317,59 +317,59 @@ export function CompetitorMonitor() {
       </div>
 
       {/* News List */}
-      <div className="bg-white rounded-xl border border-slate-200">
-        <div className="p-4 border-b border-slate-200 flex items-center justify-between">
-          <h2 className="font-semibold text-slate-900">动态列表</h2>
-          <span className="text-sm text-slate-500">共 {filteredNews.length} 条</span>
-        </div>
-        <div className="divide-y divide-slate-100">
-          {filteredNews.map((news) => {
-            const config = tagConfig[news.tag] || tagConfig.report;
-            return (
-              <div key={news.id} className="p-3 hover:bg-slate-50 transition-colors border-b border-slate-100 last:border-b-0">
-                {/* 顶部行：标签·企业 + 标题 + 时间 + 操作 */}
-                <div className="flex items-center gap-1.5 mb-1 flex-wrap">
-                  {/* 标签 */}
-                  <span className={clsx('px-1.5 py-0.5 rounded text-xs font-medium shrink-0', config.bg, config.color)}>
+      <div className="space-y-4">
+        {filteredNews.map((news) => {
+          const config = tagConfig[news.tag] || tagConfig.report;
+          return (
+            <div key={news.id} className="bg-white rounded-xl border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
+              <div className="p-5">
+                {/* 标题行 */}
+                <div className="flex items-start gap-3 mb-3">
+                  <span className={clsx('px-2 py-1 rounded text-xs font-semibold shrink-0', config.bg, config.color)}>
                     {config.label}
                   </span>
-                  {/* 企业名 */}
-                  <span className="font-medium text-xs text-slate-800 shrink-0">{news.competitorName}</span>
-                  {/* 标题 */}
-                  <span className="text-sm text-slate-700 flex-1 min-w-0">{news.title}</span>
-                  {/* 时间 */}
-                  <span className="text-xs text-slate-400 shrink-0">
-                    {new Date(news.publishedAt).toLocaleDateString('zh-CN')}
-                  </span>
-                  {/* 操作 */}
-                  <div className="flex gap-0.5 shrink-0">
-                    <button onClick={() => handleRetag(news.id)} className="p-1 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="重新打标签">
-                      <Bookmark size={13} />
-                    </button>
-                    {news.sourceUrl ? (
-                      <button onClick={() => handleOpenSource(news.sourceUrl)} className="p-1 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="查看原文">
-                        <ExternalLink size={13} />
-                      </button>
-                    ) : null}
-                  </div>
+                  <span className="font-semibold text-slate-900">{news.competitorName}</span>
+                  <span className="text-slate-700 flex-1">{news.title}</span>
                 </div>
 
-                {/* 内容摘要（截断80字） */}
-                <p className="text-xs text-slate-500 mb-1">
+                {/* 内容 */}
+                <p className="text-sm text-slate-600 mb-3">
                   {expandedIds.has(news.id) ? news.content : truncate(news.content, 80).short}
                   {truncate(news.content, 80).truncated && (
-                    <button onClick={() => toggleExpand(news.id)} className="text-blue-500 hover:text-blue-700 ml-1 text-xs">
+                    <button onClick={() => toggleExpand(news.id)} className="text-blue-500 hover:text-blue-700 ml-1 text-sm">
                       {expandedIds.has(news.id) ? '收起' : '展开'}
                     </button>
                   )}
                 </p>
 
-                {/* 来源 */}
-                <div className="text-xs text-slate-400">{news.source}</div>
+                {/* 影响分析 */}
+                {news.impactAnalysis && (
+                  <div className="bg-amber-50 border-l-4 border-amber-400 px-4 py-3 rounded-r-lg mb-4">
+                    <div className="text-sm text-amber-800">{news.impactAnalysis}</div>
+                  </div>
+                )}
+
+                {/* 底部：来源 + 时间 + 操作 */}
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-slate-400">{news.source}</span>
+                  <div className="flex items-center gap-3">
+                    <span className="text-xs text-slate-400">
+                      {new Date(news.publishedAt).toLocaleDateString('zh-CN')}
+                    </span>
+                    <button onClick={() => handleRetag(news.id)} className="text-slate-400 hover:text-blue-600" title="重新打标签">
+                      <Bookmark size={16} />
+                    </button>
+                    {news.sourceUrl && (
+                      <button onClick={() => handleOpenSource(news.sourceUrl)} className="text-slate-400 hover:text-blue-600" title="查看原文">
+                        <ExternalLink size={16} />
+                      </button>
+                    )}
+                  </div>
+                </div>
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
 
       {/* 重新打标签模态框 */}
