@@ -317,23 +317,38 @@ export function CompetitorMonitor() {
       </div>
 
       {/* News List */}
-      <div className="space-y-4">
-        {filteredNews.map((news) => {
-          const config = tagConfig[news.tag] || tagConfig.report;
-          return (
-            <div key={news.id} className="bg-white rounded-xl border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
-              <div className="p-5">
-                {/* 标题行 */}
-                <div className="flex items-start gap-3 mb-3">
-                  <span className={clsx('px-2 py-1 rounded text-xs font-semibold shrink-0', config.bg, config.color)}>
+      <div className="bg-white rounded-xl border border-slate-200">
+        <div className="p-4 border-b border-slate-200 flex items-center justify-between">
+          <h2 className="font-semibold text-slate-900">动态列表</h2>
+          <span className="text-sm text-slate-500">共 {filteredNews.length} 条动态</span>
+        </div>
+        <div className="divide-y divide-slate-100">
+          {filteredNews.map((news) => {
+            const config = tagConfig[news.tag] || tagConfig.report;
+            return (
+              <div key={news.id} className="p-4 hover:bg-slate-50 transition-colors">
+                {/* 第一行：标签·企业名·标题 */}
+                <div className="flex items-center gap-2 mb-2">
+                  <span className={clsx('px-2 py-0.5 rounded text-xs font-semibold', config.bg, config.color)}>
                     {config.label}
                   </span>
                   <span className="font-semibold text-slate-900">{news.competitorName}</span>
                   <span className="text-slate-700 flex-1">{news.title}</span>
+                  <span className="text-xs text-slate-400 ml-2">
+                    {new Date(news.publishedAt).toLocaleDateString('zh-CN')}
+                  </span>
+                  <button onClick={() => handleRetag(news.id)} className="p-1 text-slate-400 hover:text-blue-600 ml-2" title="重新打标签">
+                    <Bookmark size={14} />
+                  </button>
+                  {news.sourceUrl && (
+                    <button onClick={() => handleOpenSource(news.sourceUrl)} className="p-1 text-slate-400 hover:text-blue-600" title="查看原文">
+                      <ExternalLink size={14} />
+                    </button>
+                  )}
                 </div>
 
-                {/* 内容 */}
-                <p className="text-sm text-slate-600 mb-3">
+                {/* 第二行：内容摘要 */}
+                <p className="text-sm text-slate-600 mb-2">
                   {expandedIds.has(news.id) ? news.content : truncate(news.content, 80).short}
                   {truncate(news.content, 80).truncated && (
                     <button onClick={() => toggleExpand(news.id)} className="text-blue-500 hover:text-blue-700 ml-1 text-sm">
@@ -342,34 +357,19 @@ export function CompetitorMonitor() {
                   )}
                 </p>
 
-                {/* 影响分析 */}
+                {/* 第三行：影响分析（黄色背景） */}
                 {news.impactAnalysis && (
-                  <div className="bg-amber-50 border-l-4 border-amber-400 px-4 py-3 rounded-r-lg mb-4">
+                  <div className="bg-amber-50 border-l-4 border-amber-400 px-3 py-2 rounded-r-lg mb-2">
                     <div className="text-sm text-amber-800">{news.impactAnalysis}</div>
                   </div>
                 )}
 
-                {/* 底部：来源 + 时间 + 操作 */}
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-slate-400">{news.source}</span>
-                  <div className="flex items-center gap-3">
-                    <span className="text-xs text-slate-400">
-                      {new Date(news.publishedAt).toLocaleDateString('zh-CN')}
-                    </span>
-                    <button onClick={() => handleRetag(news.id)} className="text-slate-400 hover:text-blue-600" title="重新打标签">
-                      <Bookmark size={16} />
-                    </button>
-                    {news.sourceUrl && (
-                      <button onClick={() => handleOpenSource(news.sourceUrl)} className="text-slate-400 hover:text-blue-600" title="查看原文">
-                        <ExternalLink size={16} />
-                      </button>
-                    )}
-                  </div>
-                </div>
+                {/* 第四行：来源 */}
+                <div className="text-xs text-slate-400">{news.source}</div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
 
       {/* 重新打标签模态框 */}
