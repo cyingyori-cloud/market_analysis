@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Radio, RefreshCw, ExternalLink, Bookmark, Share2, X, Check } from 'lucide-react';
+import { RefreshCw, ExternalLink, Bookmark, Share2, X, Check } from 'lucide-react';
 import { useAppStore, fetchCompetitorNews, fetchCompetitors } from '../store/appStore';
 import clsx from 'clsx';
 
@@ -182,39 +182,31 @@ export function CompetitorMonitor() {
       )}
 
       {/* Header */}
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-            <Radio size={24} className="text-blue-600" />
-            竞争对手动态实时监测
-          </h1>
-          <p className="text-sm text-slate-500 mt-1">
-            每日自动扫描50家竞争对手官网、公众号、新闻动态，自动打标签并识别重大信号
-          </p>
-        </div>
-        <div className="flex gap-2">
-          <div className="px-1">
-            {timeRanges.map(range => (
-              <button
-                key={range.value}
-                onClick={() => setFilterTimeRange(range.value)}
-                className={clsx(
-                  'px-3 py-2 text-sm rounded-lg transition-colors',
-                  filterTimeRange === range.value
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-50'
-                )}
-              >
-                {range.label}
-              </button>
-            ))}
-          </div>
-          <button 
+      <div className="flex items-center justify-between gap-4">
+        <p className="text-sm text-slate-500 flex-1">
+          每日自动扫描50家竞争对手官网、公众号、新闻动态，自动打标签并识别重大信号
+        </p>
+        <div className="flex gap-2 shrink-0">
+          {timeRanges.map(range => (
+            <button
+              key={range.value}
+              onClick={() => setFilterTimeRange(range.value)}
+              className={clsx(
+                'px-3 py-1.5 text-sm rounded-lg transition-colors',
+                filterTimeRange === range.value
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-50'
+              )}
+            >
+              {range.label}
+            </button>
+          ))}
+          <button
             onClick={handleScan}
             disabled={isScanning}
-            className="px-4 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center gap-2 disabled:opacity-50"
+            className="px-4 py-1.5 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center gap-2 disabled:opacity-50"
           >
-            <RefreshCw size={16} className={isScanning ? 'animate-spin' : ''} />
+            <RefreshCw size={14} className={isScanning ? 'animate-spin' : ''} />
             {isScanning ? '扫描中...' : '立即扫描'}
           </button>
         </div>
@@ -226,7 +218,7 @@ export function CompetitorMonitor() {
           { label: timeRanges.find(t => t.value === filterTimeRange)?.label || '全部', value: filteredNews.length },
           { label: '已标注', value: filteredNews.filter(n => n.status === 'published').length },
           { label: '重大信号', value: filteredNews.filter(n => n.tag === 'major').length },
-          { label: '监测竞争对手', value: competitors.length },
+          { label: '监测企业', value: competitors.length },
           { label: '待处理', value: filteredNews.filter(n => n.status === 'draft').length },
         ].map((stat, i) => (
           <div key={i} className="bg-white rounded-xl border border-slate-200 p-4 text-center flex flex-col items-center justify-center min-h-[80px]">
@@ -237,8 +229,7 @@ export function CompetitorMonitor() {
       </div>
 
       {/* Filters */}
-      <div className="bg-white rounded-xl border border-slate-200 p-4 flex items-center gap-4 flex-wrap">
-        <div className="text-sm text-slate-600 font-medium">标签：</div>
+      <div className="bg-white rounded-xl border border-slate-200 p-4 flex items-center gap-3 flex-wrap">
         <div className="flex gap-2 flex-wrap">
           <button
             onClick={() => setFilterTag('all')}
@@ -263,14 +254,13 @@ export function CompetitorMonitor() {
           ))}
         </div>
 
-        <div className="border-l border-slate-200 pl-4 flex items-center gap-2">
-          <div className="text-sm text-slate-600 font-medium">竞争对手：</div>
+        <div className="border-l border-slate-200 pl-3 flex items-center gap-2">
           <select
             value={filterCompetitor}
             onChange={(e) => setFilterCompetitor(e.target.value)}
             className="px-3 py-1.5 text-sm border border-slate-200 rounded-lg"
           >
-            <option value="all">全部竞争对手</option>
+            <option value="all">全部企业</option>
             {competitors.map(c => (
               <option key={c.id} value={c.id}>{c.name}</option>
             ))}
@@ -281,58 +271,57 @@ export function CompetitorMonitor() {
       {/* News List */}
       <div className="bg-white rounded-xl border border-slate-200">
         <div className="p-4 border-b border-slate-200 flex items-center justify-between">
-          <h2 className="font-semibold text-slate-900">竞争对手动态时间线</h2>
-          <span className="text-sm text-slate-500">共 {filteredNews.length} 条动态</span>
+          <h2 className="font-semibold text-slate-900">动态列表</h2>
+          <span className="text-sm text-slate-500">共 {filteredNews.length} 条</span>
         </div>
         <div className="divide-y divide-slate-100">
           {filteredNews.map((news) => {
             const config = tagConfig[news.tag] || tagConfig.report;
             return (
-              <div key={news.id} className="p-5 hover:bg-slate-50 transition-colors border-b border-slate-100 last:border-b-0">
-                {/* 顶部行：标签 + 竞争对手 + 时间 + 操作按钮 */}
+              <div key={news.id} className="p-4 hover:bg-slate-50 transition-colors border-b border-slate-100 last:border-b-0">
+                {/* 顶部行：标签·企业 + 标题 + 时间 + 操作 */}
                 <div className="flex items-center gap-2 mb-2 flex-wrap">
                   {/* 标签 */}
                   <span className={clsx('px-2 py-0.5 rounded text-xs font-medium shrink-0', config.bg, config.color)}>
                     {config.label}
                   </span>
-                  {/* 竞争对手名 */}
-                  <span className="font-semibold text-sm text-slate-900 shrink-0">{news.competitorName}</span>
-                  {/* 标题（超长截断） */}
-                  <span className="text-sm text-slate-600 truncate">{news.title}</span>
-                  {/* 时间（靠右） */}
-                  <span className="text-xs text-slate-400 ml-auto shrink-0">
+                  <span className="text-slate-300 shrink-0">·</span>
+                  {/* 企业名 */}
+                  <span className="font-medium text-sm text-slate-800 shrink-0">{news.competitorName}</span>
+                  {/* 标题 */}
+                  <span className="text-sm text-slate-600 truncate flex-1 min-w-0">{news.title}</span>
+                  {/* 时间 */}
+                  <span className="text-xs text-slate-400 shrink-0">
                     {new Date(news.publishedAt).toLocaleDateString('zh-CN')}
                   </span>
-                  {/* 操作按钮（靠右） */}
-                  <div className="flex gap-1 shrink-0">
+                  {/* 操作 */}
+                  <div className="flex gap-0.5 shrink-0">
                     <button onClick={() => handleRetag(news.id)} className="p-1.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="重新打标签">
-                      <Bookmark size={15} />
+                      <Bookmark size={14} />
                     </button>
                     <button onClick={() => handleShare(news.id)} className="p-1.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="分享">
-                      <Share2 size={15} />
+                      <Share2 size={14} />
                     </button>
                     {news.sourceUrl ? (
                       <button onClick={() => handleOpenSource(news.sourceUrl)} className="p-1.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="查看原文">
-                        <ExternalLink size={15} />
+                        <ExternalLink size={14} />
                       </button>
                     ) : null}
                   </div>
                 </div>
 
-                {/* 内容 */}
+                {/* 内容摘要 */}
                 <p className="text-sm text-slate-600 mb-2 line-clamp-2">{news.content}</p>
 
-                {/* 影响判断 */}
+                {/* 影响分析 */}
                 {news.impactAnalysis && (
                   <div className="bg-amber-50 border-l-3 border-amber-400 px-3 py-2 rounded-r mb-2">
                     <p className="text-xs text-amber-800">{news.impactAnalysis}</p>
                   </div>
                 )}
 
-                {/* 来源信息 */}
-                <div className="text-xs text-slate-400">
-                  来源：{news.source}
-                </div>
+                {/* 来源 */}
+                <div className="text-xs text-slate-400">{news.source}</div>
               </div>
             );
           })}
