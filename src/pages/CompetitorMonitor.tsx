@@ -311,6 +311,11 @@ export function CompetitorMonitor() {
                     <button onClick={() => handleShare(news.id)} className="p-1.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="分享">
                       <Share2 size={15} />
                     </button>
+                    {news.sourceUrl ? (
+                      <button onClick={() => handleOpenSource(news.sourceUrl)} className="p-1.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="查看原文">
+                        <ExternalLink size={15} />
+                      </button>
+                    ) : null}
                   </div>
                 </div>
 
