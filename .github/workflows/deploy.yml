@@ -32,8 +32,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_USE_STATIC_DATA: 'false'
-          VITE_API_BASE_URL: 'https://marketanalysis-production-9ede.up.railway.app/api'
+          VITE_USE_STATIC_DATA: 'true'
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
