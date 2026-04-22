@@ -333,12 +333,9 @@ export function CompetitorMonitor() {
                   </div>
                 )}
 
-                {/* 来源和推送信息 */}
-                <div className="flex items-center gap-4 text-xs text-slate-400 flex-wrap">
-                  <span>来源：{news.source}</span>
-                  {news.pushedTo.length > 0 && (
-                    <span className="text-blue-600">已推送：{news.pushedTo.join('、')}</span>
-                  )}
+                {/* 来源信息 */}
+                <div className="text-xs text-slate-400">
+                  来源：{news.source}
                 </div>
               </div>
             );
