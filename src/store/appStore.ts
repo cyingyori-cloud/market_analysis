@@ -275,8 +275,16 @@ export async function fetchCompetitorNews(params?: { competitorId?: string; date
 export async function fetchPolicies(impactLevel?: string) {
   let data: Policy[];
   if (USE_STATIC) {
-    const db = await loadStaticData();
-    data = db.policies;
+    // 优先从 policies-data.json 读取（北极星电力网实时政策）
+    try {
+      const res = await fetch('/policies-data.json');
+      const policyData = await res.json();
+      data = policyData.policies || [];
+    } catch {
+      // 降级：从 db.json 读取
+      const db = await loadStaticData();
+      data = db.policies || [];
+    }
     if (impactLevel) data = data.filter((p: Policy) => p.impactLevel === impactLevel);
   } else {
     const url = impactLevel ? `${API_BASE}/policies?impactLevel=${impactLevel}` : `${API_BASE}/policies`;

@@ -21,7 +21,7 @@ export function TopBar() {
             </svg>
           </div>
           <div>
-            <div className="font-bold text-slate-900 leading-tight">市场洞察分析</div>
+            <div className="font-bold text-slate-900 leading-tight">中电电力市场洞察分析</div>
             <div className="text-xs text-slate-400 leading-tight">Market Intelligence v2.0</div>
           </div>
         </div>
