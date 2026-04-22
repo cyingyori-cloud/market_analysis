@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 // 读取本地 db.json 作为数据源
-const dbData = JSON.parse(readFileSync(join(__dirname, '..', 'db.json'), 'utf-8'));
+const dbData = JSON.parse(readFileSync(join(__dirname, 'db', 'db.json'), 'utf-8'));
 
 // 连接MongoDB（备用）
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/4s-intelligence';
