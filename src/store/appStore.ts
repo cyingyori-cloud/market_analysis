@@ -204,6 +204,10 @@ function convertMongoId(item: any, isNews = false) {
     item.actionRequired = item.actionRequired ?? (item.status === 'draft');
     item.tagLabel = item.tagLabel || tagLabelMap[item.tag] || item.tag || '';
     item.sourceUrl = item.sourceUrl || item.source;
+    // 映射MongoDB的aiAnalysis字段到前端impactAnalysis
+    if (item.aiAnalysis && !item.impactAnalysis) {
+      item.impactAnalysis = item.aiAnalysis.opportunity || item.aiAnalysis.recommendation || '';
+    }
   }
   return item;
 }
