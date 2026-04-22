@@ -132,7 +132,17 @@ export function CompetitorMonitor() {
 
   // 跳转原文
   const handleOpenSource = (url: string) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+    if (!url) {
+      showToast('暂无原文链接');
+      return;
+    }
+    // 如果是裸域名，拼接一个搜索URL
+    let finalUrl = url;
+    if (url.startsWith('https://www.') || url.startsWith('http://www.')) {
+      // 裸域名，加 /news 或直接用搜索引擎
+      finalUrl = url + '/news';
+    }
+    window.open(finalUrl, '_blank', 'noopener,noreferrer');
   };
 
   // 立即扫描 - 调用后端爬虫
@@ -219,9 +229,9 @@ export function CompetitorMonitor() {
           { label: '监测竞争对手', value: competitors.length },
           { label: '待处理', value: filteredNews.filter(n => n.status === 'draft').length },
         ].map((stat, i) => (
-          <div key={i} className="bg-white rounded-xl border border-slate-200 p-4 text-center">
+          <div key={i} className="bg-white rounded-xl border border-slate-200 p-4 text-center flex flex-col items-center justify-center min-h-[80px]">
             <div className="text-2xl font-bold text-slate-900">{stat.value}</div>
-            <div className="text-xs text-slate-500 mt-1">{stat.label}</div>
+            <div className="text-xs text-slate-500 mt-1 whitespace-nowrap">{stat.label}</div>
           </div>
         ))}
       </div>

@@ -62,7 +62,7 @@ export function Sidebar() {
       {/* Footer */}
       <div className="p-4 border-t border-slate-200">
         <div className="text-xs text-slate-400 text-center">
-          4S Intelligence v2.0
+          市场洞察分析 v2.0
         </div>
       </div>
     </div>
