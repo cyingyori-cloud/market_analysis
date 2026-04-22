@@ -20,24 +20,6 @@ const shareChannels = [
   { id: 'lark', label: '飞书', icon: '📝' },
 ];
 
-// 来源分类
-const sourceCategories = [
-  { value: 'all', label: '全部来源' },
-  { value: 'gov', label: '政府官网' },
-  { value: 'competitor', label: '竞争对手官网' },
-  { value: 'industry', label: '行业网站' },
-];
-
-const govSources = ['发改委', '国家电网', '南方电网', '能源局', '人民政府', '政府网'];
-const industrySources = ['北极星', '电力网', '能源网', '电网技术', '中国节能', '数据中心'];
-
-function getSourceCategory(source: string) {
-  const s = source.toLowerCase();
-  if (govSources.some(g => s.includes(g))) return 'gov';
-  if (industrySources.some(g => s.includes(g))) return 'industry';
-  return 'competitor';
-}
-
 function truncate(text: string, maxLen = 80) {
   if (!text || text.length <= maxLen) return { short: text || '', truncated: false };
   return { short: text.slice(0, maxLen) + '...', truncated: true };
@@ -48,7 +30,6 @@ export function CompetitorMonitor() {
   const [filterTag, setFilterTag] = useState<string>('all');
   const [filterCompetitor, setFilterCompetitor] = useState<string>('all');
   const [filterTimeRange, setFilterTimeRange] = useState<string>('week');
-  const [filterSource, setFilterSource] = useState<string>('all');
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
 
   // 模态框状态
@@ -109,7 +90,6 @@ export function CompetitorMonitor() {
   const filteredNews = competitorNews.filter(news => {
     if (filterTag !== 'all' && news.tag !== filterTag) return false;
     if (filterCompetitor !== 'all' && news.competitorId !== filterCompetitor) return false;
-    if (filterSource !== 'all' && getSourceCategory(news.source) !== filterSource) return false;
     if (dateRange && new Date(news.publishedAt) < dateRange) return false;
     return true;
   });
@@ -289,20 +269,6 @@ export function CompetitorMonitor() {
         </div>
 
         <div className="border-l border-slate-200 pl-3 flex items-center gap-2 flex-wrap">
-          {sourceCategories.map(sc => (
-            <button
-              key={sc.value}
-              onClick={() => setFilterSource(sc.value)}
-              className={clsx(
-                'px-2 py-1 text-xs rounded-lg transition-colors',
-                filterSource === sc.value
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-              )}
-            >
-              {sc.label}
-            </button>
-          ))}
           <select
             value={filterCompetitor}
             onChange={(e) => setFilterCompetitor(e.target.value)}

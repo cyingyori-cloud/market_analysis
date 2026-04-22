@@ -111,14 +111,9 @@ function truncate(text: string, maxLen = 150) {
 export function PolicyAnalysis() {
   const { policies, setLoading } = useAppStore();
   const [impactFilter, setImpactFilter] = useState('all');
-  const [sourceFilter, setSourceFilter] = useState('all');
-  const [showSources, setShowSources] = useState(false);
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
   const [isScanning, setIsScanning] = useState(false);
   const [toast, setToast] = useState({ show: false, message: '' });
-
-  // 动态计算来源分类（根据实际数据）
-  const sourceFilters = useMemo(() => getSourceFilters(policies), [policies]);
 
   const showToast = (message: string) => {
     setToast({ show: true, message });
@@ -147,11 +142,6 @@ export function PolicyAnalysis() {
 
   const filtered = policies.filter(p => {
     if (impactFilter !== 'all' && p.impactLevel !== impactFilter) return false;
-    // 来源筛选：根据source字段分类
-    if (sourceFilter !== 'all') {
-      const sourceType = getSourceType(p.source);
-      if (sourceType !== sourceFilter) return false;
-    }
     return true;
   });
 
@@ -179,29 +169,8 @@ export function PolicyAnalysis() {
           <p className="text-sm text-slate-500">
             共{policies.length}条政策，自动解读政策影响并关联中电电力销售线索
           </p>
-          <button
-            onClick={() => setShowSources(!showSources)}
-            className="text-xs text-blue-500 hover:text-blue-700 mt-1"
-          >
-            {showSources ? '收起数据来源' : '查看数据来源'}
-          </button>
         </div>
         <div className="flex gap-2 shrink-0 flex-wrap">
-          {sourceFilters.map(f => (
-            <button
-              key={f.value}
-              onClick={() => setSourceFilter(f.value)}
-              className={clsx(
-                'px-2 py-1 text-xs rounded-lg transition-colors',
-                sourceFilter === f.value
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-50'
-              )}
-            >
-              {f.label}
-            </button>
-          ))}
-          <span className="border-l border-slate-300 mx-1" />
           {impactFilters.map(f => (
             <button
               key={f.value}
@@ -226,34 +195,6 @@ export function PolicyAnalysis() {
           </button>
         </div>
       </div>
-
-      {/* 数据来源列表 */}
-      {showSources && (
-        <div className="bg-slate-50 rounded-lg border border-slate-200 p-4">
-          <div className="text-sm font-semibold text-slate-700 mb-3">📋 监控的数据来源</div>
-          <div className="grid grid-cols-3 gap-2 text-xs">
-            {monitorSources.map((src, i) => (
-              <a
-                key={i}
-                href={src.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={clsx(
-                  'px-2 py-1.5 rounded flex items-center gap-2 hover:opacity-80',
-                  src.type === 'gov' && 'bg-red-50 text-red-700',
-                  src.type === 'local' && 'bg-blue-50 text-blue-700',
-                  src.type === 'industry' && 'bg-green-50 text-green-700'
-                )}
-              >
-                <span className="font-medium">{src.name}</span>
-              </a>
-            ))}
-          </div>
-          <div className="mt-3 text-xs text-slate-500">
-            其余46个来源：各省市自治区人民政府官网（31个）+ 行业协会网站（15个）
-          </div>
-        </div>
-      )}
 
       {/* Stats */}
       <div className="grid grid-cols-4 gap-4">
