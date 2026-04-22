@@ -2,7 +2,7 @@ import { Bell, RefreshCw, User } from 'lucide-react';
 import { useAppStore } from '../../store/appStore';
 
 const tabNames: Record<string, string> = {
-  'competitor-monitor': '竞品动态监测',
+  'competitor-monitor': '竞争对手动态监测',
   'policy-analysis': '政策信号解读',
 };
 

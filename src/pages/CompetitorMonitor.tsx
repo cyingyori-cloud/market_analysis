@@ -139,7 +139,7 @@ export function CompetitorMonitor() {
   const [isScanning, setIsScanning] = useState(false);
   const handleScan = async () => {
     setIsScanning(true);
-    showToast('正在扫描竞品官网...');
+    showToast('正在扫描竞争对手官网...');
     try {
     const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/crawler/run`, {
       method: 'POST',
@@ -176,10 +176,10 @@ export function CompetitorMonitor() {
         <div>
           <h1 className="text-xl font-bold text-slate-900 flex items-center gap-2">
             <Radio size={24} className="text-blue-600" />
-            竞品动态实时监测
+            竞争对手动态实时监测
           </h1>
           <p className="text-sm text-slate-500 mt-1">
-            每日自动扫描50家竞品官网、公众号、新闻动态，自动打标签并识别重大信号
+            每日自动扫描50家竞争对手官网、公众号、新闻动态，自动打标签并识别重大信号
           </p>
         </div>
         <div className="flex gap-2">
@@ -216,7 +216,7 @@ export function CompetitorMonitor() {
           { label: timeRanges.find(t => t.value === filterTimeRange)?.label || '全部', value: filteredNews.length },
           { label: '已标注', value: filteredNews.filter(n => n.status === 'published').length },
           { label: '重大信号', value: filteredNews.filter(n => n.tag === 'major').length },
-          { label: '监测竞品', value: competitors.length },
+          { label: '监测竞争对手', value: competitors.length },
           { label: '待处理', value: filteredNews.filter(n => n.status === 'draft').length },
         ].map((stat, i) => (
           <div key={i} className="bg-white rounded-xl border border-slate-200 p-4 text-center">
@@ -254,13 +254,13 @@ export function CompetitorMonitor() {
         </div>
 
         <div className="border-l border-slate-200 pl-4 flex items-center gap-2">
-          <div className="text-sm text-slate-600 font-medium">竞品：</div>
+          <div className="text-sm text-slate-600 font-medium">竞争对手：</div>
           <select
             value={filterCompetitor}
             onChange={(e) => setFilterCompetitor(e.target.value)}
             className="px-3 py-1.5 text-sm border border-slate-200 rounded-lg"
           >
-            <option value="all">全部竞品</option>
+            <option value="all">全部竞争对手</option>
             {competitors.map(c => (
               <option key={c.id} value={c.id}>{c.name}</option>
             ))}
@@ -271,7 +271,7 @@ export function CompetitorMonitor() {
       {/* News List */}
       <div className="bg-white rounded-xl border border-slate-200">
         <div className="p-4 border-b border-slate-200 flex items-center justify-between">
-          <h2 className="font-semibold text-slate-900">竞品动态时间线</h2>
+          <h2 className="font-semibold text-slate-900">竞争对手动态时间线</h2>
           <span className="text-sm text-slate-500">共 {filteredNews.length} 条动态</span>
         </div>
         <div className="divide-y divide-slate-100">

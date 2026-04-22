@@ -5,12 +5,19 @@ import { News } from './models/News';
 import { Competitor } from './models/Competitor';
 import { analyzeNews } from './ai/analyzer';
 import { generateMockNews } from './crawler/scraper';
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// 连接MongoDB
+// 读取本地 db.json 作为数据源
+const dbData = JSON.parse(readFileSync(join(__dirname, '..', 'db.json'), 'utf-8'));
+
+// 连接MongoDB（备用）
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/4s-intelligence';
 
 mongoose.connect(MONGODB_URI)
@@ -19,66 +26,54 @@ mongoose.connect(MONGODB_URI)
 
 // ============ API 路由 ============
 
-// 获取竞品列表
+// 获取竞争对手列表（从 db.json）
 app.get('/api/competitors', async (req, res) => {
   try {
-    const competitors = await Competitor.find().sort({ name: 1 });
-    res.json(competitors);
+    const competitors = dbData.competitors;
+    res.json(competitors.map((c: any) => ({ ...c, id: c.id || c._id })));
   } catch (error) {
-    res.status(500).json({ error: '获取竞品列表失败' });
+    res.status(500).json({ error: '获取竞争对手列表失败' });
   }
 });
 
-// 获取竞品动态（支持筛选）
+// 获取竞争对手动态（从 db.json）
 app.get('/api/news', async (req, res) => {
   try {
     const { competitorId, tag, timeRange, page = 1, limit = 50 } = req.query;
-    
-    const filter: any = {};
-    
+    let news = [...dbData.competitorNews];
+
     if (competitorId && competitorId !== 'all') {
-      filter.competitorId = competitorId;
+      news = news.filter((n: any) => n.competitorId === competitorId);
     }
-    
     if (tag && tag !== 'all') {
-      filter.tag = tag;
+      news = news.filter((n: any) => n.tag === tag);
     }
-    
     if (timeRange && timeRange !== 'all') {
       const now = new Date();
       const start = new Date();
-      
       switch (timeRange) {
-        case 'today':
-          start.setHours(0, 0, 0, 0);
-          break;
-        case 'week':
-          start.setDate(now.getDate() - 7);
-          break;
-        case 'month':
-          start.setDate(now.getDate() - 30);
-          break;
+        case 'today': start.setHours(0, 0, 0, 0); break;
+        case 'week': start.setDate(now.getDate() - 7); break;
+        case 'month': start.setDate(now.getDate() - 30); break;
       }
-      
-      filter.publishedAt = { $gte: start };
+      news = news.filter((n: any) => new Date(n.publishedAt) >= start);
     }
-    
-    const news = await News.find(filter)
-      .sort({ publishedAt: -1 })
-      .skip((Number(page) - 1) * Number(limit))
-      .limit(Number(limit));
-    
-    const total = await News.countDocuments(filter);
-    
+
+    news.sort((a: any, b: any) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+    const total = news.length;
+    const pageNum = Number(page);
+    const limitNum = Number(limit);
+    const paged = news.slice((pageNum - 1) * limitNum, pageNum * limitNum);
+
     res.json({
-      data: news,
+      data: paged.map((n: any) => ({ ...n, id: n.id || n._id })),
       total,
-      page: Number(page),
-      limit: Number(limit)
+      page: pageNum,
+      limit: limitNum
     });
   } catch (error) {
-    console.error('获取竞品动态失败:', error);
-    res.status(500).json({ error: '获取竞品动态失败' });
+    console.error('获取竞争对手动态失败:', error);
+    res.status(500).json({ error: '获取竞争对手动态失败' });
   }
 });
 
@@ -133,6 +128,23 @@ app.get('/api/competitor-news', async (req, res) => {
 // 触发扫描（手动）- 别名
 app.post('/api/crawler/run', async (req, res) => {
   req.url = '/api/scan';
+});
+
+// /api/competitor-news 兼容路由
+app.get('/api/competitor-news', async (req, res) => {
+  req.url = '/api/news';
+  const originalSend = res.send.bind(res);
+  (res as any).send = function(body: any) {
+    if (body && body.data) {
+      body = {
+        data: body.data.map((n: any) => ({ ...n, id: n.id || n._id })),
+        total: body.total,
+        page: body.page,
+        limit: body.limit
+      };
+    }
+    return originalSend(body);
+  };
 });
 
 // 触发扫描（手动）

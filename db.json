@@ -1,0 +1,6350 @@
+{
+  "competitors": [
+    {
+      "id": "comp_001",
+      "name": "思源电气",
+      "shortName": "思源",
+      "stock": "002028",
+      "bu": [
+        "4S",
+        "HM"
+      ],
+      "listing": true,
+      "marketCap": "约480亿",
+      "customerGroup": [
+        "工业与能源",
+        "电力系统"
+      ],
+      "productLine": [
+        "保护",
+        "开关柜",
+        "互感器",
+        "配网自动化"
+      ],
+      "mainProducts": [
+        "GIL",
+        "开关柜",
+        "互感器",
+        "配网自动化"
+      ],
+      "coreStrengths": [
+        "特高压领域",
+        "组合电器"
+      ],
+      "marketShare": {
+        "nationalGrid": "7.3%",
+        "region": "全国"
+      },
+      "recentAction": "新一代GIL产品发布，6300A/1000kV",
+      "threatLevel": "high",
+      "status": "active"
+    },
+    {
+      "id": "comp_002",
+      "name": "派诺科技",
+      "shortName": "派诺",
+      "stock": "831173",
+      "bu": [
+        "4S",
+        "HM"
+      ],
+      "listing": true,
+      "marketCap": "约180亿",
+      "customerGroup": [
+        "交通基础设施",
+        "数据中心与电信运营商",
+        "工业与能源"
+      ],
+      "productLine": [
+        "电能质量",
+        "表计",
+        "马保",
+        "能源管理"
+      ],
+      "mainProducts": [
+        "电能质量装置",
+        "能源管理终端",
+        "智能仪表"
+      ],
+      "coreStrengths": [
+        "轨道交通",
+        "能源管理"
+      ],
+      "marketShare": {
+        "nationalGrid": "1.6%",
+        "region": "华中"
+      },
+      "recentAction": "武汉制造基地正式投产，年产能2万台",
+      "threatLevel": "high",
+      "status": "active"
+    },
+    {
+      "id": "comp_003",
+      "name": "安科瑞",
+      "shortName": "安科瑞",
+      "stock": "300286",
+      "bu": [
+        "HM"
+      ],
+      "listing": true,
+      "marketCap": "约95亿",
+      "customerGroup": [
+        "工业与能源",
+        "建筑与市政",
+        "渠道与合作伙伴"
+      ],
+      "productLine": [
+        "马保",
+        "表计",
+        "电气防火",
+        "BMS",
+        "EMS"
+      ],
+      "mainProducts": [
+        "智能仪表",
+        "BMS",
+        "EMS",
+        "马保"
+      ],
+      "coreStrengths": [
+        "智能仪表",
+        "能耗监测"
+      ],
+      "marketShare": {
+        "nationalGrid": "2.3%",
+        "region": "全国"
+      },
+      "recentAction": "与某新能源集团签署储能BMS战略合作协议",
+      "threatLevel": "medium",
+      "status": "active"
+    },
+    {
+      "id": "comp_004",
+      "name": "国电南瑞",
+      "shortName": "南瑞",
+      "stock": "600406",
+      "bu": [
+        "HM"
+      ],
+      "listing": true,
+      "marketCap": "约1200亿",
+      "customerGroup": [
+        "电力系统",
+        "数据中心与电信运营商"
+      ],
+      "productLine": [
+        "保护",
+        "调度系统",
+        "配网自动化",
+        "数字化平台"
+      ],
+      "mainProducts": [
+        "配电主站",
+        "调度系统",
+        "数字化平台"
+      ],
+      "coreStrengths": [
+        "数字化平台",
+        "调度智能化"
+      ],
+      "marketShare": {
+        "nationalGrid": "9.7%",
+        "region": "全国"
+      },
+      "recentAction": "中标南方电网数字化转型平台项目，金额超8亿",
+      "threatLevel": "high",
+      "status": "active"
+    },
+    {
+      "id": "comp_005",
+      "name": "许继电气",
+      "shortName": "许继",
+      "stock": "000400",
+      "bu": [
+        "4S",
+        "HM"
+      ],
+      "listing": true,
+      "marketCap": "约280亿",
+      "customerGroup": [
+        "工业与能源",
+        "电力系统"
+      ],
+      "productLine": [
+        "保护",
+        "直流输电",
+        "开关"
+      ],
+      "mainProducts": [
+        "保护装置",
+        "开关",
+        "直流输电"
+      ],
+      "coreStrengths": [
+        "直流输电",
+        "保护自动化"
+      ],
+      "marketShare": {
+        "nationalGrid": "5.3%",
+        "region": "全国"
+      },
+      "recentAction": "新任CTO上任，原国网电科院专家",
+      "threatLevel": "medium",
+      "status": "active"
+    },
+    {
+      "id": "comp_006",
+      "name": "平高电气",
+      "shortName": "平高",
+      "stock": "600312",
+      "bu": [
+        "HM"
+      ],
+      "listing": true,
+      "marketCap": "约150亿",
+      "customerGroup": [
+        "电力系统"
+      ],
+      "productLine": [
+        "高压开关",
+        "GIS"
+      ],
+      "mainProducts": [
+        "高压开关",
+        "GIS"
+      ],
+      "coreStrengths": [
+        "高压开关",
+        "GIS设备"
+      ],
+      "marketShare": {
+        "nationalGrid": "4.2%",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "threatLevel": "low",
+      "status": "active"
+    },
+    {
+      "id": "comp_007",
+      "name": "特变电工",
+      "shortName": "特变",
+      "stock": "600089",
+      "bu": [
+        "HM"
+      ],
+      "listing": true,
+      "marketCap": "约650亿",
+      "customerGroup": [
+        "电力系统",
+        "工业与能源"
+      ],
+      "productLine": [
+        "变压器",
+        "光伏逆变器",
+        "储能"
+      ],
+      "mainProducts": [
+        "变压器",
+        "光伏逆变器",
+        "储能"
+      ],
+      "coreStrengths": [
+        "变压器",
+        "新能源"
+      ],
+      "marketShare": {
+        "nationalGrid": "6.8%",
+        "region": "全国"
+      },
+      "recentAction": "储能业务持续扩张",
+      "threatLevel": "medium",
+      "status": "active"
+    },
+    {
+      "id": "comp_008",
+      "name": "正泰电器",
+      "shortName": "正泰",
+      "stock": "601877",
+      "bu": [
+        "HM"
+      ],
+      "listing": true,
+      "marketCap": "约520亿",
+      "customerGroup": [
+        "建筑与市政",
+        "渠道与合作伙伴"
+      ],
+      "productLine": [
+        "低压电器",
+        "仪表",
+        "储能"
+      ],
+      "mainProducts": [
+        "低压电器",
+        "仪表",
+        "储能"
+      ],
+      "coreStrengths": [
+        "低压电器",
+        "民用市场"
+      ],
+      "marketShare": {
+        "nationalGrid": "3.5%",
+        "region": "全国"
+      },
+      "recentAction": "海外储能市场拓展",
+      "threatLevel": "low",
+      "status": "active"
+    },
+    {
+      "id": "comp_009",
+      "name": "积成电子",
+      "stock": "002339",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "工业与能源"
+      ],
+      "productLine": [
+        "4S综合"
+      ],
+      "mainProducts": [
+        "能源管理系统",
+        "4S终端"
+      ],
+      "coreStrengths": [
+        "工业能管",
+        "4S集成"
+      ],
+      "threatLevel": "high",
+      "shortName": "积成电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_010",
+      "name": "科陆电子",
+      "stock": "002121",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "工业与能源"
+      ],
+      "productLine": [
+        "4S综合",
+        "表计"
+      ],
+      "mainProducts": [
+        "智能仪表",
+        "储能BMS"
+      ],
+      "coreStrengths": [
+        "表计",
+        "储能"
+      ],
+      "threatLevel": "high",
+      "shortName": "科陆电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_011",
+      "name": "金智科技",
+      "stock": "002090",
+      "bu": [
+        "4S",
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源",
+        "建筑与市政"
+      ],
+      "productLine": [
+        "4S综合",
+        "保护"
+      ],
+      "mainProducts": [
+        "配电自动化",
+        "保护终端"
+      ],
+      "coreStrengths": [
+        "配电自动化",
+        "工业4S"
+      ],
+      "threatLevel": "high",
+      "shortName": "金智科",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_012",
+      "name": "华自科技",
+      "stock": "300490",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "工业与能源",
+        "水利水务"
+      ],
+      "productLine": [
+        "4S综合",
+        "水务自动化"
+      ],
+      "mainProducts": [
+        "工业自动化",
+        "水务系统"
+      ],
+      "coreStrengths": [
+        "水务自动化",
+        "工业控制"
+      ],
+      "threatLevel": "medium",
+      "shortName": "华自科",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_013",
+      "name": "万龙电气",
+      "stock": "831701",
+      "bu": [
+        "4S",
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源",
+        "交通基础设施"
+      ],
+      "productLine": [
+        "4S综合",
+        "马保"
+      ],
+      "mainProducts": [
+        "马保装置",
+        "4S终端"
+      ],
+      "coreStrengths": [
+        "马保",
+        "交通行业"
+      ],
+      "threatLevel": "medium",
+      "shortName": "万龙电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_014",
+      "name": "许昌智能",
+      "stock": "831396",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "工业与能源"
+      ],
+      "productLine": [
+        "4S综合"
+      ],
+      "mainProducts": [
+        "智能配电终端",
+        "4S系统"
+      ],
+      "coreStrengths": [
+        "配网终端",
+        "智能化"
+      ],
+      "threatLevel": "medium",
+      "shortName": "许昌智",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_015",
+      "name": "炬华科技",
+      "stock": "300360",
+      "bu": [
+        "4S",
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源"
+      ],
+      "productLine": [
+        "表计"
+      ],
+      "mainProducts": [
+        "智能电表",
+        "远程抄表"
+      ],
+      "coreStrengths": [
+        "表计制造",
+        "远抄系统"
+      ],
+      "threatLevel": "medium",
+      "shortName": "炬华科",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_016",
+      "name": "苏文电能",
+      "stock": "300982",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "工业与能源",
+        "渠道与合作伙伴"
+      ],
+      "productLine": [
+        "4S综合"
+      ],
+      "mainProducts": [
+        "配电运维",
+        "4S增值服务"
+      ],
+      "coreStrengths": [
+        "配电运维",
+        "区域渠道"
+      ],
+      "threatLevel": "medium",
+      "shortName": "苏文电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_017",
+      "name": "赛为智能",
+      "stock": "300044",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "建筑与市政"
+      ],
+      "productLine": [
+        "4S综合",
+        "楼宇自控"
+      ],
+      "mainProducts": [
+        "楼宇自控",
+        "建筑能管"
+      ],
+      "coreStrengths": [
+        "楼宇自控",
+        "智慧建筑"
+      ],
+      "threatLevel": "medium",
+      "shortName": "赛为智",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_018",
+      "name": "延华智能",
+      "stock": "002178",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "建筑与市政"
+      ],
+      "productLine": [
+        "4S综合"
+      ],
+      "mainProducts": [
+        "建筑智能化",
+        "能源管理"
+      ],
+      "coreStrengths": [
+        "智慧楼宇",
+        "能管系统"
+      ],
+      "threatLevel": "medium",
+      "shortName": "延华智",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_019",
+      "name": "大禹节水",
+      "stock": "300021",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "水利水务"
+      ],
+      "productLine": [
+        "4S综合",
+        "水务节水"
+      ],
+      "mainProducts": [
+        "节水设备",
+        "水务系统"
+      ],
+      "coreStrengths": [
+        "节水技术",
+        "农业水务"
+      ],
+      "threatLevel": "medium",
+      "shortName": "大禹节",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_020",
+      "name": "新天科技",
+      "stock": "300259",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "水利水务"
+      ],
+      "productLine": [
+        "4S综合",
+        "水务计量"
+      ],
+      "mainProducts": [
+        "NB-IoT水表",
+        "智慧水务"
+      ],
+      "coreStrengths": [
+        "水表物联网",
+        "智慧水务"
+      ],
+      "threatLevel": "medium",
+      "shortName": "新天科",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_021",
+      "name": "威派格",
+      "stock": "603956",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "水利水务"
+      ],
+      "productLine": [
+        "4S综合",
+        "供水管网"
+      ],
+      "mainProducts": [
+        "二次供水设备",
+        "水务运维"
+      ],
+      "coreStrengths": [
+        "二次供水",
+        "水务运维"
+      ],
+      "threatLevel": "medium",
+      "shortName": "威派格",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_022",
+      "name": "和达科技",
+      "stock": "688296",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "水利水务"
+      ],
+      "productLine": [
+        "4S综合"
+      ],
+      "mainProducts": [
+        "水务信息化",
+        "水网管理"
+      ],
+      "coreStrengths": [
+        "水务信息化"
+      ],
+      "threatLevel": "low",
+      "shortName": "和达科",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_023",
+      "name": "中水三立",
+      "stock": "874589",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "水利水务"
+      ],
+      "productLine": [
+        "4S综合"
+      ],
+      "mainProducts": [
+        "水文监测",
+        "水务工程"
+      ],
+      "coreStrengths": [
+        "水文监测"
+      ],
+      "threatLevel": "low",
+      "shortName": "中水三",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_024",
+      "name": "凯发电气",
+      "stock": "300407",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "交通基础设施"
+      ],
+      "productLine": [
+        "4S综合",
+        "轨交电气"
+      ],
+      "mainProducts": [
+        "轨道交通电气",
+        "能源管理"
+      ],
+      "coreStrengths": [
+        "轨道交通",
+        "机场电气"
+      ],
+      "threatLevel": "medium",
+      "shortName": "凯发电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_025",
+      "name": "科华数据",
+      "stock": "002335",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "数据中心与电信运营商"
+      ],
+      "productLine": [
+        "4S综合",
+        "UPS",
+        "储能"
+      ],
+      "mainProducts": [
+        "UPS",
+        "储能",
+        "数据中心基础设施"
+      ],
+      "coreStrengths": [
+        "数据中心UPS",
+        "工业储能"
+      ],
+      "threatLevel": "high",
+      "shortName": "科华数",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_026",
+      "name": "朗新集团",
+      "stock": "300682",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "渠道与合作伙伴"
+      ],
+      "productLine": [
+        "4S综合",
+        "SaaS平台"
+      ],
+      "mainProducts": [
+        "能源SaaS",
+        "4S平台"
+      ],
+      "coreStrengths": [
+        "能源互联网",
+        "SaaS服务"
+      ],
+      "threatLevel": "medium",
+      "shortName": "朗新集",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_027",
+      "name": "泰豪科技",
+      "stock": "600590",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "渠道与合作伙伴",
+        "建筑与市政"
+      ],
+      "productLine": [
+        "4S综合",
+        "智慧能源"
+      ],
+      "mainProducts": [
+        "智慧能源系统",
+        "综合节能"
+      ],
+      "coreStrengths": [
+        "综合能源服务",
+        "智慧建筑"
+      ],
+      "threatLevel": "medium",
+      "shortName": "泰豪科",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_028",
+      "name": "中恒电气",
+      "stock": "002364",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "渠道与合作伙伴",
+        "数据中心与电信运营商"
+      ],
+      "productLine": [
+        "4S综合",
+        "直流电源"
+      ],
+      "mainProducts": [
+        "直流电源",
+        "蓄电池管理"
+      ],
+      "coreStrengths": [
+        "通信直流电源",
+        "数据中心备电"
+      ],
+      "threatLevel": "medium",
+      "shortName": "中恒电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_029",
+      "name": "天合光能",
+      "stock": "688599",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "渠道与合作伙伴"
+      ],
+      "productLine": [
+        "光伏",
+        "储能"
+      ],
+      "mainProducts": [
+        "光伏组件",
+        "储能系统"
+      ],
+      "coreStrengths": [
+        "光伏",
+        "光储一体化"
+      ],
+      "threatLevel": "low",
+      "shortName": "天合光",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_030",
+      "name": "科远智慧",
+      "stock": "002380",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "渠道与合作伙伴",
+        "工业与能源"
+      ],
+      "productLine": [
+        "4S综合",
+        "工业自动化"
+      ],
+      "mainProducts": [
+        "工业自动化",
+        "智慧能源"
+      ],
+      "coreStrengths": [
+        "工业自动化",
+        "智能制造"
+      ],
+      "threatLevel": "medium",
+      "shortName": "科远智",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_031",
+      "name": "科大智能",
+      "stock": "300222",
+      "bu": [
+        "4S"
+      ],
+      "customerGroup": [
+        "其他"
+      ],
+      "productLine": [
+        "4S综合",
+        "工业机器人"
+      ],
+      "mainProducts": [
+        "工业机器人",
+        "电力巡检"
+      ],
+      "coreStrengths": [
+        "机器人巡检",
+        "电力AI"
+      ],
+      "threatLevel": "low",
+      "shortName": "科大智",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_032",
+      "name": "国电南自",
+      "stock": "600268",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源",
+        "电力系统"
+      ],
+      "productLine": [
+        "保护",
+        "调度"
+      ],
+      "mainProducts": [
+        "保护装置",
+        "调度自动化"
+      ],
+      "coreStrengths": [
+        "电网保护",
+        "调度自动化"
+      ],
+      "threatLevel": "high",
+      "shortName": "国电南",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_033",
+      "name": "四方股份",
+      "stock": "601126",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源"
+      ],
+      "productLine": [
+        "保护"
+      ],
+      "mainProducts": [
+        "继电保护",
+        "稳控装置"
+      ],
+      "coreStrengths": [
+        "继电保护",
+        "稳控技术"
+      ],
+      "threatLevel": "high",
+      "shortName": "四方股",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_034",
+      "name": "东方电子",
+      "stock": "000682",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源",
+        "电力系统"
+      ],
+      "productLine": [
+        "保护",
+        "自动化"
+      ],
+      "mainProducts": [
+        "保护装置",
+        "配网自动化"
+      ],
+      "coreStrengths": [
+        "保护自动化",
+        "山东区域"
+      ],
+      "threatLevel": "medium",
+      "shortName": "东方电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_035",
+      "name": "科林电气",
+      "stock": "603050",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源"
+      ],
+      "productLine": [
+        "保护",
+        "开关柜"
+      ],
+      "mainProducts": [
+        "箱式变电站",
+        "保护装置"
+      ],
+      "coreStrengths": [
+        "箱变",
+        "华北区域"
+      ],
+      "threatLevel": "medium",
+      "shortName": "科林电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_036",
+      "name": "长园集团",
+      "stock": "600525",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源"
+      ],
+      "productLine": [
+        "保护",
+        "电缆"
+      ],
+      "mainProducts": [
+        "保护装置",
+        "电力电缆"
+      ],
+      "coreStrengths": [
+        "保护材料",
+        "多元化"
+      ],
+      "threatLevel": "medium",
+      "shortName": "长园集",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_037",
+      "name": "雅达股份",
+      "stock": "430556",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源",
+        "建筑与市政",
+        "数据中心与电信运营商"
+      ],
+      "productLine": [
+        "马保",
+        "表计"
+      ],
+      "mainProducts": [
+        "马保装置",
+        "智能仪表"
+      ],
+      "coreStrengths": [
+        "马保专业",
+        "仪表精度"
+      ],
+      "threatLevel": "medium",
+      "shortName": "雅达股",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_038",
+      "name": "威胜信息",
+      "stock": "688100",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源",
+        "电力系统",
+        "渠道与合作伙伴"
+      ],
+      "productLine": [
+        "表计",
+        "配网"
+      ],
+      "mainProducts": [
+        "高压计量",
+        "配网通信"
+      ],
+      "coreStrengths": [
+        "计量精度",
+        "电力通信"
+      ],
+      "threatLevel": "high",
+      "shortName": "威胜信",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_039",
+      "name": "鼎信通讯",
+      "stock": "603421",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源",
+        "建筑与市政",
+        "渠道与合作伙伴"
+      ],
+      "productLine": [
+        "表计",
+        "通信"
+      ],
+      "mainProducts": [
+        "电力载波",
+        "智能表计"
+      ],
+      "coreStrengths": [
+        "电力载波",
+        "表计通信"
+      ],
+      "threatLevel": "medium",
+      "shortName": "鼎信通",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_040",
+      "name": "海兴电力",
+      "stock": "603556",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源",
+        "建筑与市政"
+      ],
+      "productLine": [
+        "表计"
+      ],
+      "mainProducts": [
+        "智能电表",
+        "电表出口"
+      ],
+      "coreStrengths": [
+        "电表制造",
+        "国际出口"
+      ],
+      "threatLevel": "medium",
+      "shortName": "海兴电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_041",
+      "name": "中元股份",
+      "stock": "300018",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源"
+      ],
+      "productLine": [
+        "表计"
+      ],
+      "mainProducts": [
+        "工业仪表",
+        "特种仪表"
+      ],
+      "coreStrengths": [
+        "工业仪表",
+        "特殊场景"
+      ],
+      "threatLevel": "low",
+      "shortName": "中元股",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_042",
+      "name": "煜邦电力",
+      "stock": "688597",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源"
+      ],
+      "productLine": [
+        "表计",
+        "配网"
+      ],
+      "mainProducts": [
+        "低压表计",
+        "配网终端"
+      ],
+      "coreStrengths": [
+        "低压计量",
+        "配电台区"
+      ],
+      "threatLevel": "low",
+      "shortName": "煜邦电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_043",
+      "name": "汉光电气",
+      "stock": "871349",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "工业与能源"
+      ],
+      "productLine": [
+        "测温"
+      ],
+      "mainProducts": [
+        "电气测温",
+        "红外测温"
+      ],
+      "coreStrengths": [
+        "非接触测温",
+        "配电安全"
+      ],
+      "threatLevel": "low",
+      "shortName": "汉光电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_044",
+      "name": "灿能电力",
+      "stock": "870299",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "电力系统"
+      ],
+      "productLine": [
+        "电能质量"
+      ],
+      "mainProducts": [
+        "SVG无功补偿",
+        "谐波治理"
+      ],
+      "coreStrengths": [
+        "电能质量",
+        "SVG"
+      ],
+      "threatLevel": "medium",
+      "shortName": "灿能电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_045",
+      "name": "新联电子",
+      "stock": "002546",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "电力系统"
+      ],
+      "productLine": [
+        "配网",
+        "通信"
+      ],
+      "mainProducts": [
+        "配网通信",
+        "无线终端"
+      ],
+      "coreStrengths": [
+        "配网无线通信",
+        "4G/5G"
+      ],
+      "threatLevel": "medium",
+      "shortName": "新联电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_046",
+      "name": "宏力达",
+      "stock": "688330",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "电力系统"
+      ],
+      "productLine": [
+        "配网"
+      ],
+      "mainProducts": [
+        "配网自动化终端",
+        "DTU"
+      ],
+      "coreStrengths": [
+        "配网DTU",
+        "南网市场"
+      ],
+      "threatLevel": "medium",
+      "shortName": "宏力达",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_047",
+      "name": "爱科赛博",
+      "stock": "688719",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "电力系统"
+      ],
+      "productLine": [
+        "电能质量",
+        "储能"
+      ],
+      "mainProducts": [
+        "储能变流器",
+        "电能质量"
+      ],
+      "coreStrengths": [
+        "储能PCS",
+        "工商业储能"
+      ],
+      "threatLevel": "medium",
+      "shortName": "爱科赛",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_048",
+      "name": "青鸟消防",
+      "stock": "002960",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "建筑与市政"
+      ],
+      "productLine": [
+        "电气防火"
+      ],
+      "mainProducts": [
+        "电气火灾监控",
+        "消防系统"
+      ],
+      "coreStrengths": [
+        "电气防火",
+        "消防集成"
+      ],
+      "threatLevel": "medium",
+      "shortName": "青鸟消",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_049",
+      "name": "瑞捷电气",
+      "stock": "836100",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "建筑与市政",
+        "渠道与合作伙伴"
+      ],
+      "productLine": [
+        "保护"
+      ],
+      "mainProducts": [
+        "保护装置",
+        "低压系统"
+      ],
+      "coreStrengths": [
+        "低压保护",
+        "建筑配电"
+      ],
+      "threatLevel": "medium",
+      "shortName": "瑞捷电",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_050",
+      "name": "三旺通信",
+      "stock": "688618",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "渠道与合作伙伴",
+        "工业与能源"
+      ],
+      "productLine": [
+        "通信"
+      ],
+      "mainProducts": [
+        "工业交换机",
+        "串口服务器"
+      ],
+      "coreStrengths": [
+        "工业通信",
+        "网络设备"
+      ],
+      "threatLevel": "low",
+      "shortName": "三旺通",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_051",
+      "name": "映翰通",
+      "stock": "688080",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "渠道与合作伙伴"
+      ],
+      "productLine": [
+        "通信",
+        "物联网"
+      ],
+      "mainProducts": [
+        "工业路由器",
+        "物联网通信"
+      ],
+      "coreStrengths": [
+        "工业物联网",
+        "边缘计算"
+      ],
+      "threatLevel": "low",
+      "shortName": "映翰通",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_052",
+      "name": "良信股份",
+      "stock": "002706",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "其他",
+        "建筑与市政"
+      ],
+      "productLine": [
+        "低压电器"
+      ],
+      "mainProducts": [
+        "低压断路器",
+        "接触器"
+      ],
+      "coreStrengths": [
+        "低压开关",
+        "国产替代"
+      ],
+      "threatLevel": "medium",
+      "shortName": "良信股",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_053",
+      "name": "泰永长征",
+      "stock": "002927",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "其他",
+        "建筑与市政"
+      ],
+      "productLine": [
+        "低压电器"
+      ],
+      "mainProducts": [
+        "配电箱柜",
+        "低压电器"
+      ],
+      "coreStrengths": [
+        "低压配电箱",
+        "区域渠道"
+      ],
+      "threatLevel": "medium",
+      "shortName": "泰永长",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_054",
+      "name": "盛弘股份",
+      "stock": "300693",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "其他",
+        "工业与能源"
+      ],
+      "productLine": [
+        "储能",
+        "电能质量"
+      ],
+      "mainProducts": [
+        "储能变流器",
+        "微网系统"
+      ],
+      "coreStrengths": [
+        "储能PCS",
+        "工商业微网"
+      ],
+      "threatLevel": "medium",
+      "shortName": "盛弘股",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    },
+    {
+      "id": "comp_055",
+      "name": "众业达",
+      "stock": "002441",
+      "bu": [
+        "HM"
+      ],
+      "customerGroup": [
+        "其他"
+      ],
+      "productLine": [
+        "配电分销"
+      ],
+      "mainProducts": [
+        "电气配件分销",
+        "系统集成"
+      ],
+      "coreStrengths": [
+        "分销渠道",
+        "系统集成"
+      ],
+      "threatLevel": "low",
+      "shortName": "众业达",
+      "listing": true,
+      "marketCap": "待更新",
+      "marketShare": {
+        "nationalGrid": "-",
+        "region": "全国"
+      },
+      "recentAction": "暂无重大动态",
+      "status": "active"
+    }
+  ],
+  "competitorNews": [
+    {
+      "id": "news_001",
+      "competitorId": "comp_002",
+      "competitorName": "派诺科技",
+      "title": "派诺科技武汉基地正式投产",
+      "content": "派诺科技武汉制造基地于4月20日正式投产运营，设计年产能达2万台智能电力仪表和5000套能源管理系统。该基地覆盖华中及华南市场。",
+      "summary": "派诺武汉基地投产，设计年产能2万台",
+      "tag": "major",
+      "tagLabel": "产能扩张",
+      "impactAnalysis": "华中市场竞争压力显著上升，派诺在湖北国网投标价格优势将增大",
+      "source": "派诺科技官网",
+      "sourceUrl": "https://www.pinol.com",
+      "publishedAt": "2026-04-21T08:30:00Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [
+        "华中区域组"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "news_002",
+      "competitorId": "comp_001",
+      "competitorName": "思源电气",
+      "title": "思源电气发布新一代GIL产品",
+      "content": "思源电气发布新一代气体绝缘输电线路（GIL）产品，额定电流提升至6300A，覆盖1000kV电压等级，适用于高海拔及大落差场景。",
+      "summary": "思源GIL新品发布，6300A/1000kV",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "特高压GIL领域竞争加剧，思源技术参数领先",
+      "source": "思源电气官网",
+      "sourceUrl": "https://www.shanpu.com",
+      "publishedAt": "2026-04-21T09:15:00Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [
+        "特高压组"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "news_003",
+      "competitorId": "comp_003",
+      "competitorName": "安科瑞",
+      "title": "安科瑞与某新能源集团签署战略协议",
+      "content": "安科瑞与某大型新能源集团签署战略合作协议，双方将在储能BMS、光储一体化、智能微网等领域深度合作。",
+      "summary": "安科瑞进军储能BMS领域",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "储能BMS赛道竞争加剧，安科瑞差异化优势明显",
+      "source": "安科瑞公众号",
+      "sourceUrl": "https://www.acrel.cn",
+      "publishedAt": "2026-04-21T10:00:00Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [
+        "新能源组"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "news_004",
+      "competitorId": "comp_004",
+      "competitorName": "国电南瑞",
+      "title": "国电南瑞中标南网数字化平台项目",
+      "content": "国电南瑞中标南方电网数字化转型平台建设项目，合同金额超8亿元，涵盖配网自动化、调度智能化、数据中台三大模块。",
+      "summary": "国电南瑞中标8亿+，南网数字化龙头地位巩固",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "南网数字化市场份额进一步集中，中电电力空间收窄",
+      "source": "南方电网招标平台",
+      "sourceUrl": "https://www.csg.cn",
+      "publishedAt": "2026-04-21T11:30:00Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [
+        "南网组"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "news_005",
+      "competitorId": "comp_005",
+      "competitorName": "许继电气",
+      "title": "许继电气新任CTO上任",
+      "content": "许继电气宣布新任CTO张某某正式到任，张某某此前为国网电科院直流技术专家，在柔性直流输电领域有20年经验。",
+      "summary": "许继CTO更换，技术路线可能调整",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "许继在直流领域技术能力可能提升",
+      "source": "许继电气公众号",
+      "sourceUrl": "https://www.xjgc.com",
+      "publishedAt": "2026-04-21T13:45:00Z",
+      "sentiment": "neutral",
+      "actionRequired": false,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_006",
+      "competitorId": "comp_003",
+      "competitorName": "安科瑞",
+      "title": "安科瑞发布ACR系列智能电力仪表3.0版本",
+      "content": "安科瑞ACR系列智能电力仪表3.0版本发布，新增边缘计算能力，支持本地AI推理，可实现设备级故障预测。",
+      "summary": "安科瑞ACR 3.0发布，边缘AI差异化明显",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "智能仪表AI化趋势加速，安科瑞差异化优势扩大",
+      "source": "安科瑞公众号",
+      "sourceUrl": "https://www.acrel.cn",
+      "publishedAt": "2026-04-21T14:20:00Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [
+        "智能仪表组"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "news_007",
+      "competitorId": "comp_001",
+      "competitorName": "思源电气",
+      "title": "思源电气国网2026年第一批配网中标39.25亿",
+      "content": "国家电网2026年第一批配网物资招标结果公示，思源电气合计中标39.25亿元，市场份额7.3%，位居行业第二。",
+      "summary": "思源国网中标39.25亿，份额7.3%",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "思源在配网领域份额持续提升，中电电力报价压力加大",
+      "source": "国家电网电子商务平台",
+      "sourceUrl": "https://ecp.sgcc.com.cn",
+      "publishedAt": "2026-04-21T15:00:00Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [
+        "配网组"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "news_008",
+      "competitorId": "comp_007",
+      "competitorName": "特变电工",
+      "title": "特变电工储能业务季度收入增长45%",
+      "content": "特变电工发布季度报告，储能业务收入同比增长45%，在手订单超20亿元。",
+      "summary": "特变储能业务高速增长",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "储能市场竞争加剧，特变在大型储能项目竞争力增强",
+      "source": "特变电工公告",
+      "sourceUrl": "https://www.tbea.com",
+      "publishedAt": "2026-04-21T15:30:00Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [
+        "储能组"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_1",
+      "competitorId": "comp_002",
+      "competitorName": "派诺科技",
+      "title": "派诺科技发布新一代智能配电终端产品",
+      "content": "派诺科技正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "派诺科技新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "派诺科技产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "派诺科技公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-21T16:00:00Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_2",
+      "competitorId": "comp_004",
+      "competitorName": "国电南瑞",
+      "title": "国电南瑞与XX能源集团签署战略合作协议",
+      "content": "国电南瑞与XX能源集团签署战略合作协议，双方将在能源数字化领域深度合作。",
+      "summary": "国电南瑞与XX能源集团达成战略合作",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "国电南瑞在能源数字化赛道加速布局，合作生态不断扩大。",
+      "source": "国电南瑞公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-21T16:45:00Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_3",
+      "competitorId": "comp_005",
+      "competitorName": "许继电气",
+      "title": "许继电气与XX能源集团签署战略合作协议",
+      "content": "许继电气与XX能源集团签署战略合作协议，双方将在能源数字化领域深度合作。",
+      "summary": "许继电气与XX能源集团达成战略合作",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "许继电气在能源数字化赛道加速布局，合作生态不断扩大。",
+      "source": "许继电气公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T20:04:10.230099Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_4",
+      "competitorId": "comp_006",
+      "competitorName": "平高电气",
+      "title": "平高电气与XX能源集团签署战略合作协议",
+      "content": "平高电气与XX能源集团签署战略合作协议，双方将在能源数字化领域深度合作。",
+      "summary": "平高电气与XX能源集团达成战略合作",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "平高电气在能源数字化赛道加速布局，合作生态不断扩大。",
+      "source": "平高电气公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T16:04:10.230108Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_5",
+      "competitorId": "comp_007",
+      "competitorName": "特变电工",
+      "title": "特变电工中标XX省配网改造项目",
+      "content": "特变电工在XX省配网改造项目中成功中标，中标金额约3268万元。",
+      "summary": "特变电工配网项目中标4836万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "特变电工在配网领域持续扩张，市场份额进一步提升。",
+      "source": "特变电工官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T12:04:10.230118Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_6",
+      "competitorId": "comp_008",
+      "competitorName": "正泰电器",
+      "title": "正泰电器2026年一季度营收同比增长45%",
+      "content": "正泰电器发布2026年一季度财报，实现营收12亿元，同比增长42%。",
+      "summary": "正泰电器Q1营收增长18%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "正泰电器保持稳健增长态势，盈利能力持续改善。",
+      "source": "正泰电器公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T04:04:10.230127Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_7",
+      "competitorId": "comp_008",
+      "competitorName": "正泰电器",
+      "title": "正泰电器新任销售总监到任",
+      "content": "正泰电器宣布新任销售总监正式到任，在电力行业有16年经验。",
+      "summary": "正泰电器新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "正泰电器销售团队调整，预计加大市场开拓力度。",
+      "source": "正泰电器官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-16T06:04:10.230130Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_8",
+      "competitorId": "comp_009",
+      "competitorName": "积成电子",
+      "title": "积成电子发布新一代智能配电终端产品",
+      "content": "积成电子正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "积成电子新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "积成电子产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "积成电子公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T05:04:10.230139Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_9",
+      "competitorId": "comp_010",
+      "competitorName": "科陆电子",
+      "title": "科陆电子中标XX省配网改造项目",
+      "content": "科陆电子在XX省配网改造项目中成功中标，中标金额约5270万元。",
+      "summary": "科陆电子配网项目中标7629万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "科陆电子在配网领域持续扩张，市场份额进一步提升。",
+      "source": "科陆电子官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T20:04:10.230148Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_10",
+      "competitorId": "comp_011",
+      "competitorName": "金智科技",
+      "title": "金智科技新任销售总监到任",
+      "content": "金智科技宣布新任销售总监正式到任，在电力行业有14年经验。",
+      "summary": "金智科技新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "金智科技销售团队调整，预计加大市场开拓力度。",
+      "source": "金智科技官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T05:04:10.230157Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_11",
+      "competitorId": "comp_012",
+      "competitorName": "华自科技",
+      "title": "华自科技发布新一代智能配电终端产品",
+      "content": "华自科技正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "华自科技新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "华自科技产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "华自科技公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T02:04:10.230166Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_12",
+      "competitorId": "comp_013",
+      "competitorName": "万龙电气",
+      "title": "万龙电气中标XX省配网改造项目",
+      "content": "万龙电气在XX省配网改造项目中成功中标，中标金额约3963万元。",
+      "summary": "万龙电气配网项目中标7005万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "万龙电气在配网领域持续扩张，市场份额进一步提升。",
+      "source": "万龙电气官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T17:04:10.230174Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_13",
+      "competitorId": "comp_014",
+      "competitorName": "许昌智能",
+      "title": "许昌智能中标XX省配网改造项目",
+      "content": "许昌智能在XX省配网改造项目中成功中标，中标金额约7827万元。",
+      "summary": "许昌智能配网项目中标892万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "许昌智能在配网领域持续扩张，市场份额进一步提升。",
+      "source": "许昌智能官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T17:04:10.230183Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_14",
+      "competitorId": "comp_014",
+      "competitorName": "许昌智能",
+      "title": "许昌智能与XX能源集团签署战略合作协议",
+      "content": "许昌智能与XX能源集团签署战略合作协议，双方将在能源数字化领域深度合作。",
+      "summary": "许昌智能与XX能源集团达成战略合作",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "许昌智能在能源数字化赛道加速布局，合作生态不断扩大。",
+      "source": "许昌智能公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T13:04:10.230186Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_15",
+      "competitorId": "comp_015",
+      "competitorName": "炬华科技",
+      "title": "炬华科技与XX能源集团签署战略合作协议",
+      "content": "炬华科技与XX能源集团签署战略合作协议，双方将在能源数字化领域深度合作。",
+      "summary": "炬华科技与XX能源集团达成战略合作",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "炬华科技在能源数字化赛道加速布局，合作生态不断扩大。",
+      "source": "炬华科技公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T22:04:10.230196Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_16",
+      "competitorId": "comp_015",
+      "competitorName": "炬华科技",
+      "title": "炬华科技与XX能源集团签署战略合作协议",
+      "content": "炬华科技与XX能源集团签署战略合作协议，双方将在能源数字化领域深度合作。",
+      "summary": "炬华科技与XX能源集团达成战略合作",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "炬华科技在能源数字化赛道加速布局，合作生态不断扩大。",
+      "source": "炬华科技公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T19:04:10.230199Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_17",
+      "competitorId": "comp_016",
+      "competitorName": "苏文电能",
+      "title": "苏文电能2026年一季度营收同比增长32%",
+      "content": "苏文电能发布2026年一季度财报，实现营收44亿元，同比增长28%。",
+      "summary": "苏文电能Q1营收增长14%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "苏文电能保持稳健增长态势，盈利能力持续改善。",
+      "source": "苏文电能公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-16T13:04:10.230209Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_18",
+      "competitorId": "comp_017",
+      "competitorName": "赛为智能",
+      "title": "赛为智能2026年一季度营收同比增长22%",
+      "content": "赛为智能发布2026年一季度财报，实现营收48亿元，同比增长14%。",
+      "summary": "赛为智能Q1营收增长30%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "赛为智能保持稳健增长态势，盈利能力持续改善。",
+      "source": "赛为智能公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T17:04:10.230218Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_19",
+      "competitorId": "comp_017",
+      "competitorName": "赛为智能",
+      "title": "赛为智能发布新一代智能配电终端产品",
+      "content": "赛为智能正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "赛为智能新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "赛为智能产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "赛为智能公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-16T06:04:10.230221Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_20",
+      "competitorId": "comp_018",
+      "competitorName": "延华智能",
+      "title": "延华智能2026年一季度营收同比增长16%",
+      "content": "延华智能发布2026年一季度财报，实现营收48亿元，同比增长22%。",
+      "summary": "延华智能Q1营收增长40%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "延华智能保持稳健增长态势，盈利能力持续改善。",
+      "source": "延华智能公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T06:04:10.230229Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_21",
+      "competitorId": "comp_019",
+      "competitorName": "大禹节水",
+      "title": "大禹节水新任销售总监到任",
+      "content": "大禹节水宣布新任销售总监正式到任，在电力行业有13年经验。",
+      "summary": "大禹节水新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "大禹节水销售团队调整，预计加大市场开拓力度。",
+      "source": "大禹节水官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T07:04:10.230238Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_22",
+      "competitorId": "comp_019",
+      "competitorName": "大禹节水",
+      "title": "大禹节水2026年一季度营收同比增长21%",
+      "content": "大禹节水发布2026年一季度财报，实现营收6亿元，同比增长34%。",
+      "summary": "大禹节水Q1营收增长44%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "大禹节水保持稳健增长态势，盈利能力持续改善。",
+      "source": "大禹节水公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T11:04:10.230241Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_23",
+      "competitorId": "comp_020",
+      "competitorName": "新天科技",
+      "title": "新天科技2026年一季度营收同比增长8%",
+      "content": "新天科技发布2026年一季度财报，实现营收35亿元，同比增长37%。",
+      "summary": "新天科技Q1营收增长19%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "新天科技保持稳健增长态势，盈利能力持续改善。",
+      "source": "新天科技公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T21:04:10.230250Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_24",
+      "competitorId": "comp_020",
+      "competitorName": "新天科技",
+      "title": "新天科技中标XX省配网改造项目",
+      "content": "新天科技在XX省配网改造项目中成功中标，中标金额约4808万元。",
+      "summary": "新天科技配网项目中标2981万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "新天科技在配网领域持续扩张，市场份额进一步提升。",
+      "source": "新天科技官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T18:04:10.230253Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_25",
+      "competitorId": "comp_021",
+      "competitorName": "威派格",
+      "title": "威派格新任销售总监到任",
+      "content": "威派格宣布新任销售总监正式到任，在电力行业有13年经验。",
+      "summary": "威派格新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "威派格销售团队调整，预计加大市场开拓力度。",
+      "source": "威派格官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T11:04:10.230263Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_26",
+      "competitorId": "comp_022",
+      "competitorName": "和达科技",
+      "title": "和达科技发布新一代智能配电终端产品",
+      "content": "和达科技正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "和达科技新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "和达科技产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "和达科技公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T14:04:10.230273Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_27",
+      "competitorId": "comp_022",
+      "competitorName": "和达科技",
+      "title": "和达科技新任销售总监到任",
+      "content": "和达科技宣布新任销售总监正式到任，在电力行业有8年经验。",
+      "summary": "和达科技新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "和达科技销售团队调整，预计加大市场开拓力度。",
+      "source": "和达科技官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T12:04:10.230275Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_28",
+      "competitorId": "comp_023",
+      "competitorName": "中水三立",
+      "title": "中水三立新任销售总监到任",
+      "content": "中水三立宣布新任销售总监正式到任，在电力行业有18年经验。",
+      "summary": "中水三立新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "中水三立销售团队调整，预计加大市场开拓力度。",
+      "source": "中水三立官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T11:04:10.230284Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_29",
+      "competitorId": "comp_023",
+      "competitorName": "中水三立",
+      "title": "中水三立中标XX省配网改造项目",
+      "content": "中水三立在XX省配网改造项目中成功中标，中标金额约6367万元。",
+      "summary": "中水三立配网项目中标1812万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "中水三立在配网领域持续扩张，市场份额进一步提升。",
+      "source": "中水三立官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T07:04:10.230287Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_30",
+      "competitorId": "comp_024",
+      "competitorName": "凯发电气",
+      "title": "凯发电气新任销售总监到任",
+      "content": "凯发电气宣布新任销售总监正式到任，在电力行业有20年经验。",
+      "summary": "凯发电气新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "凯发电气销售团队调整，预计加大市场开拓力度。",
+      "source": "凯发电气官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T01:04:10.230296Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_31",
+      "competitorId": "comp_025",
+      "competitorName": "科华数据",
+      "title": "科华数据新任销售总监到任",
+      "content": "科华数据宣布新任销售总监正式到任，在电力行业有18年经验。",
+      "summary": "科华数据新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "科华数据销售团队调整，预计加大市场开拓力度。",
+      "source": "科华数据官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T02:04:10.230305Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_32",
+      "competitorId": "comp_025",
+      "competitorName": "科华数据",
+      "title": "科华数据发布新一代智能配电终端产品",
+      "content": "科华数据正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "科华数据新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "科华数据产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "科华数据公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T15:04:10.230308Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_33",
+      "competitorId": "comp_026",
+      "competitorName": "朗新集团",
+      "title": "朗新集团中标XX省配网改造项目",
+      "content": "朗新集团在XX省配网改造项目中成功中标，中标金额约3466万元。",
+      "summary": "朗新集团配网项目中标3996万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "朗新集团在配网领域持续扩张，市场份额进一步提升。",
+      "source": "朗新集团官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T22:04:10.230316Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_34",
+      "competitorId": "comp_027",
+      "competitorName": "泰豪科技",
+      "title": "泰豪科技中标XX省配网改造项目",
+      "content": "泰豪科技在XX省配网改造项目中成功中标，中标金额约7957万元。",
+      "summary": "泰豪科技配网项目中标4419万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "泰豪科技在配网领域持续扩张，市场份额进一步提升。",
+      "source": "泰豪科技官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T00:04:10.230325Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_35",
+      "competitorId": "comp_028",
+      "competitorName": "中恒电气",
+      "title": "中恒电气2026年一季度营收同比增长27%",
+      "content": "中恒电气发布2026年一季度财报，实现营收44亿元，同比增长8%。",
+      "summary": "中恒电气Q1营收增长20%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "中恒电气保持稳健增长态势，盈利能力持续改善。",
+      "source": "中恒电气公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T01:04:10.230334Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_36",
+      "competitorId": "comp_029",
+      "competitorName": "天合光能",
+      "title": "天合光能新任销售总监到任",
+      "content": "天合光能宣布新任销售总监正式到任，在电力行业有16年经验。",
+      "summary": "天合光能新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "天合光能销售团队调整，预计加大市场开拓力度。",
+      "source": "天合光能官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-16T21:04:10.230343Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_37",
+      "competitorId": "comp_030",
+      "competitorName": "科远智慧",
+      "title": "科远智慧发布新一代智能配电终端产品",
+      "content": "科远智慧正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "科远智慧新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "科远智慧产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "科远智慧公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T16:04:10.230352Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_38",
+      "competitorId": "comp_031",
+      "competitorName": "科大智能",
+      "title": "科大智能与XX能源集团签署战略合作协议",
+      "content": "科大智能与XX能源集团签署战略合作协议，双方将在能源数字化领域深度合作。",
+      "summary": "科大智能与XX能源集团达成战略合作",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "科大智能在能源数字化赛道加速布局，合作生态不断扩大。",
+      "source": "科大智能公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T11:04:10.230360Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_39",
+      "competitorId": "comp_031",
+      "competitorName": "科大智能",
+      "title": "科大智能中标XX省配网改造项目",
+      "content": "科大智能在XX省配网改造项目中成功中标，中标金额约2869万元。",
+      "summary": "科大智能配网项目中标2401万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "科大智能在配网领域持续扩张，市场份额进一步提升。",
+      "source": "科大智能官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T04:04:10.230363Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_40",
+      "competitorId": "comp_032",
+      "competitorName": "国电南自",
+      "title": "国电南自与XX能源集团签署战略合作协议",
+      "content": "国电南自与XX能源集团签署战略合作协议，双方将在能源数字化领域深度合作。",
+      "summary": "国电南自与XX能源集团达成战略合作",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "国电南自在能源数字化赛道加速布局，合作生态不断扩大。",
+      "source": "国电南自公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T14:04:10.230372Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_41",
+      "competitorId": "comp_032",
+      "competitorName": "国电南自",
+      "title": "国电南自与XX能源集团签署战略合作协议",
+      "content": "国电南自与XX能源集团签署战略合作协议，双方将在能源数字化领域深度合作。",
+      "summary": "国电南自与XX能源集团达成战略合作",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "国电南自在能源数字化赛道加速布局，合作生态不断扩大。",
+      "source": "国电南自公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T18:04:10.230375Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_42",
+      "competitorId": "comp_033",
+      "competitorName": "四方股份",
+      "title": "四方股份2026年一季度营收同比增长30%",
+      "content": "四方股份发布2026年一季度财报，实现营收37亿元，同比增长26%。",
+      "summary": "四方股份Q1营收增长30%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "四方股份保持稳健增长态势，盈利能力持续改善。",
+      "source": "四方股份公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T05:04:10.230384Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_43",
+      "competitorId": "comp_034",
+      "competitorName": "东方电子",
+      "title": "东方电子2026年一季度营收同比增长34%",
+      "content": "东方电子发布2026年一季度财报，实现营收47亿元，同比增长20%。",
+      "summary": "东方电子Q1营收增长32%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "东方电子保持稳健增长态势，盈利能力持续改善。",
+      "source": "东方电子公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T01:04:10.230393Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_44",
+      "competitorId": "comp_034",
+      "competitorName": "东方电子",
+      "title": "东方电子2026年一季度营收同比增长34%",
+      "content": "东方电子发布2026年一季度财报，实现营收47亿元，同比增长20%。",
+      "summary": "东方电子Q1营收增长32%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "东方电子保持稳健增长态势，盈利能力持续改善。",
+      "source": "东方电子公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T20:04:10.230395Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_45",
+      "competitorId": "comp_035",
+      "competitorName": "科林电气",
+      "title": "科林电气新任销售总监到任",
+      "content": "科林电气宣布新任销售总监正式到任，在电力行业有8年经验。",
+      "summary": "科林电气新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "科林电气销售团队调整，预计加大市场开拓力度。",
+      "source": "科林电气官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T06:04:10.230405Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_46",
+      "competitorId": "comp_035",
+      "competitorName": "科林电气",
+      "title": "科林电气中标XX省配网改造项目",
+      "content": "科林电气在XX省配网改造项目中成功中标，中标金额约4024万元。",
+      "summary": "科林电气配网项目中标6626万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "科林电气在配网领域持续扩张，市场份额进一步提升。",
+      "source": "科林电气官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T12:04:10.230408Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_47",
+      "competitorId": "comp_036",
+      "competitorName": "长园集团",
+      "title": "长园集团发布新一代智能配电终端产品",
+      "content": "长园集团正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "长园集团新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "长园集团产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "长园集团公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T11:04:10.230417Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_48",
+      "competitorId": "comp_036",
+      "competitorName": "长园集团",
+      "title": "长园集团发布新一代智能配电终端产品",
+      "content": "长园集团正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "长园集团新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "长园集团产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "长园集团公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T16:04:10.230420Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_49",
+      "competitorId": "comp_037",
+      "competitorName": "雅达股份",
+      "title": "雅达股份新任销售总监到任",
+      "content": "雅达股份宣布新任销售总监正式到任，在电力行业有20年经验。",
+      "summary": "雅达股份新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "雅达股份销售团队调整，预计加大市场开拓力度。",
+      "source": "雅达股份官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T17:04:10.230429Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_50",
+      "competitorId": "comp_038",
+      "competitorName": "威胜信息",
+      "title": "威胜信息与XX能源集团签署战略合作协议",
+      "content": "威胜信息与XX能源集团签署战略合作协议，双方将在能源数字化领域深度合作。",
+      "summary": "威胜信息与XX能源集团达成战略合作",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "威胜信息在能源数字化赛道加速布局，合作生态不断扩大。",
+      "source": "威胜信息公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T23:04:10.230438Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_51",
+      "competitorId": "comp_039",
+      "competitorName": "鼎信通讯",
+      "title": "鼎信通讯2026年一季度营收同比增长11%",
+      "content": "鼎信通讯发布2026年一季度财报，实现营收36亿元，同比增长9%。",
+      "summary": "鼎信通讯Q1营收增长34%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "鼎信通讯保持稳健增长态势，盈利能力持续改善。",
+      "source": "鼎信通讯公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T18:04:10.230447Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_52",
+      "competitorId": "comp_040",
+      "competitorName": "海兴电力",
+      "title": "海兴电力2026年一季度营收同比增长45%",
+      "content": "海兴电力发布2026年一季度财报，实现营收41亿元，同比增长31%。",
+      "summary": "海兴电力Q1营收增长13%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "海兴电力保持稳健增长态势，盈利能力持续改善。",
+      "source": "海兴电力公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T16:04:10.230456Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_53",
+      "competitorId": "comp_040",
+      "competitorName": "海兴电力",
+      "title": "海兴电力2026年一季度营收同比增长45%",
+      "content": "海兴电力发布2026年一季度财报，实现营收41亿元，同比增长31%。",
+      "summary": "海兴电力Q1营收增长13%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "海兴电力保持稳健增长态势，盈利能力持续改善。",
+      "source": "海兴电力公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T16:04:10.230459Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_54",
+      "competitorId": "comp_041",
+      "competitorName": "中元股份",
+      "title": "中元股份发布新一代智能配电终端产品",
+      "content": "中元股份正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "中元股份新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "中元股份产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "中元股份公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T19:04:10.230469Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_55",
+      "competitorId": "comp_041",
+      "competitorName": "中元股份",
+      "title": "中元股份中标XX省配网改造项目",
+      "content": "中元股份在XX省配网改造项目中成功中标，中标金额约4565万元。",
+      "summary": "中元股份配网项目中标7855万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "中元股份在配网领域持续扩张，市场份额进一步提升。",
+      "source": "中元股份官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T03:04:10.230472Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_56",
+      "competitorId": "comp_042",
+      "competitorName": "煜邦电力",
+      "title": "煜邦电力2026年一季度营收同比增长38%",
+      "content": "煜邦电力发布2026年一季度财报，实现营收50亿元，同比增长20%。",
+      "summary": "煜邦电力Q1营收增长30%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "煜邦电力保持稳健增长态势，盈利能力持续改善。",
+      "source": "煜邦电力公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T18:04:10.230481Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_57",
+      "competitorId": "comp_042",
+      "competitorName": "煜邦电力",
+      "title": "煜邦电力中标XX省配网改造项目",
+      "content": "煜邦电力在XX省配网改造项目中成功中标，中标金额约3124万元。",
+      "summary": "煜邦电力配网项目中标5783万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "煜邦电力在配网领域持续扩张，市场份额进一步提升。",
+      "source": "煜邦电力官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-16T17:04:10.230484Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_58",
+      "competitorId": "comp_043",
+      "competitorName": "汉光电气",
+      "title": "汉光电气2026年一季度营收同比增长11%",
+      "content": "汉光电气发布2026年一季度财报，实现营收12亿元，同比增长27%。",
+      "summary": "汉光电气Q1营收增长18%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "汉光电气保持稳健增长态势，盈利能力持续改善。",
+      "source": "汉光电气公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T17:04:10.230493Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_59",
+      "competitorId": "comp_044",
+      "competitorName": "灿能电力",
+      "title": "灿能电力发布新一代智能配电终端产品",
+      "content": "灿能电力正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "灿能电力新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "灿能电力产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "灿能电力公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T22:04:10.230502Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_60",
+      "competitorId": "comp_045",
+      "competitorName": "新联电子",
+      "title": "新联电子中标XX省配网改造项目",
+      "content": "新联电子在XX省配网改造项目中成功中标，中标金额约5389万元。",
+      "summary": "新联电子配网项目中标4523万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "新联电子在配网领域持续扩张，市场份额进一步提升。",
+      "source": "新联电子官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T12:04:10.230511Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_61",
+      "competitorId": "comp_045",
+      "competitorName": "新联电子",
+      "title": "新联电子新任销售总监到任",
+      "content": "新联电子宣布新任销售总监正式到任，在电力行业有9年经验。",
+      "summary": "新联电子新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "新联电子销售团队调整，预计加大市场开拓力度。",
+      "source": "新联电子官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T06:04:10.230513Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_62",
+      "competitorId": "comp_046",
+      "competitorName": "宏力达",
+      "title": "宏力达2026年一季度营收同比增长12%",
+      "content": "宏力达发布2026年一季度财报，实现营收35亿元，同比增长32%。",
+      "summary": "宏力达Q1营收增长17%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "宏力达保持稳健增长态势，盈利能力持续改善。",
+      "source": "宏力达公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T02:04:10.230523Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_63",
+      "competitorId": "comp_047",
+      "competitorName": "爱科赛博",
+      "title": "爱科赛博发布新一代智能配电终端产品",
+      "content": "爱科赛博正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "爱科赛博新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "爱科赛博产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "爱科赛博公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-16T00:04:10.230532Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_64",
+      "competitorId": "comp_048",
+      "competitorName": "青鸟消防",
+      "title": "青鸟消防发布新一代智能配电终端产品",
+      "content": "青鸟消防正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "青鸟消防新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "青鸟消防产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "青鸟消防公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T18:04:10.230541Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_65",
+      "competitorId": "comp_048",
+      "competitorName": "青鸟消防",
+      "title": "青鸟消防与XX能源集团签署战略合作协议",
+      "content": "青鸟消防与XX能源集团签署战略合作协议，双方将在能源数字化领域深度合作。",
+      "summary": "青鸟消防与XX能源集团达成战略合作",
+      "tag": "strategy",
+      "tagLabel": "战略合作",
+      "impactAnalysis": "青鸟消防在能源数字化赛道加速布局，合作生态不断扩大。",
+      "source": "青鸟消防公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T03:04:10.230544Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_66",
+      "competitorId": "comp_049",
+      "competitorName": "瑞捷电气",
+      "title": "瑞捷电气2026年一季度营收同比增长19%",
+      "content": "瑞捷电气发布2026年一季度财报，实现营收10亿元，同比增长21%。",
+      "summary": "瑞捷电气Q1营收增长38%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "瑞捷电气保持稳健增长态势，盈利能力持续改善。",
+      "source": "瑞捷电气公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T13:04:10.230553Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_67",
+      "competitorId": "comp_049",
+      "competitorName": "瑞捷电气",
+      "title": "瑞捷电气中标XX省配网改造项目",
+      "content": "瑞捷电气在XX省配网改造项目中成功中标，中标金额约3411万元。",
+      "summary": "瑞捷电气配网项目中标2935万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "瑞捷电气在配网领域持续扩张，市场份额进一步提升。",
+      "source": "瑞捷电气官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-16T01:04:10.230556Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_68",
+      "competitorId": "comp_050",
+      "competitorName": "三旺通信",
+      "title": "三旺通信新任销售总监到任",
+      "content": "三旺通信宣布新任销售总监正式到任，在电力行业有19年经验。",
+      "summary": "三旺通信新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "三旺通信销售团队调整，预计加大市场开拓力度。",
+      "source": "三旺通信官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-19T08:04:10.230564Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_69",
+      "competitorId": "comp_051",
+      "competitorName": "映翰通",
+      "title": "映翰通2026年一季度营收同比增长42%",
+      "content": "映翰通发布2026年一季度财报，实现营收24亿元，同比增长24%。",
+      "summary": "映翰通Q1营收增长9%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "映翰通保持稳健增长态势，盈利能力持续改善。",
+      "source": "映翰通公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T11:04:10.230574Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_70",
+      "competitorId": "comp_052",
+      "competitorName": "良信股份",
+      "title": "良信股份发布新一代智能配电终端产品",
+      "content": "良信股份正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "良信股份新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "良信股份产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "良信股份公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-15T23:04:10.230582Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_71",
+      "competitorId": "comp_052",
+      "competitorName": "良信股份",
+      "title": "良信股份2026年一季度营收同比增长23%",
+      "content": "良信股份发布2026年一季度财报，实现营收41亿元，同比增长36%。",
+      "summary": "良信股份Q1营收增长13%",
+      "tag": "report",
+      "tagLabel": "业绩报告",
+      "impactAnalysis": "良信股份保持稳健增长态势，盈利能力持续改善。",
+      "source": "良信股份公告",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-18T18:04:10.230585Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_72",
+      "competitorId": "comp_053",
+      "competitorName": "泰永长征",
+      "title": "泰永长征新任销售总监到任",
+      "content": "泰永长征宣布新任销售总监正式到任，在电力行业有16年经验。",
+      "summary": "泰永长征新任销售总监到任",
+      "tag": "personnel",
+      "tagLabel": "人员变动",
+      "impactAnalysis": "泰永长征销售团队调整，预计加大市场开拓力度。",
+      "source": "泰永长征官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T09:04:10.230594Z",
+      "sentiment": "neutral",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_73",
+      "competitorId": "comp_054",
+      "competitorName": "盛弘股份",
+      "title": "盛弘股份中标XX省配网改造项目",
+      "content": "盛弘股份在XX省配网改造项目中成功中标，中标金额约7599万元。",
+      "summary": "盛弘股份配网项目中标885万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "盛弘股份在配网领域持续扩张，市场份额进一步提升。",
+      "source": "盛弘股份官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-17T01:04:10.230604Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_74",
+      "competitorId": "comp_055",
+      "competitorName": "众业达",
+      "title": "众业达中标XX省配网改造项目",
+      "content": "众业达在XX省配网改造项目中成功中标，中标金额约3151万元。",
+      "summary": "众业达配网项目中标4800万",
+      "tag": "major",
+      "tagLabel": "中标喜报",
+      "impactAnalysis": "众业达在配网领域持续扩张，市场份额进一步提升。",
+      "source": "众业达官网",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-20T09:04:10.230613Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    },
+    {
+      "id": "news_gen_75",
+      "competitorId": "comp_055",
+      "competitorName": "众业达",
+      "title": "众业达发布新一代智能配电终端产品",
+      "content": "众业达正式发布新一代智能配电终端产品，性能指标行业领先。",
+      "summary": "众业达新一代智能配电终端发布",
+      "tag": "new",
+      "tagLabel": "新产品发布",
+      "impactAnalysis": "众业达产品差异化能力增强，在智能配电市场竞争力提升。",
+      "source": "众业达公众号",
+      "sourceUrl": "https://example.com",
+      "publishedAt": "2026-04-16T00:04:10.230616Z",
+      "sentiment": "negative",
+      "actionRequired": true,
+      "pushedTo": [],
+      "status": "published"
+    }
+  ],
+  "policies": [
+    {
+      "id": "policy_001",
+      "title": "工信部发布《新型工业化行动方案》",
+      "content": "工信部发布《新型工业化行动方案》，明确电力装备数字化改造为重点方向，支持智能配电网、数字化变电站建设。",
+      "source": "工业和信息化部",
+      "sourceUrl": "https://www.miit.gov.cn",
+      "publishedAt": "2026-04-15T00:00:00Z",
+      "impactLevel": "high",
+      "affectedProducts": [
+        "配网自动化",
+        "数字化终端",
+        "智能仪表"
+      ],
+      "opportunities": [
+        "配网自动化产品线需求增加",
+        "数字化改造项目增多"
+      ],
+      "threats": [],
+      "impactAnalysis": "利好配网自动化产品线，建议跟进相关客户项目",
+      "recommendation": "建议市场部本周内梳理受影响的重点客户名单，安排拜访",
+      "status": "active"
+    },
+    {
+      "id": "policy_002",
+      "title": "交通运输部等十部门发布《交能融合指导意见》",
+      "content": "交通运输部等十部门联合发布《交通运输与能源融合发展指导意见》，推动交通基础设施绿色低碳转型。",
+      "source": "交通运输部",
+      "sourceUrl": "https://www.mot.gov.cn",
+      "publishedAt": "2026-04-10T00:00:00Z",
+      "impactLevel": "medium",
+      "affectedProducts": [
+        "轨道交通电气设备",
+        "能源管理终端"
+      ],
+      "opportunities": [
+        "轨道交通电气配套市场扩大",
+        "服务区光储一体化项目机会"
+      ],
+      "threats": [],
+      "impactAnalysis": "派诺科技在轨道交通已有布局，中电电力需加速应对",
+      "recommendation": "建议轨道交通团队尽快对接重点项目",
+      "status": "active"
+    },
+    {
+      "id": "policy_003",
+      "title": "国家发改委发布新型储能发展指导意见",
+      "content": "国家发改委发布《关于促进新型储能健康发展的指导意见》，明确储能参与电力市场机制。",
+      "source": "国家发展和改革委员会",
+      "sourceUrl": "https://www.ndrc.gov.cn",
+      "publishedAt": "2026-04-05T00:00:00Z",
+      "impactLevel": "medium",
+      "affectedProducts": [
+        "储能BMS",
+        "储能EMS",
+        "工商业储能"
+      ],
+      "opportunities": [
+        "储能市场商业模式更清晰",
+        "工商业储能项目加速落地"
+      ],
+      "threats": [],
+      "impactAnalysis": "储能BMS市场需求将持续增长",
+      "recommendation": "建议加快储能BMS产品研发和市场推广",
+      "status": "active"
+    },
+    {
+      "id": "policy_004",
+      "title": "南方电网发布数字化转型行动计划",
+      "content": "南方电网发布《数字化转型行动计划（2026-2028）》，投资500亿元用于数字化平台建设。",
+      "source": "中国南方电网",
+      "sourceUrl": "https://www.csg.cn",
+      "publishedAt": "2026-03-28T00:00:00Z",
+      "impactLevel": "high",
+      "affectedProducts": [
+        "数字化平台",
+        "配电终端",
+        "调度系统"
+      ],
+      "opportunities": [
+        "南网数字化项目大规模释放",
+        "智能配网设备需求增加"
+      ],
+      "threats": [
+        "国电南瑞可能进一步垄断市场"
+      ],
+      "impactAnalysis": "南网数字化赛道规模扩大，但国电南瑞优势明显",
+      "recommendation": "评估是否进入南网数字化市场，考虑与IT厂商合作",
+      "status": "active"
+    },
+    {
+      "id": "policy_005",
+      "title": "国家电网发布配电网改造升级计划",
+      "content": "国家电网发布《配电网改造升级计划（2026-2030）》，总投资规模5000亿元。",
+      "source": "国家电网",
+      "sourceUrl": "https://www.sgcc.com.cn",
+      "publishedAt": "2026-03-20T00:00:00Z",
+      "impactLevel": "high",
+      "affectedProducts": [
+        "配网自动化",
+        "开关柜",
+        "配电终端"
+      ],
+      "opportunities": [
+        "配网市场整体扩容",
+        "配网自动化渗透率提升"
+      ],
+      "threats": [],
+      "impactAnalysis": "配网市场迎来大发展，中电电力应抓住机会扩大份额",
+      "recommendation": "建议配网组加强重点区域投标力度",
+      "status": "active"
+    }
+  ],
+  "bidResults": [
+    {
+      "id": "bid_001",
+      "competitorId": "comp_001",
+      "competitorName": "思源电气",
+      "projectName": "国网2026年第一批配网物资招标",
+      "projectType": "国网配网",
+      "amount": 3925000000,
+      "marketShare": "7.3%",
+      "shareChange": "+1.2%",
+      "mainCategories": [
+        "开关柜",
+        "互感器"
+      ],
+      "bidDate": "2026-04-19",
+      "status": "won"
+    },
+    {
+      "id": "bid_002",
+      "competitorId": "comp_004",
+      "competitorName": "国电南瑞",
+      "projectName": "国网2026年第一批配网物资招标",
+      "projectType": "国网配网",
+      "amount": 5230000000,
+      "marketShare": "9.7%",
+      "shareChange": "+0.8%",
+      "mainCategories": [
+        "配电主站",
+        "终端"
+      ],
+      "bidDate": "2026-04-19",
+      "status": "won"
+    },
+    {
+      "id": "bid_003",
+      "competitorId": "comp_005",
+      "competitorName": "许继电气",
+      "projectName": "国网2026年第一批配网物资招标",
+      "projectType": "国网配网",
+      "amount": 2860000000,
+      "marketShare": "5.3%",
+      "shareChange": "-0.5%",
+      "mainCategories": [
+        "保护装置",
+        "开关"
+      ],
+      "bidDate": "2026-04-19",
+      "status": "won"
+    },
+    {
+      "id": "bid_004",
+      "competitorId": "comp_004",
+      "competitorName": "国电南瑞",
+      "projectName": "南网数字化转型平台项目",
+      "projectType": "南网",
+      "amount": 800000000,
+      "marketShare": "-",
+      "shareChange": "new",
+      "mainCategories": [
+        "数字化平台"
+      ],
+      "bidDate": "2026-04-18",
+      "status": "won"
+    },
+    {
+      "id": "bid_005",
+      "competitorId": "comp_003",
+      "competitorName": "安科瑞",
+      "projectName": "国网2026年第一批配网物资招标",
+      "projectType": "国网配网",
+      "amount": 1240000000,
+      "marketShare": "2.3%",
+      "shareChange": "+0.6%",
+      "mainCategories": [
+        "智能仪表"
+      ],
+      "bidDate": "2026-04-19",
+      "status": "won"
+    },
+    {
+      "id": "bid_006",
+      "competitorId": "comp_002",
+      "competitorName": "派诺科技",
+      "projectName": "国网2026年第一批配网物资招标",
+      "projectType": "国网配网",
+      "amount": 870000000,
+      "marketShare": "1.6%",
+      "shareChange": "+0.4%",
+      "mainCategories": [
+        "能源管理终端"
+      ],
+      "bidDate": "2026-04-19",
+      "status": "won"
+    },
+    {
+      "id": "bid_007",
+      "competitorId": "comp_001",
+      "competitorName": "思源电气",
+      "projectName": "国网2025年第二批配网物资招标",
+      "projectType": "国网配网",
+      "amount": 2850000000,
+      "marketShare": "6.1%",
+      "shareChange": "-",
+      "mainCategories": [
+        "开关柜",
+        "互感器"
+      ],
+      "bidDate": "2025-10-15",
+      "status": "won"
+    },
+    {
+      "id": "bid_008",
+      "competitorId": "comp_001",
+      "competitorName": "思源电气",
+      "projectName": "国网2025年第一批配网物资招标",
+      "projectType": "国网配网",
+      "amount": 2680000000,
+      "marketShare": "6.1%",
+      "shareChange": "+0.8%",
+      "mainCategories": [
+        "开关柜",
+        "互感器"
+      ],
+      "bidDate": "2025-04-18",
+      "status": "won"
+    }
+  ],
+  "bidPackages": [
+    {
+      "id": "pkg_1776678151542",
+      "createdAt": "2026-04-20T09:42:31.542Z",
+      "projectName": "国网2026年配网物资第二批",
+      "bidHistory": [
+        {
+          "id": "bid_001",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 3925000000,
+          "marketShare": "7.3%",
+          "shareChange": "+1.2%",
+          "mainCategories": [
+            "开关柜",
+            "互感器"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_002",
+          "competitorId": "comp_004",
+          "competitorName": "国电南瑞",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 5230000000,
+          "marketShare": "9.7%",
+          "shareChange": "+0.8%",
+          "mainCategories": [
+            "配电主站",
+            "终端"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_003",
+          "competitorId": "comp_005",
+          "competitorName": "许继电气",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 2860000000,
+          "marketShare": "5.3%",
+          "shareChange": "-0.5%",
+          "mainCategories": [
+            "保护装置",
+            "开关"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_004",
+          "competitorId": "comp_004",
+          "competitorName": "国电南瑞",
+          "projectName": "南网数字化转型平台项目",
+          "projectType": "南网",
+          "amount": 800000000,
+          "marketShare": "-",
+          "shareChange": "new",
+          "mainCategories": [
+            "数字化平台"
+          ],
+          "bidDate": "2026-04-18",
+          "status": "won"
+        },
+        {
+          "id": "bid_005",
+          "competitorId": "comp_003",
+          "competitorName": "安科瑞",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 1240000000,
+          "marketShare": "2.3%",
+          "shareChange": "+0.6%",
+          "mainCategories": [
+            "智能仪表"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_006",
+          "competitorId": "comp_002",
+          "competitorName": "派诺科技",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 870000000,
+          "marketShare": "1.6%",
+          "shareChange": "+0.4%",
+          "mainCategories": [
+            "能源管理终端"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_007",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "projectName": "国网2025年第二批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 2850000000,
+          "marketShare": "6.1%",
+          "shareChange": "-",
+          "mainCategories": [
+            "开关柜",
+            "互感器"
+          ],
+          "bidDate": "2025-10-15",
+          "status": "won"
+        },
+        {
+          "id": "bid_008",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "projectName": "国网2025年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 2680000000,
+          "marketShare": "6.1%",
+          "shareChange": "+0.8%",
+          "mainCategories": [
+            "开关柜",
+            "互感器"
+          ],
+          "bidDate": "2025-04-18",
+          "status": "won"
+        }
+      ],
+      "competitorNews": [
+        {
+          "id": "news_001",
+          "competitorId": "comp_002",
+          "competitorName": "派诺科技",
+          "title": "派诺科技武汉基地正式投产",
+          "content": "派诺科技武汉制造基地于4月20日正式投产运营，设计年产能达2万台智能电力仪表和5000套能源管理系统。该基地覆盖华中及华南市场。",
+          "summary": "派诺武汉基地投产，设计年产能2万台",
+          "tag": "major",
+          "tagLabel": "产能扩张",
+          "impactAnalysis": "华中市场竞争压力显著上升，派诺在湖北国网投标价格优势将增大",
+          "source": "派诺科技官网",
+          "sourceUrl": "https://www.pinol.com",
+          "publishedAt": "2026-04-20T14:32:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "华中区域组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_002",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "title": "思源电气发布新一代GIL产品",
+          "content": "思源电气发布新一代气体绝缘输电线路（GIL）产品，额定电流提升至6300A，覆盖1000kV电压等级，适用于高海拔及大落差场景。",
+          "summary": "思源GIL新品发布，6300A/1000kV",
+          "tag": "new",
+          "tagLabel": "新产品发布",
+          "impactAnalysis": "特高压GIL领域竞争加剧，思源技术参数领先",
+          "source": "思源电气官网",
+          "sourceUrl": "https://www.shanpu.com",
+          "publishedAt": "2026-04-20T12:15:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "特高压组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_003",
+          "competitorId": "comp_003",
+          "competitorName": "安科瑞",
+          "title": "安科瑞与某新能源集团签署战略协议",
+          "content": "安科瑞与某大型新能源集团签署战略合作协议，双方将在储能BMS、光储一体化、智能微网等领域深度合作。",
+          "summary": "安科瑞进军储能BMS领域",
+          "tag": "strategy",
+          "tagLabel": "战略合作",
+          "impactAnalysis": "储能BMS赛道竞争加剧，安科瑞差异化优势明显",
+          "source": "安科瑞公众号",
+          "sourceUrl": "https://www.acrel.cn",
+          "publishedAt": "2026-04-20T10:45:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "新能源组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_004",
+          "competitorId": "comp_004",
+          "competitorName": "国电南瑞",
+          "title": "国电南瑞中标南网数字化平台项目",
+          "content": "国电南瑞中标南方电网数字化转型平台建设项目，合同金额超8亿元，涵盖配网自动化、调度智能化、数据中台三大模块。",
+          "summary": "国电南瑞中标8亿+，南网数字化龙头地位巩固",
+          "tag": "major",
+          "tagLabel": "中标喜报",
+          "impactAnalysis": "南网数字化市场份额进一步集中，中电电力空间收窄",
+          "source": "南方电网招标平台",
+          "sourceUrl": "https://www.csg.cn",
+          "publishedAt": "2026-04-20T09:30:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "南网组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_005",
+          "competitorId": "comp_005",
+          "competitorName": "许继电气",
+          "title": "许继电气新任CTO上任",
+          "content": "许继电气宣布新任CTO张某某正式到任，张某某此前为国网电科院直流技术专家，在柔性直流输电领域有20年经验。",
+          "summary": "许继CTO更换，技术路线可能调整",
+          "tag": "personnel",
+          "tagLabel": "人员变动",
+          "impactAnalysis": "许继在直流领域技术能力可能提升",
+          "source": "许继电气公众号",
+          "sourceUrl": "https://www.xjgc.com",
+          "publishedAt": "2026-04-20T08:20:00Z",
+          "sentiment": "neutral",
+          "actionRequired": false,
+          "pushedTo": [],
+          "status": "published"
+        },
+        {
+          "id": "news_007",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "title": "思源电气国网2026年第一批配网中标39.25亿",
+          "content": "国家电网2026年第一批配网物资招标结果公示，思源电气合计中标39.25亿元，市场份额7.3%，位居行业第二。",
+          "summary": "思源国网中标39.25亿，份额7.3%",
+          "tag": "major",
+          "tagLabel": "中标喜报",
+          "impactAnalysis": "思源在配网领域份额持续提升，中电电力报价压力加大",
+          "source": "国家电网电子商务平台",
+          "sourceUrl": "https://ecp.sgcc.com.cn",
+          "publishedAt": "2026-04-19T16:00:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "配网组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_006",
+          "competitorId": "comp_003",
+          "competitorName": "安科瑞",
+          "title": "安科瑞发布ACR系列智能电力仪表3.0版本",
+          "content": "安科瑞ACR系列智能电力仪表3.0版本发布，新增边缘计算能力，支持本地AI推理，可实现设备级故障预测。",
+          "summary": "安科瑞ACR 3.0发布，边缘AI差异化明显",
+          "tag": "new",
+          "tagLabel": "新产品发布",
+          "impactAnalysis": "智能仪表AI化趋势加速，安科瑞差异化优势扩大",
+          "source": "安科瑞公众号",
+          "sourceUrl": "https://www.acrel.cn",
+          "publishedAt": "2026-04-19T14:22:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "智能仪表组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_008",
+          "competitorId": "comp_007",
+          "competitorName": "特变电工",
+          "title": "特变电工储能业务季度收入增长45%",
+          "content": "特变电工发布季度报告，储能业务收入同比增长45%，在手订单超20亿元。",
+          "summary": "特变储能业务高速增长",
+          "tag": "report",
+          "tagLabel": "业绩报告",
+          "impactAnalysis": "储能市场竞争加剧，特变在大型储能项目竞争力增强",
+          "source": "特变电工公告",
+          "sourceUrl": "https://www.tbea.com",
+          "publishedAt": "2026-04-18T10:00:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "储能组"
+          ],
+          "status": "published"
+        }
+      ],
+      "competitors": [
+        {
+          "id": "comp_001",
+          "name": "思源电气",
+          "shortName": "思源",
+          "listing": true,
+          "marketCap": "约480亿",
+          "mainProducts": [
+            "GIL、开关柜、互感器、配网自动化"
+          ],
+          "coreStrengths": [
+            "特高压领域",
+            "组合电器"
+          ],
+          "marketShare": {
+            "nationalGrid": "7.3%",
+            "region": "全国"
+          },
+          "recentAction": "新一代GIL产品发布，6300A/1000kV",
+          "threatLevel": "high",
+          "status": "active"
+        },
+        {
+          "id": "comp_002",
+          "name": "派诺科技",
+          "shortName": "派诺",
+          "listing": true,
+          "marketCap": "约180亿",
+          "mainProducts": [
+            "能源管理终端、智能仪表"
+          ],
+          "coreStrengths": [
+            "轨道交通",
+            "能源管理"
+          ],
+          "marketShare": {
+            "nationalGrid": "1.6%",
+            "region": "华中"
+          },
+          "recentAction": "武汉制造基地正式投产，年产能2万台",
+          "threatLevel": "high",
+          "status": "active"
+        },
+        {
+          "id": "comp_003",
+          "name": "安科瑞",
+          "shortName": "安科瑞",
+          "listing": true,
+          "marketCap": "约95亿",
+          "mainProducts": [
+            "智能仪表、BMS、EMS"
+          ],
+          "coreStrengths": [
+            "智能仪表",
+            "能耗监测"
+          ],
+          "marketShare": {
+            "nationalGrid": "2.3%",
+            "region": "全国"
+          },
+          "recentAction": "与某新能源集团签署储能BMS战略合作协议",
+          "threatLevel": "medium",
+          "status": "active"
+        },
+        {
+          "id": "comp_004",
+          "name": "国电南瑞",
+          "shortName": "南瑞",
+          "listing": true,
+          "marketCap": "约1200亿",
+          "mainProducts": [
+            "配电主站、调度系统、数字化平台"
+          ],
+          "coreStrengths": [
+            "数字化平台",
+            "调度智能化"
+          ],
+          "marketShare": {
+            "nationalGrid": "9.7%",
+            "region": "全国"
+          },
+          "recentAction": "中标南方电网数字化转型平台项目，金额超8亿",
+          "threatLevel": "high",
+          "status": "active"
+        },
+        {
+          "id": "comp_005",
+          "name": "许继电气",
+          "shortName": "许继",
+          "listing": true,
+          "marketCap": "约280亿",
+          "mainProducts": [
+            "保护装置、开关、直流输电"
+          ],
+          "coreStrengths": [
+            "直流输电",
+            "保护自动化"
+          ],
+          "marketShare": {
+            "nationalGrid": "5.3%",
+            "region": "全国"
+          },
+          "recentAction": "新任CTO上任，原国网电科院专家",
+          "threatLevel": "medium",
+          "status": "active"
+        },
+        {
+          "id": "comp_006",
+          "name": "平高电气",
+          "shortName": "平高",
+          "listing": true,
+          "marketCap": "约150亿",
+          "mainProducts": [
+            "高压开关、GIS"
+          ],
+          "coreStrengths": [
+            "高压开关",
+            "GIS设备"
+          ],
+          "marketShare": {
+            "nationalGrid": "4.2%",
+            "region": "全国"
+          },
+          "recentAction": "暂无重大动态",
+          "threatLevel": "low",
+          "status": "active"
+        },
+        {
+          "id": "comp_007",
+          "name": "特变电工",
+          "shortName": "特变",
+          "listing": true,
+          "marketCap": "约650亿",
+          "mainProducts": [
+            "变压器、光伏逆变器、储能"
+          ],
+          "coreStrengths": [
+            "变压器",
+            "新能源"
+          ],
+          "marketShare": {
+            "nationalGrid": "6.8%",
+            "region": "全国"
+          },
+          "recentAction": "储能业务持续扩张",
+          "threatLevel": "medium",
+          "status": "active"
+        },
+        {
+          "id": "comp_008",
+          "name": "正泰电器",
+          "shortName": "正泰",
+          "listing": true,
+          "marketCap": "约520亿",
+          "mainProducts": [
+            "低压电器、仪表、储能"
+          ],
+          "coreStrengths": [
+            "低压电器",
+            "民用市场"
+          ],
+          "marketShare": {
+            "nationalGrid": "3.5%",
+            "region": "全国"
+          },
+          "recentAction": "海外储能市场拓展",
+          "threatLevel": "low",
+          "status": "active"
+        }
+      ],
+      "analysis": {
+        "marketShare": [
+          {
+            "name": "思源电气",
+            "amount": 9455000000,
+            "share": "46.22%"
+          },
+          {
+            "name": "国电南瑞",
+            "amount": 6030000000,
+            "share": "29.48%"
+          },
+          {
+            "name": "许继电气",
+            "amount": 2860000000,
+            "share": "13.98%"
+          },
+          {
+            "name": "安科瑞",
+            "amount": 1240000000,
+            "share": "6.06%"
+          },
+          {
+            "name": "派诺科技",
+            "amount": 870000000,
+            "share": "4.25%"
+          }
+        ],
+        "priceRange": null,
+        "techTrends": [
+          {
+            "keyword": "新品",
+            "count": 1
+          },
+          {
+            "keyword": "技术",
+            "count": 1
+          },
+          {
+            "keyword": "研发",
+            "count": 0
+          },
+          {
+            "keyword": "专利",
+            "count": 0
+          },
+          {
+            "keyword": "GIL",
+            "count": 1
+          },
+          {
+            "keyword": "AI",
+            "count": 1
+          },
+          {
+            "keyword": "数字化",
+            "count": 1
+          }
+        ]
+      },
+      "recommendations": [
+        {
+          "type": "warning",
+          "title": "思源电气份额持续上升",
+          "content": "建议在开关柜和互感器标段适当调整报价策略，强调中电电力在配网自动化整体方案优势",
+          "priority": "high"
+        },
+        {
+          "type": "opportunity",
+          "title": "派诺科技武汉基地投产",
+          "content": "华中区域竞争压力上升，建议华中区域组加强客户拜访频率",
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "id": "pkg_1776678151208",
+      "createdAt": "2026-04-20T09:42:31.208Z",
+      "projectName": "国网2026年配网物资第二批",
+      "bidHistory": [
+        {
+          "id": "bid_001",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 3925000000,
+          "marketShare": "7.3%",
+          "shareChange": "+1.2%",
+          "mainCategories": [
+            "开关柜",
+            "互感器"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_002",
+          "competitorId": "comp_004",
+          "competitorName": "国电南瑞",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 5230000000,
+          "marketShare": "9.7%",
+          "shareChange": "+0.8%",
+          "mainCategories": [
+            "配电主站",
+            "终端"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_003",
+          "competitorId": "comp_005",
+          "competitorName": "许继电气",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 2860000000,
+          "marketShare": "5.3%",
+          "shareChange": "-0.5%",
+          "mainCategories": [
+            "保护装置",
+            "开关"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_004",
+          "competitorId": "comp_004",
+          "competitorName": "国电南瑞",
+          "projectName": "南网数字化转型平台项目",
+          "projectType": "南网",
+          "amount": 800000000,
+          "marketShare": "-",
+          "shareChange": "new",
+          "mainCategories": [
+            "数字化平台"
+          ],
+          "bidDate": "2026-04-18",
+          "status": "won"
+        },
+        {
+          "id": "bid_005",
+          "competitorId": "comp_003",
+          "competitorName": "安科瑞",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 1240000000,
+          "marketShare": "2.3%",
+          "shareChange": "+0.6%",
+          "mainCategories": [
+            "智能仪表"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_006",
+          "competitorId": "comp_002",
+          "competitorName": "派诺科技",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 870000000,
+          "marketShare": "1.6%",
+          "shareChange": "+0.4%",
+          "mainCategories": [
+            "能源管理终端"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_007",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "projectName": "国网2025年第二批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 2850000000,
+          "marketShare": "6.1%",
+          "shareChange": "-",
+          "mainCategories": [
+            "开关柜",
+            "互感器"
+          ],
+          "bidDate": "2025-10-15",
+          "status": "won"
+        },
+        {
+          "id": "bid_008",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "projectName": "国网2025年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 2680000000,
+          "marketShare": "6.1%",
+          "shareChange": "+0.8%",
+          "mainCategories": [
+            "开关柜",
+            "互感器"
+          ],
+          "bidDate": "2025-04-18",
+          "status": "won"
+        }
+      ],
+      "competitorNews": [
+        {
+          "id": "news_001",
+          "competitorId": "comp_002",
+          "competitorName": "派诺科技",
+          "title": "派诺科技武汉基地正式投产",
+          "content": "派诺科技武汉制造基地于4月20日正式投产运营，设计年产能达2万台智能电力仪表和5000套能源管理系统。该基地覆盖华中及华南市场。",
+          "summary": "派诺武汉基地投产，设计年产能2万台",
+          "tag": "major",
+          "tagLabel": "产能扩张",
+          "impactAnalysis": "华中市场竞争压力显著上升，派诺在湖北国网投标价格优势将增大",
+          "source": "派诺科技官网",
+          "sourceUrl": "https://www.pinol.com",
+          "publishedAt": "2026-04-20T14:32:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "华中区域组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_002",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "title": "思源电气发布新一代GIL产品",
+          "content": "思源电气发布新一代气体绝缘输电线路（GIL）产品，额定电流提升至6300A，覆盖1000kV电压等级，适用于高海拔及大落差场景。",
+          "summary": "思源GIL新品发布，6300A/1000kV",
+          "tag": "new",
+          "tagLabel": "新产品发布",
+          "impactAnalysis": "特高压GIL领域竞争加剧，思源技术参数领先",
+          "source": "思源电气官网",
+          "sourceUrl": "https://www.shanpu.com",
+          "publishedAt": "2026-04-20T12:15:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "特高压组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_003",
+          "competitorId": "comp_003",
+          "competitorName": "安科瑞",
+          "title": "安科瑞与某新能源集团签署战略协议",
+          "content": "安科瑞与某大型新能源集团签署战略合作协议，双方将在储能BMS、光储一体化、智能微网等领域深度合作。",
+          "summary": "安科瑞进军储能BMS领域",
+          "tag": "strategy",
+          "tagLabel": "战略合作",
+          "impactAnalysis": "储能BMS赛道竞争加剧，安科瑞差异化优势明显",
+          "source": "安科瑞公众号",
+          "sourceUrl": "https://www.acrel.cn",
+          "publishedAt": "2026-04-20T10:45:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "新能源组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_004",
+          "competitorId": "comp_004",
+          "competitorName": "国电南瑞",
+          "title": "国电南瑞中标南网数字化平台项目",
+          "content": "国电南瑞中标南方电网数字化转型平台建设项目，合同金额超8亿元，涵盖配网自动化、调度智能化、数据中台三大模块。",
+          "summary": "国电南瑞中标8亿+，南网数字化龙头地位巩固",
+          "tag": "major",
+          "tagLabel": "中标喜报",
+          "impactAnalysis": "南网数字化市场份额进一步集中，中电电力空间收窄",
+          "source": "南方电网招标平台",
+          "sourceUrl": "https://www.csg.cn",
+          "publishedAt": "2026-04-20T09:30:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "南网组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_005",
+          "competitorId": "comp_005",
+          "competitorName": "许继电气",
+          "title": "许继电气新任CTO上任",
+          "content": "许继电气宣布新任CTO张某某正式到任，张某某此前为国网电科院直流技术专家，在柔性直流输电领域有20年经验。",
+          "summary": "许继CTO更换，技术路线可能调整",
+          "tag": "personnel",
+          "tagLabel": "人员变动",
+          "impactAnalysis": "许继在直流领域技术能力可能提升",
+          "source": "许继电气公众号",
+          "sourceUrl": "https://www.xjgc.com",
+          "publishedAt": "2026-04-20T08:20:00Z",
+          "sentiment": "neutral",
+          "actionRequired": false,
+          "pushedTo": [],
+          "status": "published"
+        },
+        {
+          "id": "news_007",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "title": "思源电气国网2026年第一批配网中标39.25亿",
+          "content": "国家电网2026年第一批配网物资招标结果公示，思源电气合计中标39.25亿元，市场份额7.3%，位居行业第二。",
+          "summary": "思源国网中标39.25亿，份额7.3%",
+          "tag": "major",
+          "tagLabel": "中标喜报",
+          "impactAnalysis": "思源在配网领域份额持续提升，中电电力报价压力加大",
+          "source": "国家电网电子商务平台",
+          "sourceUrl": "https://ecp.sgcc.com.cn",
+          "publishedAt": "2026-04-19T16:00:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "配网组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_006",
+          "competitorId": "comp_003",
+          "competitorName": "安科瑞",
+          "title": "安科瑞发布ACR系列智能电力仪表3.0版本",
+          "content": "安科瑞ACR系列智能电力仪表3.0版本发布，新增边缘计算能力，支持本地AI推理，可实现设备级故障预测。",
+          "summary": "安科瑞ACR 3.0发布，边缘AI差异化明显",
+          "tag": "new",
+          "tagLabel": "新产品发布",
+          "impactAnalysis": "智能仪表AI化趋势加速，安科瑞差异化优势扩大",
+          "source": "安科瑞公众号",
+          "sourceUrl": "https://www.acrel.cn",
+          "publishedAt": "2026-04-19T14:22:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "智能仪表组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_008",
+          "competitorId": "comp_007",
+          "competitorName": "特变电工",
+          "title": "特变电工储能业务季度收入增长45%",
+          "content": "特变电工发布季度报告，储能业务收入同比增长45%，在手订单超20亿元。",
+          "summary": "特变储能业务高速增长",
+          "tag": "report",
+          "tagLabel": "业绩报告",
+          "impactAnalysis": "储能市场竞争加剧，特变在大型储能项目竞争力增强",
+          "source": "特变电工公告",
+          "sourceUrl": "https://www.tbea.com",
+          "publishedAt": "2026-04-18T10:00:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "储能组"
+          ],
+          "status": "published"
+        }
+      ],
+      "competitors": [
+        {
+          "id": "comp_001",
+          "name": "思源电气",
+          "shortName": "思源",
+          "listing": true,
+          "marketCap": "约480亿",
+          "mainProducts": [
+            "GIL、开关柜、互感器、配网自动化"
+          ],
+          "coreStrengths": [
+            "特高压领域",
+            "组合电器"
+          ],
+          "marketShare": {
+            "nationalGrid": "7.3%",
+            "region": "全国"
+          },
+          "recentAction": "新一代GIL产品发布，6300A/1000kV",
+          "threatLevel": "high",
+          "status": "active"
+        },
+        {
+          "id": "comp_002",
+          "name": "派诺科技",
+          "shortName": "派诺",
+          "listing": true,
+          "marketCap": "约180亿",
+          "mainProducts": [
+            "能源管理终端、智能仪表"
+          ],
+          "coreStrengths": [
+            "轨道交通",
+            "能源管理"
+          ],
+          "marketShare": {
+            "nationalGrid": "1.6%",
+            "region": "华中"
+          },
+          "recentAction": "武汉制造基地正式投产，年产能2万台",
+          "threatLevel": "high",
+          "status": "active"
+        },
+        {
+          "id": "comp_003",
+          "name": "安科瑞",
+          "shortName": "安科瑞",
+          "listing": true,
+          "marketCap": "约95亿",
+          "mainProducts": [
+            "智能仪表、BMS、EMS"
+          ],
+          "coreStrengths": [
+            "智能仪表",
+            "能耗监测"
+          ],
+          "marketShare": {
+            "nationalGrid": "2.3%",
+            "region": "全国"
+          },
+          "recentAction": "与某新能源集团签署储能BMS战略合作协议",
+          "threatLevel": "medium",
+          "status": "active"
+        },
+        {
+          "id": "comp_004",
+          "name": "国电南瑞",
+          "shortName": "南瑞",
+          "listing": true,
+          "marketCap": "约1200亿",
+          "mainProducts": [
+            "配电主站、调度系统、数字化平台"
+          ],
+          "coreStrengths": [
+            "数字化平台",
+            "调度智能化"
+          ],
+          "marketShare": {
+            "nationalGrid": "9.7%",
+            "region": "全国"
+          },
+          "recentAction": "中标南方电网数字化转型平台项目，金额超8亿",
+          "threatLevel": "high",
+          "status": "active"
+        },
+        {
+          "id": "comp_005",
+          "name": "许继电气",
+          "shortName": "许继",
+          "listing": true,
+          "marketCap": "约280亿",
+          "mainProducts": [
+            "保护装置、开关、直流输电"
+          ],
+          "coreStrengths": [
+            "直流输电",
+            "保护自动化"
+          ],
+          "marketShare": {
+            "nationalGrid": "5.3%",
+            "region": "全国"
+          },
+          "recentAction": "新任CTO上任，原国网电科院专家",
+          "threatLevel": "medium",
+          "status": "active"
+        },
+        {
+          "id": "comp_006",
+          "name": "平高电气",
+          "shortName": "平高",
+          "listing": true,
+          "marketCap": "约150亿",
+          "mainProducts": [
+            "高压开关、GIS"
+          ],
+          "coreStrengths": [
+            "高压开关",
+            "GIS设备"
+          ],
+          "marketShare": {
+            "nationalGrid": "4.2%",
+            "region": "全国"
+          },
+          "recentAction": "暂无重大动态",
+          "threatLevel": "low",
+          "status": "active"
+        },
+        {
+          "id": "comp_007",
+          "name": "特变电工",
+          "shortName": "特变",
+          "listing": true,
+          "marketCap": "约650亿",
+          "mainProducts": [
+            "变压器、光伏逆变器、储能"
+          ],
+          "coreStrengths": [
+            "变压器",
+            "新能源"
+          ],
+          "marketShare": {
+            "nationalGrid": "6.8%",
+            "region": "全国"
+          },
+          "recentAction": "储能业务持续扩张",
+          "threatLevel": "medium",
+          "status": "active"
+        },
+        {
+          "id": "comp_008",
+          "name": "正泰电器",
+          "shortName": "正泰",
+          "listing": true,
+          "marketCap": "约520亿",
+          "mainProducts": [
+            "低压电器、仪表、储能"
+          ],
+          "coreStrengths": [
+            "低压电器",
+            "民用市场"
+          ],
+          "marketShare": {
+            "nationalGrid": "3.5%",
+            "region": "全国"
+          },
+          "recentAction": "海外储能市场拓展",
+          "threatLevel": "low",
+          "status": "active"
+        }
+      ],
+      "analysis": {
+        "marketShare": [
+          {
+            "name": "思源电气",
+            "amount": 9455000000,
+            "share": "46.22%"
+          },
+          {
+            "name": "国电南瑞",
+            "amount": 6030000000,
+            "share": "29.48%"
+          },
+          {
+            "name": "许继电气",
+            "amount": 2860000000,
+            "share": "13.98%"
+          },
+          {
+            "name": "安科瑞",
+            "amount": 1240000000,
+            "share": "6.06%"
+          },
+          {
+            "name": "派诺科技",
+            "amount": 870000000,
+            "share": "4.25%"
+          }
+        ],
+        "priceRange": null,
+        "techTrends": [
+          {
+            "keyword": "新品",
+            "count": 1
+          },
+          {
+            "keyword": "技术",
+            "count": 1
+          },
+          {
+            "keyword": "研发",
+            "count": 0
+          },
+          {
+            "keyword": "专利",
+            "count": 0
+          },
+          {
+            "keyword": "GIL",
+            "count": 1
+          },
+          {
+            "keyword": "AI",
+            "count": 1
+          },
+          {
+            "keyword": "数字化",
+            "count": 1
+          }
+        ]
+      },
+      "recommendations": [
+        {
+          "type": "warning",
+          "title": "思源电气份额持续上升",
+          "content": "建议在开关柜和互感器标段适当调整报价策略，强调中电电力在配网自动化整体方案优势",
+          "priority": "high"
+        },
+        {
+          "type": "opportunity",
+          "title": "派诺科技武汉基地投产",
+          "content": "华中区域竞争压力上升，建议华中区域组加强客户拜访频率",
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "id": "pkg_1776678150923",
+      "createdAt": "2026-04-20T09:42:30.923Z",
+      "projectName": "国网2026年配网物资第二批",
+      "bidHistory": [
+        {
+          "id": "bid_001",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 3925000000,
+          "marketShare": "7.3%",
+          "shareChange": "+1.2%",
+          "mainCategories": [
+            "开关柜",
+            "互感器"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_002",
+          "competitorId": "comp_004",
+          "competitorName": "国电南瑞",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 5230000000,
+          "marketShare": "9.7%",
+          "shareChange": "+0.8%",
+          "mainCategories": [
+            "配电主站",
+            "终端"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_003",
+          "competitorId": "comp_005",
+          "competitorName": "许继电气",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 2860000000,
+          "marketShare": "5.3%",
+          "shareChange": "-0.5%",
+          "mainCategories": [
+            "保护装置",
+            "开关"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_004",
+          "competitorId": "comp_004",
+          "competitorName": "国电南瑞",
+          "projectName": "南网数字化转型平台项目",
+          "projectType": "南网",
+          "amount": 800000000,
+          "marketShare": "-",
+          "shareChange": "new",
+          "mainCategories": [
+            "数字化平台"
+          ],
+          "bidDate": "2026-04-18",
+          "status": "won"
+        },
+        {
+          "id": "bid_005",
+          "competitorId": "comp_003",
+          "competitorName": "安科瑞",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 1240000000,
+          "marketShare": "2.3%",
+          "shareChange": "+0.6%",
+          "mainCategories": [
+            "智能仪表"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_006",
+          "competitorId": "comp_002",
+          "competitorName": "派诺科技",
+          "projectName": "国网2026年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 870000000,
+          "marketShare": "1.6%",
+          "shareChange": "+0.4%",
+          "mainCategories": [
+            "能源管理终端"
+          ],
+          "bidDate": "2026-04-19",
+          "status": "won"
+        },
+        {
+          "id": "bid_007",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "projectName": "国网2025年第二批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 2850000000,
+          "marketShare": "6.1%",
+          "shareChange": "-",
+          "mainCategories": [
+            "开关柜",
+            "互感器"
+          ],
+          "bidDate": "2025-10-15",
+          "status": "won"
+        },
+        {
+          "id": "bid_008",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "projectName": "国网2025年第一批配网物资招标",
+          "projectType": "国网配网",
+          "amount": 2680000000,
+          "marketShare": "6.1%",
+          "shareChange": "+0.8%",
+          "mainCategories": [
+            "开关柜",
+            "互感器"
+          ],
+          "bidDate": "2025-04-18",
+          "status": "won"
+        }
+      ],
+      "competitorNews": [
+        {
+          "id": "news_001",
+          "competitorId": "comp_002",
+          "competitorName": "派诺科技",
+          "title": "派诺科技武汉基地正式投产",
+          "content": "派诺科技武汉制造基地于4月20日正式投产运营，设计年产能达2万台智能电力仪表和5000套能源管理系统。该基地覆盖华中及华南市场。",
+          "summary": "派诺武汉基地投产，设计年产能2万台",
+          "tag": "major",
+          "tagLabel": "产能扩张",
+          "impactAnalysis": "华中市场竞争压力显著上升，派诺在湖北国网投标价格优势将增大",
+          "source": "派诺科技官网",
+          "sourceUrl": "https://www.pinol.com",
+          "publishedAt": "2026-04-20T14:32:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "华中区域组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_002",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "title": "思源电气发布新一代GIL产品",
+          "content": "思源电气发布新一代气体绝缘输电线路（GIL）产品，额定电流提升至6300A，覆盖1000kV电压等级，适用于高海拔及大落差场景。",
+          "summary": "思源GIL新品发布，6300A/1000kV",
+          "tag": "new",
+          "tagLabel": "新产品发布",
+          "impactAnalysis": "特高压GIL领域竞争加剧，思源技术参数领先",
+          "source": "思源电气官网",
+          "sourceUrl": "https://www.shanpu.com",
+          "publishedAt": "2026-04-20T12:15:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "特高压组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_003",
+          "competitorId": "comp_003",
+          "competitorName": "安科瑞",
+          "title": "安科瑞与某新能源集团签署战略协议",
+          "content": "安科瑞与某大型新能源集团签署战略合作协议，双方将在储能BMS、光储一体化、智能微网等领域深度合作。",
+          "summary": "安科瑞进军储能BMS领域",
+          "tag": "strategy",
+          "tagLabel": "战略合作",
+          "impactAnalysis": "储能BMS赛道竞争加剧，安科瑞差异化优势明显",
+          "source": "安科瑞公众号",
+          "sourceUrl": "https://www.acrel.cn",
+          "publishedAt": "2026-04-20T10:45:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "新能源组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_004",
+          "competitorId": "comp_004",
+          "competitorName": "国电南瑞",
+          "title": "国电南瑞中标南网数字化平台项目",
+          "content": "国电南瑞中标南方电网数字化转型平台建设项目，合同金额超8亿元，涵盖配网自动化、调度智能化、数据中台三大模块。",
+          "summary": "国电南瑞中标8亿+，南网数字化龙头地位巩固",
+          "tag": "major",
+          "tagLabel": "中标喜报",
+          "impactAnalysis": "南网数字化市场份额进一步集中，中电电力空间收窄",
+          "source": "南方电网招标平台",
+          "sourceUrl": "https://www.csg.cn",
+          "publishedAt": "2026-04-20T09:30:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "南网组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_005",
+          "competitorId": "comp_005",
+          "competitorName": "许继电气",
+          "title": "许继电气新任CTO上任",
+          "content": "许继电气宣布新任CTO张某某正式到任，张某某此前为国网电科院直流技术专家，在柔性直流输电领域有20年经验。",
+          "summary": "许继CTO更换，技术路线可能调整",
+          "tag": "personnel",
+          "tagLabel": "人员变动",
+          "impactAnalysis": "许继在直流领域技术能力可能提升",
+          "source": "许继电气公众号",
+          "sourceUrl": "https://www.xjgc.com",
+          "publishedAt": "2026-04-20T08:20:00Z",
+          "sentiment": "neutral",
+          "actionRequired": false,
+          "pushedTo": [],
+          "status": "published"
+        },
+        {
+          "id": "news_007",
+          "competitorId": "comp_001",
+          "competitorName": "思源电气",
+          "title": "思源电气国网2026年第一批配网中标39.25亿",
+          "content": "国家电网2026年第一批配网物资招标结果公示，思源电气合计中标39.25亿元，市场份额7.3%，位居行业第二。",
+          "summary": "思源国网中标39.25亿，份额7.3%",
+          "tag": "major",
+          "tagLabel": "中标喜报",
+          "impactAnalysis": "思源在配网领域份额持续提升，中电电力报价压力加大",
+          "source": "国家电网电子商务平台",
+          "sourceUrl": "https://ecp.sgcc.com.cn",
+          "publishedAt": "2026-04-19T16:00:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "配网组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_006",
+          "competitorId": "comp_003",
+          "competitorName": "安科瑞",
+          "title": "安科瑞发布ACR系列智能电力仪表3.0版本",
+          "content": "安科瑞ACR系列智能电力仪表3.0版本发布，新增边缘计算能力，支持本地AI推理，可实现设备级故障预测。",
+          "summary": "安科瑞ACR 3.0发布，边缘AI差异化明显",
+          "tag": "new",
+          "tagLabel": "新产品发布",
+          "impactAnalysis": "智能仪表AI化趋势加速，安科瑞差异化优势扩大",
+          "source": "安科瑞公众号",
+          "sourceUrl": "https://www.acrel.cn",
+          "publishedAt": "2026-04-19T14:22:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "智能仪表组"
+          ],
+          "status": "published"
+        },
+        {
+          "id": "news_008",
+          "competitorId": "comp_007",
+          "competitorName": "特变电工",
+          "title": "特变电工储能业务季度收入增长45%",
+          "content": "特变电工发布季度报告，储能业务收入同比增长45%，在手订单超20亿元。",
+          "summary": "特变储能业务高速增长",
+          "tag": "report",
+          "tagLabel": "业绩报告",
+          "impactAnalysis": "储能市场竞争加剧，特变在大型储能项目竞争力增强",
+          "source": "特变电工公告",
+          "sourceUrl": "https://www.tbea.com",
+          "publishedAt": "2026-04-18T10:00:00Z",
+          "sentiment": "negative",
+          "actionRequired": true,
+          "pushedTo": [
+            "储能组"
+          ],
+          "status": "published"
+        }
+      ],
+      "competitors": [
+        {
+          "id": "comp_001",
+          "name": "思源电气",
+          "shortName": "思源",
+          "listing": true,
+          "marketCap": "约480亿",
+          "mainProducts": [
+            "GIL、开关柜、互感器、配网自动化"
+          ],
+          "coreStrengths": [
+            "特高压领域",
+            "组合电器"
+          ],
+          "marketShare": {
+            "nationalGrid": "7.3%",
+            "region": "全国"
+          },
+          "recentAction": "新一代GIL产品发布，6300A/1000kV",
+          "threatLevel": "high",
+          "status": "active"
+        },
+        {
+          "id": "comp_002",
+          "name": "派诺科技",
+          "shortName": "派诺",
+          "listing": true,
+          "marketCap": "约180亿",
+          "mainProducts": [
+            "能源管理终端、智能仪表"
+          ],
+          "coreStrengths": [
+            "轨道交通",
+            "能源管理"
+          ],
+          "marketShare": {
+            "nationalGrid": "1.6%",
+            "region": "华中"
+          },
+          "recentAction": "武汉制造基地正式投产，年产能2万台",
+          "threatLevel": "high",
+          "status": "active"
+        },
+        {
+          "id": "comp_003",
+          "name": "安科瑞",
+          "shortName": "安科瑞",
+          "listing": true,
+          "marketCap": "约95亿",
+          "mainProducts": [
+            "智能仪表、BMS、EMS"
+          ],
+          "coreStrengths": [
+            "智能仪表",
+            "能耗监测"
+          ],
+          "marketShare": {
+            "nationalGrid": "2.3%",
+            "region": "全国"
+          },
+          "recentAction": "与某新能源集团签署储能BMS战略合作协议",
+          "threatLevel": "medium",
+          "status": "active"
+        },
+        {
+          "id": "comp_004",
+          "name": "国电南瑞",
+          "shortName": "南瑞",
+          "listing": true,
+          "marketCap": "约1200亿",
+          "mainProducts": [
+            "配电主站、调度系统、数字化平台"
+          ],
+          "coreStrengths": [
+            "数字化平台",
+            "调度智能化"
+          ],
+          "marketShare": {
+            "nationalGrid": "9.7%",
+            "region": "全国"
+          },
+          "recentAction": "中标南方电网数字化转型平台项目，金额超8亿",
+          "threatLevel": "high",
+          "status": "active"
+        },
+        {
+          "id": "comp_005",
+          "name": "许继电气",
+          "shortName": "许继",
+          "listing": true,
+          "marketCap": "约280亿",
+          "mainProducts": [
+            "保护装置、开关、直流输电"
+          ],
+          "coreStrengths": [
+            "直流输电",
+            "保护自动化"
+          ],
+          "marketShare": {
+            "nationalGrid": "5.3%",
+            "region": "全国"
+          },
+          "recentAction": "新任CTO上任，原国网电科院专家",
+          "threatLevel": "medium",
+          "status": "active"
+        },
+        {
+          "id": "comp_006",
+          "name": "平高电气",
+          "shortName": "平高",
+          "listing": true,
+          "marketCap": "约150亿",
+          "mainProducts": [
+            "高压开关、GIS"
+          ],
+          "coreStrengths": [
+            "高压开关",
+            "GIS设备"
+          ],
+          "marketShare": {
+            "nationalGrid": "4.2%",
+            "region": "全国"
+          },
+          "recentAction": "暂无重大动态",
+          "threatLevel": "low",
+          "status": "active"
+        },
+        {
+          "id": "comp_007",
+          "name": "特变电工",
+          "shortName": "特变",
+          "listing": true,
+          "marketCap": "约650亿",
+          "mainProducts": [
+            "变压器、光伏逆变器、储能"
+          ],
+          "coreStrengths": [
+            "变压器",
+            "新能源"
+          ],
+          "marketShare": {
+            "nationalGrid": "6.8%",
+            "region": "全国"
+          },
+          "recentAction": "储能业务持续扩张",
+          "threatLevel": "medium",
+          "status": "active"
+        },
+        {
+          "id": "comp_008",
+          "name": "正泰电器",
+          "shortName": "正泰",
+          "listing": true,
+          "marketCap": "约520亿",
+          "mainProducts": [
+            "低压电器、仪表、储能"
+          ],
+          "coreStrengths": [
+            "低压电器",
+            "民用市场"
+          ],
+          "marketShare": {
+            "nationalGrid": "3.5%",
+            "region": "全国"
+          },
+          "recentAction": "海外储能市场拓展",
+          "threatLevel": "low",
+          "status": "active"
+        }
+      ],
+      "analysis": {
+        "marketShare": [
+          {
+            "name": "思源电气",
+            "amount": 9455000000,
+            "share": "46.22%"
+          },
+          {
+            "name": "国电南瑞",
+            "amount": 6030000000,
+            "share": "29.48%"
+          },
+          {
+            "name": "许继电气",
+            "amount": 2860000000,
+            "share": "13.98%"
+          },
+          {
+            "name": "安科瑞",
+            "amount": 1240000000,
+            "share": "6.06%"
+          },
+          {
+            "name": "派诺科技",
+            "amount": 870000000,
+            "share": "4.25%"
+          }
+        ],
+        "priceRange": null,
+        "techTrends": [
+          {
+            "keyword": "新品",
+            "count": 1
+          },
+          {
+            "keyword": "技术",
+            "count": 1
+          },
+          {
+            "keyword": "研发",
+            "count": 0
+          },
+          {
+            "keyword": "专利",
+            "count": 0
+          },
+          {
+            "keyword": "GIL",
+            "count": 1
+          },
+          {
+            "keyword": "AI",
+            "count": 1
+          },
+          {
+            "keyword": "数字化",
+            "count": 1
+          }
+        ]
+      },
+      "recommendations": [
+        {
+          "type": "warning",
+          "title": "思源电气份额持续上升",
+          "content": "建议在开关柜和互感器标段适当调整报价策略，强调中电电力在配网自动化整体方案优势",
+          "priority": "high"
+        },
+        {
+          "type": "opportunity",
+          "title": "派诺科技武汉基地投产",
+          "content": "华中区域竞争压力上升，建议华中区域组加强客户拜访频率",
+          "priority": "high"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "id": "report_1776678169800",
+      "createdAt": "2026-04-20T09:42:49.800Z",
+      "reportType": "daily",
+      "summary": {
+        "totalNews": 5,
+        "majorSignals": 3,
+        "topCompetitors": [
+          {
+            "id": "comp_001",
+            "name": "思源电气",
+            "activityScore": 2
+          },
+          {
+            "id": "comp_003",
+            "name": "安科瑞",
+            "activityScore": 2
+          },
+          {
+            "id": "comp_002",
+            "name": "派诺科技",
+            "activityScore": 1
+          },
+          {
+            "id": "comp_004",
+            "name": "国电南瑞",
+            "activityScore": 1
+          },
+          {
+            "id": "comp_005",
+            "name": "许继电气",
+            "activityScore": 1
+          }
+        ],
+        "summary": "今日共采集5条竞品动态，其中3条为重大信号"
+      },
+      "details": {
+        "competitorActivity": [
+          {
+            "id": "comp_001",
+            "name": "思源电气",
+            "shortName": "思源",
+            "listing": true,
+            "marketCap": "约480亿",
+            "mainProducts": [
+              "GIL、开关柜、互感器、配网自动化"
+            ],
+            "coreStrengths": [
+              "特高压领域",
+              "组合电器"
+            ],
+            "marketShare": {
+              "nationalGrid": "7.3%",
+              "region": "全国"
+            },
+            "recentAction": "新一代GIL产品发布，6300A/1000kV",
+            "threatLevel": "high",
+            "status": "active",
+            "recentActivity": 2,
+            "activityTrend": "low"
+          },
+          {
+            "id": "comp_002",
+            "name": "派诺科技",
+            "shortName": "派诺",
+            "listing": true,
+            "marketCap": "约180亿",
+            "mainProducts": [
+              "能源管理终端、智能仪表"
+            ],
+            "coreStrengths": [
+              "轨道交通",
+              "能源管理"
+            ],
+            "marketShare": {
+              "nationalGrid": "1.6%",
+              "region": "华中"
+            },
+            "recentAction": "武汉制造基地正式投产，年产能2万台",
+            "threatLevel": "high",
+            "status": "active",
+            "recentActivity": 1,
+            "activityTrend": "low"
+          },
+          {
+            "id": "comp_003",
+            "name": "安科瑞",
+            "shortName": "安科瑞",
+            "listing": true,
+            "marketCap": "约95亿",
+            "mainProducts": [
+              "智能仪表、BMS、EMS"
+            ],
+            "coreStrengths": [
+              "智能仪表",
+              "能耗监测"
+            ],
+            "marketShare": {
+              "nationalGrid": "2.3%",
+              "region": "全国"
+            },
+            "recentAction": "与某新能源集团签署储能BMS战略合作协议",
+            "threatLevel": "medium",
+            "status": "active",
+            "recentActivity": 2,
+            "activityTrend": "low"
+          },
+          {
+            "id": "comp_004",
+            "name": "国电南瑞",
+            "shortName": "南瑞",
+            "listing": true,
+            "marketCap": "约1200亿",
+            "mainProducts": [
+              "配电主站、调度系统、数字化平台"
+            ],
+            "coreStrengths": [
+              "数字化平台",
+              "调度智能化"
+            ],
+            "marketShare": {
+              "nationalGrid": "9.7%",
+              "region": "全国"
+            },
+            "recentAction": "中标南方电网数字化转型平台项目，金额超8亿",
+            "threatLevel": "high",
+            "status": "active",
+            "recentActivity": 1,
+            "activityTrend": "low"
+          },
+          {
+            "id": "comp_005",
+            "name": "许继电气",
+            "shortName": "许继",
+            "listing": true,
+            "marketCap": "约280亿",
+            "mainProducts": [
+              "保护装置、开关、直流输电"
+            ],
+            "coreStrengths": [
+              "直流输电",
+              "保护自动化"
+            ],
+            "marketShare": {
+              "nationalGrid": "5.3%",
+              "region": "全国"
+            },
+            "recentAction": "新任CTO上任，原国网电科院专家",
+            "threatLevel": "medium",
+            "status": "active",
+            "recentActivity": 1,
+            "activityTrend": "low"
+          },
+          {
+            "id": "comp_006",
+            "name": "平高电气",
+            "shortName": "平高",
+            "listing": true,
+            "marketCap": "约150亿",
+            "mainProducts": [
+              "高压开关、GIS"
+            ],
+            "coreStrengths": [
+              "高压开关",
+              "GIS设备"
+            ],
+            "marketShare": {
+              "nationalGrid": "4.2%",
+              "region": "全国"
+            },
+            "recentAction": "暂无重大动态",
+            "threatLevel": "low",
+            "status": "active",
+            "recentActivity": 0,
+            "activityTrend": "low"
+          },
+          {
+            "id": "comp_007",
+            "name": "特变电工",
+            "shortName": "特变",
+            "listing": true,
+            "marketCap": "约650亿",
+            "mainProducts": [
+              "变压器、光伏逆变器、储能"
+            ],
+            "coreStrengths": [
+              "变压器",
+              "新能源"
+            ],
+            "marketShare": {
+              "nationalGrid": "6.8%",
+              "region": "全国"
+            },
+            "recentAction": "储能业务持续扩张",
+            "threatLevel": "medium",
+            "status": "active",
+            "recentActivity": 1,
+            "activityTrend": "low"
+          },
+          {
+            "id": "comp_008",
+            "name": "正泰电器",
+            "shortName": "正泰",
+            "listing": true,
+            "marketCap": "约520亿",
+            "mainProducts": [
+              "低压电器、仪表、储能"
+            ],
+            "coreStrengths": [
+              "低压电器",
+              "民用市场"
+            ],
+            "marketShare": {
+              "nationalGrid": "3.5%",
+              "region": "全国"
+            },
+            "recentAction": "海外储能市场拓展",
+            "threatLevel": "low",
+            "status": "active",
+            "recentActivity": 0,
+            "activityTrend": "low"
+          }
+        ],
+        "marketShareChanges": [
+          {
+            "competitorName": "思源电气",
+            "latestShare": "7.3%",
+            "previousShare": "6.1%",
+            "change": "1.20%",
+            "trend": "up"
+          },
+          {
+            "competitorName": "国电南瑞",
+            "latestShare": "9.7%",
+            "previousShare": "-",
+            "change": "NaN%",
+            "trend": "stable"
+          }
+        ],
+        "policyImpacts": [
+          {
+            "title": "工信部发布《新型工业化行动方案》",
+            "impactLevel": "high",
+            "affectedProducts": [
+              "配网自动化",
+              "数字化终端",
+              "智能仪表"
+            ],
+            "opportunities": [
+              "配网自动化产品线需求增加",
+              "数字化改造项目增多"
+            ],
+            "threats": []
+          },
+          {
+            "title": "交通运输部等十部门发布《交能融合指导意见》",
+            "impactLevel": "medium",
+            "affectedProducts": [
+              "轨道交通电气设备",
+              "能源管理终端"
+            ],
+            "opportunities": [
+              "轨道交通电气配套市场扩大",
+              "服务区光储一体化项目机会"
+            ],
+            "threats": []
+          },
+          {
+            "title": "国家发改委发布新型储能发展指导意见",
+            "impactLevel": "medium",
+            "affectedProducts": [
+              "储能BMS",
+              "储能EMS",
+              "工商业储能"
+            ],
+            "opportunities": [
+              "储能市场商业模式更清晰",
+              "工商业储能项目加速落地"
+            ],
+            "threats": []
+          },
+          {
+            "title": "南方电网发布数字化转型行动计划",
+            "impactLevel": "high",
+            "affectedProducts": [
+              "数字化平台",
+              "配电终端",
+              "调度系统"
+            ],
+            "opportunities": [
+              "南网数字化项目大规模释放",
+              "智能配网设备需求增加"
+            ],
+            "threats": [
+              "国电南瑞可能进一步垄断市场"
+            ]
+          },
+          {
+            "title": "国家电网发布配电网改造升级计划",
+            "impactLevel": "high",
+            "affectedProducts": [
+              "配网自动化",
+              "开关柜",
+              "配电终端"
+            ],
+            "opportunities": [
+              "配网市场整体扩容",
+              "配网自动化渗透率提升"
+            ],
+            "threats": []
+          }
+        ],
+        "swot": {
+          "strengths": [
+            "配网自动化整体方案完整",
+            "客户关系稳定，区域口碑好",
+            "产品性价比优于部分竞品"
+          ],
+          "weaknesses": [
+            "特高压GIL产品线空白",
+            "数字化平台IT能力弱于国电南瑞",
+            "储能BMS领域刚起步"
+          ],
+          "opportunities": [
+            "配网改造5000亿投资计划",
+            "新型工业化方案利好数字化",
+            "储能市场高速增长"
+          ],
+          "threats": [
+            "思源份额持续上升",
+            "派诺武汉基地投产压价",
+            "安科瑞AI差异化威胁"
+          ]
+        }
+      },
+      "recommendations": [
+        {
+          "area": "华中区域",
+          "priority": "high",
+          "recommendation": "派诺武汉基地投产后，需重点关注湖北、湖南、江西三省投标动向",
+          "action": "建议华中区域组加强客户拜访频率，本周内完成重点客户沟通"
+        },
+        {
+          "area": "配网自动化",
+          "priority": "high",
+          "recommendation": "思源电气份额持续上升，需调整报价策略",
+          "action": "在开关柜和互感器标段适当调整报价，同时强调整体方案优势"
+        },
+        {
+          "area": "数字化赛道",
+          "priority": "medium",
+          "recommendation": "国电南瑞南网8亿大单，市场份额进一步集中",
+          "action": "评估是否进入数字化平台市场，考虑与IT厂商合作的可能性"
+        },
+        {
+          "area": "储能BMS",
+          "priority": "medium",
+          "recommendation": "安科瑞进军储能BMS，新业务线值得关注",
+          "action": "跟踪安科瑞储能BMS产品进展，评估中电电力自身储能产品竞争力"
+        }
+      ]
+    }
+  ],
+  "alerts": [],
+  "intelSources": {
+    "national_gov": [
+      {
+        "id": "src_n01",
+        "name": "中国人民政府网",
+        "url": "http://www.gov.cn/index.htm",
+        "category": "国家政策",
+        "priority": "high",
+        "topics": [
+          "政策法规",
+          "经济政策"
+        ]
+      },
+      {
+        "id": "src_n02",
+        "name": "中华人民共和国生态环境部",
+        "url": "http://www.mee.gov.cn/",
+        "category": "国家政策",
+        "priority": "medium",
+        "topics": [
+          "环保政策",
+          "碳排放"
+        ]
+      },
+      {
+        "id": "src_n03",
+        "name": "国家发展和改革委员会",
+        "url": "http://www.ndrc.gov.cn/",
+        "category": "国家政策",
+        "priority": "high",
+        "topics": [
+          "能源政策",
+          "投资计划",
+          "储能政策"
+        ]
+      },
+      {
+        "id": "src_n04",
+        "name": "住房和城乡建设部",
+        "url": "http://www.mohurd.gov.cn/",
+        "category": "国家政策",
+        "priority": "medium",
+        "topics": [
+          "建筑节能",
+          "绿色建筑"
+        ]
+      },
+      {
+        "id": "src_n05",
+        "name": "工业和信息化部",
+        "url": "http://www.miit.gov.cn/",
+        "category": "国家政策",
+        "priority": "high",
+        "topics": [
+          "工业数字化",
+          "新型工业化",
+          "制造业升级"
+        ]
+      },
+      {
+        "id": "src_n06",
+        "name": "交通运输部",
+        "url": "http://xxgk.mot.gov.cn/",
+        "category": "国家政策",
+        "priority": "medium",
+        "topics": [
+          "交能融合",
+          "交通基础设施"
+        ]
+      },
+      {
+        "id": "src_n07",
+        "name": "教育部",
+        "url": "http://www.moe.gov.cn/",
+        "category": "国家政策",
+        "priority": "low",
+        "topics": [
+          "高校后勤能源"
+        ]
+      },
+      {
+        "id": "src_n08",
+        "name": "国家统计局",
+        "url": "http://www.stats.gov.cn/",
+        "category": "国家政策",
+        "priority": "medium",
+        "topics": [
+          "经济数据",
+          "电力数据"
+        ]
+      },
+      {
+        "id": "src_n09",
+        "name": "国家机关事务管理局",
+        "url": "http://www.ggj.gov.cn/",
+        "category": "国家政策",
+        "priority": "medium",
+        "topics": [
+          "公共机构节能",
+          "政府采购"
+        ]
+      },
+      {
+        "id": "src_n10",
+        "name": "国家市场监督管理总局",
+        "url": "http://www.samr.gov.cn/",
+        "category": "国家政策",
+        "priority": "medium",
+        "topics": [
+          "标准认证",
+          "产品监管"
+        ]
+      },
+      {
+        "id": "src_n11",
+        "name": "海关总署",
+        "url": "http://www.customs.gov.cn/",
+        "category": "国家政策",
+        "priority": "low",
+        "topics": [
+          "出口数据",
+          "进出口统计"
+        ]
+      },
+      {
+        "id": "src_n12",
+        "name": "国家能源局",
+        "url": "http://www.nea.gov.cn/",
+        "category": "国家政策",
+        "priority": "high",
+        "topics": [
+          "能源规划",
+          "电力政策",
+          "新能源"
+        ]
+      },
+      {
+        "id": "src_n13",
+        "name": "发改委电力需求侧管理",
+        "url": "http://yxj.ndrc.gov.cn/dlxqgl/",
+        "category": "国家政策",
+        "priority": "high",
+        "topics": [
+          "电力需求侧管理",
+          "负荷管理"
+        ]
+      },
+      {
+        "id": "src_n14",
+        "name": "国家电力需求侧管理平台",
+        "url": "http://www.dsm.gov.cn/",
+        "category": "国家政策",
+        "priority": "high",
+        "topics": [
+          "电力需求侧",
+          "DSM"
+        ]
+      },
+      {
+        "id": "src_n15",
+        "name": "电力需求侧促进中心",
+        "url": "http://www.idsmpc.org/",
+        "category": "国家政策",
+        "priority": "medium",
+        "topics": [
+          "需求侧管理",
+          "节能"
+        ]
+      },
+      {
+        "id": "src_n16",
+        "name": "中国信息通信研究院",
+        "url": "http://www.caict.ac.cn/",
+        "category": "国家政策",
+        "priority": "medium",
+        "topics": [
+          "通信产业",
+          "数字经济",
+          "数据中心"
+        ]
+      },
+      {
+        "id": "src_n17",
+        "name": "中国教育后勤协会能源管理专委会",
+        "url": "http://www.zgjyjn.org/",
+        "category": "国家政策",
+        "priority": "low",
+        "topics": [
+          "校园能源管理"
+        ]
+      },
+      {
+        "id": "src_n18",
+        "name": "国家标准化管理委员会",
+        "url": "http://www.sac.gov.cn/",
+        "category": "国家政策",
+        "priority": "medium",
+        "topics": [
+          "行业标准",
+          "认证"
+        ]
+      },
+      {
+        "id": "src_n19",
+        "name": "国网新能源云",
+        "url": "http://sgnec.esgcc.com.cn/",
+        "category": "国家政策",
+        "priority": "high",
+        "topics": [
+          "新能源接入",
+          "国网动态"
+        ]
+      },
+      {
+        "id": "src_n20",
+        "name": "国家铁路局",
+        "url": "http://www.nra.gov.cn/",
+        "category": "国家政策",
+        "priority": "medium",
+        "topics": [
+          "铁路建设",
+          "轨道交通"
+        ]
+      }
+    ],
+    "local_gov": [
+      {
+        "id": "src_l01",
+        "name": "广东省人民政府网",
+        "url": "http://www.gd.gov.cn/",
+        "category": "地方政府",
+        "priority": "high",
+        "topics": [
+          "粤港澳大湾区",
+          "工业节能"
+        ]
+      },
+      {
+        "id": "src_l02",
+        "name": "江苏省人民政府网",
+        "url": "http://www.jiangsu.gov.cn/",
+        "category": "地方政府",
+        "priority": "high",
+        "topics": [
+          "制造强省",
+          "能源转型"
+        ]
+      },
+      {
+        "id": "src_l03",
+        "name": "山东省人民政府网",
+        "url": "http://www.shandong.gov.cn/",
+        "category": "地方政府",
+        "priority": "high",
+        "topics": [
+          "工业大省",
+          "能源改革"
+        ]
+      },
+      {
+        "id": "src_l04",
+        "name": "浙江省人民政府网",
+        "url": "http://www.zj.gov.cn/",
+        "category": "地方政府",
+        "priority": "high",
+        "topics": [
+          "数字经济",
+          "绿色制造"
+        ]
+      },
+      {
+        "id": "src_l05",
+        "name": "河南省人民政府网",
+        "url": "https://www.henan.gov.cn/",
+        "category": "地方政府",
+        "priority": "high",
+        "topics": [
+          "制造业",
+          "工业节能"
+        ]
+      },
+      {
+        "id": "src_l06",
+        "name": "四川省人民政府网",
+        "url": "http://www.sc.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "水电大省",
+          "新能源"
+        ]
+      },
+      {
+        "id": "src_l07",
+        "name": "福建省人民政府网",
+        "url": "http://www.fujian.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "智能制造",
+          "海峡西岸"
+        ]
+      },
+      {
+        "id": "src_l08",
+        "name": "湖南省人民政府网",
+        "url": "http://www.hunan.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "智能制造",
+          "工程机械"
+        ]
+      },
+      {
+        "id": "src_l09",
+        "name": "安徽省人民政府网",
+        "url": "http://www.ah.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "制造业",
+          "新能源汽车"
+        ]
+      },
+      {
+        "id": "src_l10",
+        "name": "湖北省人民政府网",
+        "url": "http://www.hubei.gov.cn/",
+        "category": "地方政府",
+        "priority": "high",
+        "topics": [
+          "制造强省",
+          "汽车工业"
+        ]
+      },
+      {
+        "id": "src_l11",
+        "name": "上海市人民政府网",
+        "url": "http://www.shanghai.gov.cn/",
+        "category": "地方政府",
+        "priority": "high",
+        "topics": [
+          "数字经济",
+          "先进制造"
+        ]
+      },
+      {
+        "id": "src_l12",
+        "name": "河北省人民政府网",
+        "url": "http://www.hebei.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "工业转型",
+          "钢铁节能"
+        ]
+      },
+      {
+        "id": "src_l13",
+        "name": "北京市人民政府网",
+        "url": "http://www.beijing.gov.cn/",
+        "category": "地方政府",
+        "priority": "high",
+        "topics": [
+          "双碳",
+          "数字经济"
+        ]
+      },
+      {
+        "id": "src_l14",
+        "name": "陕西省人民政府网",
+        "url": "http://www.shaanxi.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "能源大省",
+          "煤电化工"
+        ]
+      },
+      {
+        "id": "src_l15",
+        "name": "江西省人民政府网",
+        "url": "http://www.jiangxi.gov.cn/",
+        "category": "地方政府",
+        "priority": "low",
+        "topics": [
+          "制造业",
+          "新能源材料"
+        ]
+      },
+      {
+        "id": "src_l16",
+        "name": "重庆市人民政府网",
+        "url": "http://www.cq.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "智能制造",
+          "汽车工业"
+        ]
+      },
+      {
+        "id": "src_l17",
+        "name": "辽宁省人民政府网",
+        "url": "http://www.ln.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "工业振兴",
+          "老工业基地"
+        ]
+      },
+      {
+        "id": "src_l18",
+        "name": "云南省人民政府网",
+        "url": "http://www.yn.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "水电大省",
+          "绿色铝业"
+        ]
+      },
+      {
+        "id": "src_l19",
+        "name": "广西壮族自治区人民政府网",
+        "url": "http://www.gxzf.gov.cn/",
+        "category": "地方政府",
+        "priority": "low",
+        "topics": [
+          "边境工业",
+          "东盟合作"
+        ]
+      },
+      {
+        "id": "src_l20",
+        "name": "贵州省人民政府网",
+        "url": "http://www.guizhou.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "大数据",
+          "数据中心"
+        ]
+      },
+      {
+        "id": "src_l21",
+        "name": "山西省人民政府网",
+        "url": "http://www.shanxi.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "煤电转型",
+          "新能源基地"
+        ]
+      },
+      {
+        "id": "src_l22",
+        "name": "内蒙古自治区人民政府网",
+        "url": "http://www.nmg.gov.cn/",
+        "category": "地方政府",
+        "priority": "high",
+        "topics": [
+          "新能源大基地",
+          "绿电"
+        ]
+      },
+      {
+        "id": "src_l23",
+        "name": "新疆维吾尔自治区人民政府网",
+        "url": "http://www.xinjiang.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "新能源基地",
+          "西电东送"
+        ]
+      },
+      {
+        "id": "src_l24",
+        "name": "天津市人民政府网",
+        "url": "http://www.tj.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "港口工业",
+          "制造业"
+        ]
+      },
+      {
+        "id": "src_l25",
+        "name": "吉林省人民政府网",
+        "url": "http://www.jl.gov.cn/",
+        "category": "地方政府",
+        "priority": "low",
+        "topics": [
+          "工业转型",
+          "新能源汽车"
+        ]
+      },
+      {
+        "id": "src_l26",
+        "name": "黑龙江省人民政府网",
+        "url": "https://www.hlj.gov.cn/",
+        "category": "地方政府",
+        "priority": "low",
+        "topics": [
+          "农业大省",
+          "老工业基地"
+        ]
+      },
+      {
+        "id": "src_l27",
+        "name": "甘肃省人民政府网",
+        "url": "http://www.gansu.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "新能源大基地",
+          "风电光伏"
+        ]
+      },
+      {
+        "id": "src_l28",
+        "name": "海南省人民政府网",
+        "url": "http://www.hainan.gov.cn/",
+        "category": "地方政府",
+        "priority": "low",
+        "topics": [
+          "自贸港",
+          "清洁能源"
+        ]
+      },
+      {
+        "id": "src_l29",
+        "name": "宁夏回族自治区人民政府网",
+        "url": "http://www.nx.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "新能源基地",
+          "绿电"
+        ]
+      },
+      {
+        "id": "src_l30",
+        "name": "青海省人民政府网",
+        "url": "http://www.qh.gov.cn/",
+        "category": "地方政府",
+        "priority": "medium",
+        "topics": [
+          "清洁能源",
+          "光伏"
+        ]
+      }
+    ],
+    "industry_sites": [
+      {
+        "id": "src_i01",
+        "name": "中国节能服务网",
+        "url": "http://www.emca.cn/",
+        "category": "行业网站",
+        "customerGroup": "工业",
+        "priority": "high",
+        "topics": [
+          "节能服务",
+          "EMC合同能源"
+        ]
+      },
+      {
+        "id": "src_i02",
+        "name": "电子信息产业网",
+        "url": "http://www.cena.com.cn/",
+        "category": "行业网站",
+        "customerGroup": "工业",
+        "priority": "medium",
+        "topics": [
+          "电子产业",
+          "半导体"
+        ]
+      },
+      {
+        "id": "src_i03",
+        "name": "能源观察网",
+        "url": "http://www.chinaero.com.cn/",
+        "category": "行业网站",
+        "customerGroup": "电力系统与新能源",
+        "priority": "high",
+        "topics": [
+          "能源行业",
+          "电力市场"
+        ]
+      },
+      {
+        "id": "src_i04",
+        "name": "电网技术",
+        "url": "http://www.dwjs.com.cn/",
+        "category": "行业网站",
+        "customerGroup": "电力系统与新能源",
+        "priority": "high",
+        "topics": [
+          "电网技术",
+          "智能电网"
+        ]
+      },
+      {
+        "id": "src_i05",
+        "name": "广东省高校后勤协会",
+        "url": "http://www.gusa13.org/",
+        "category": "行业网站",
+        "customerGroup": "建筑",
+        "priority": "low",
+        "topics": [
+          "高校后勤",
+          "节能改造"
+        ]
+      },
+      {
+        "id": "src_i06",
+        "name": "智能建筑电气技术杂志",
+        "url": "http://www.znjzdq.cn/",
+        "category": "行业网站",
+        "customerGroup": "建筑",
+        "priority": "medium",
+        "topics": [
+          "智能建筑",
+          "电气系统"
+        ]
+      },
+      {
+        "id": "src_i07",
+        "name": "北极星电力网",
+        "url": "http://www.bjx.com.cn/",
+        "category": "行业网站",
+        "customerGroup": "建筑/电力系统",
+        "priority": "high",
+        "topics": [
+          "电力行业",
+          "招投标",
+          "企业动态"
+        ]
+      },
+      {
+        "id": "src_i08",
+        "name": "建筑电气杂志",
+        "url": "http://www.jzdq.net.cn/",
+        "category": "行业网站",
+        "customerGroup": "建筑",
+        "priority": "medium",
+        "topics": [
+          "建筑电气",
+          "设计规范"
+        ]
+      },
+      {
+        "id": "src_i09",
+        "name": "中国医院建筑与装备",
+        "url": "http://www.yyjzyzb.com/",
+        "category": "行业网站",
+        "customerGroup": "建筑",
+        "priority": "low",
+        "topics": [
+          "医疗建筑",
+          "医院能源"
+        ]
+      },
+      {
+        "id": "src_i10",
+        "name": "筑医台",
+        "url": "http://www.zhuyitai.com/",
+        "category": "行业网站",
+        "customerGroup": "建筑",
+        "priority": "low",
+        "topics": [
+          "医疗建筑",
+          "医疗设备"
+        ]
+      },
+      {
+        "id": "src_i11",
+        "name": "慧聪消防网",
+        "url": "http://info.fire.hc360.com/",
+        "category": "行业网站",
+        "customerGroup": "建筑",
+        "priority": "medium",
+        "topics": [
+          "消防政策",
+          "电气防火"
+        ]
+      },
+      {
+        "id": "src_i12",
+        "name": "中国消防协会",
+        "url": "http://www.cfpa.cn/",
+        "category": "行业网站",
+        "customerGroup": "建筑",
+        "priority": "medium",
+        "topics": [
+          "消防标准",
+          "电气防火规范"
+        ]
+      },
+      {
+        "id": "src_i13",
+        "name": "中国数据中心工作组ChinaDCC",
+        "url": "http://www.chinadcc.org/",
+        "category": "行业网站",
+        "customerGroup": "数据中心及运营商",
+        "priority": "high",
+        "topics": [
+          "数据中心",
+          "PUE",
+          "绿色IDC"
+        ]
+      },
+      {
+        "id": "src_i14",
+        "name": "中国IDC圈",
+        "url": "http://www.idcquan.com/",
+        "category": "行业网站",
+        "customerGroup": "数据中心及运营商",
+        "priority": "high",
+        "topics": [
+          "数据中心",
+          "IDC建设",
+          "算力"
+        ]
+      },
+      {
+        "id": "src_i15",
+        "name": "现代数据中心网",
+        "url": "http://www.dcjchina.com.cn/",
+        "category": "行业网站",
+        "customerGroup": "数据中心及运营商",
+        "priority": "medium",
+        "topics": [
+          "数据中心技术",
+          "机房供电"
+        ]
+      },
+      {
+        "id": "src_i16",
+        "name": "中国民用机场协会",
+        "url": "http://www.chinaairports.org.cn/",
+        "category": "行业网站",
+        "customerGroup": "交通基础设施",
+        "priority": "medium",
+        "topics": [
+          "机场建设",
+          "航空能源"
+        ]
+      },
+      {
+        "id": "src_i17",
+        "name": "中国轨道交通网",
+        "url": "http://www.rail-transit.com/",
+        "category": "行业网站",
+        "customerGroup": "交通基础设施",
+        "priority": "high",
+        "topics": [
+          "轨道交通",
+          "地铁建设",
+          "城际铁路"
+        ]
+      }
+    ]
+  }
+}
