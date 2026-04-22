@@ -192,50 +192,82 @@ export const useAppStore = create<AppState>((set) => ({
   setLoading: (loading) => set({ isLoading: loading }),
 }));
 
-// 转换 MongoDB _id 为前端 id
-function convertMongoId(item: any) {
+// 转换 MongoDB _id 为前端 id，并为 news 补充缺失字段
+function convertMongoId(item: any, isNews = false) {
   if (item._id) {
     item.id = item._id.toString();
     delete item._id;
   }
+  if (isNews) {
+    item.sentiment = item.sentiment || 'neutral';
+    item.pushedTo = item.pushedTo || [];
+    item.actionRequired = item.actionRequired ?? (item.status === 'draft');
+    item.tagLabel = item.tagLabel || tagLabelMap[item.tag] || item.tag || '';
+    item.sourceUrl = item.sourceUrl || item.source;
+  }
   return item;
 }
 
-function convertList(items: any[]) {
-  return items.map(convertMongoId);
+function convertList(items: any[], isNews = false) {
+  return items.map(item => convertMongoId(item, isNews));
 }
 
+const tagLabelMap: Record<string, string> = {
+  major: '重大信号',
+  new: '新产品',
+  bid: '中标喜报',
+  strategy: '战略合作',
+  personnel: '人员变动',
+  report: '业绩报告',
+};
+
 // API Functions
-export async function fetchCompetitors() {
-  let data: Competitor[];
-  if (USE_STATIC) {
-    const db = await loadStaticData();
-    data = db.competitors;
-  } else {
-    const res = await fetch(`${API_BASE}/competitors`);
-    const json = await res.json();
-    data = convertList(json);
+export async function fetchCompetitors(): Promise<Competitor[]> {
+  try {
+    if (!USE_STATIC) {
+      const res = await fetch(`${API_BASE}/competitors`);
+      if (res.ok) {
+        const json = await res.json();
+        const data = convertList(json, false);
+        useAppStore.getState().setCompetitors(data);
+        return data;
+      }
+    }
+  } catch (e) {
+    console.warn('API获取失败，回退到静态数据:', e);
   }
+  // 回退到静态数据
+  const db = await loadStaticData();
+  const data = db.competitors;
   useAppStore.getState().setCompetitors(data);
   return data;
 }
 
-export async function fetchCompetitorNews(params?: { competitorId?: string; date?: string; tag?: string }) {
-  let data: CompetitorNews[];
-  if (USE_STATIC) {
-    const db = await loadStaticData();
-    data = db.competitorNews;
-    if (params?.competitorId) data = data.filter((n: CompetitorNews) => n.competitorId === params.competitorId);
-    if (params?.tag) data = data.filter((n: CompetitorNews) => n.tag === params.tag);
-  } else {
-    const searchParams = new URLSearchParams();
-    if (params?.competitorId) searchParams.set('competitorId', params.competitorId);
-    if (params?.date) searchParams.set('date', params.date);
-    if (params?.tag) searchParams.set('tag', params.tag);
-    const res = await fetch(`${API_BASE}/competitor-news?${searchParams}`);
-    const json = await res.json();
-    data = convertList(json);
+export async function fetchCompetitorNews(params?: { competitorId?: string; date?: string; tag?: string }): Promise<CompetitorNews[]> {
+  try {
+    if (!USE_STATIC) {
+      const searchParams = new URLSearchParams();
+      if (params?.competitorId) searchParams.set('competitorId', params.competitorId);
+      if (params?.date) searchParams.set('date', params.date);
+      if (params?.tag) searchParams.set('tag', params.tag);
+      const res = await fetch(`${API_BASE}/competitor-news?${searchParams}`);
+      if (res.ok) {
+        const json = await res.json();
+        // API返回 {data: [...]} 格式
+        const list = Array.isArray(json) ? json : (json.data || json.results || []);
+        const data = convertList(list, true);
+        useAppStore.getState().setCompetitorNews(data);
+        return data;
+      }
+    }
+  } catch (e) {
+    console.warn('API获取失败，回退到静态数据:', e);
   }
+  // 回退到静态数据
+  const db = await loadStaticData();
+  let data = db.competitorNews;
+  if (params?.competitorId) data = data.filter((n: CompetitorNews) => n.competitorId === params.competitorId);
+  if (params?.tag) data = data.filter((n: CompetitorNews) => n.tag === params.tag);
   useAppStore.getState().setCompetitorNews(data);
   return data;
 }
