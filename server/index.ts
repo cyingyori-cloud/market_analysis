@@ -77,6 +77,23 @@ app.get('/api/news', async (req, res) => {
   }
 });
 
+// 获取政策列表
+app.get('/api/policies', async (req, res) => {
+  try {
+    const { impactLevel } = req.query;
+    let policies = [...(dbData.policies || [])];
+    
+    if (impactLevel && impactLevel !== 'all') {
+      policies = policies.filter((p: any) => p.impactLevel === impactLevel);
+    }
+    
+    res.json(policies);
+  } catch (error) {
+    console.error('获取政策列表失败:', error);
+    res.status(500).json({ error: '获取政策列表失败' });
+  }
+});
+
 // 别名：competitor-news -> news
 app.get('/api/competitor-news', async (req, res) => {
   try {
