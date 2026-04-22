@@ -20,11 +20,36 @@ const shareChannels = [
   { id: 'lark', label: '飞书', icon: '📝' },
 ];
 
+// 来源分类
+const sourceCategories = [
+  { value: 'all', label: '全部来源' },
+  { value: 'gov', label: '政府官网' },
+  { value: 'competitor', label: '竞争对手官网' },
+  { value: 'industry', label: '行业网站' },
+];
+
+const govSources = ['发改委', '国家电网', '南方电网', '能源局', '人民政府', '政府网'];
+const industrySources = ['北极星', '电力网', '能源网', '电网技术', '中国节能', '数据中心'];
+
+function getSourceCategory(source: string) {
+  const s = source.toLowerCase();
+  if (govSources.some(g => s.includes(g))) return 'gov';
+  if (industrySources.some(g => s.includes(g))) return 'industry';
+  return 'competitor';
+}
+
+function truncate(text: string, maxLen = 80) {
+  if (!text || text.length <= maxLen) return { short: text || '', truncated: false };
+  return { short: text.slice(0, maxLen) + '...', truncated: true };
+}
+
 export function CompetitorMonitor() {
   const { competitors, competitorNews, setLoading, isLoading, updateNews } = useAppStore();
   const [filterTag, setFilterTag] = useState<string>('all');
   const [filterCompetitor, setFilterCompetitor] = useState<string>('all');
   const [filterTimeRange, setFilterTimeRange] = useState<string>('week');
+  const [filterSource, setFilterSource] = useState<string>('all');
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
 
   // 模态框状态
   const [tagModal, setTagModal] = useState<{ open: boolean; newsId: string | null; currentTag: string }>({
@@ -84,9 +109,18 @@ export function CompetitorMonitor() {
   const filteredNews = competitorNews.filter(news => {
     if (filterTag !== 'all' && news.tag !== filterTag) return false;
     if (filterCompetitor !== 'all' && news.competitorId !== filterCompetitor) return false;
+    if (filterSource !== 'all' && getSourceCategory(news.source) !== filterSource) return false;
     if (dateRange && new Date(news.publishedAt) < dateRange) return false;
     return true;
   });
+
+  const toggleExpand = (id: string) => {
+    setExpandedIds(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      return next;
+    });
+  };
 
   // 重新打标签
   const handleRetag = (newsId: string) => {
@@ -254,7 +288,21 @@ export function CompetitorMonitor() {
           ))}
         </div>
 
-        <div className="border-l border-slate-200 pl-3 flex items-center gap-2">
+        <div className="border-l border-slate-200 pl-3 flex items-center gap-2 flex-wrap">
+          {sourceCategories.map(sc => (
+            <button
+              key={sc.value}
+              onClick={() => setFilterSource(sc.value)}
+              className={clsx(
+                'px-2 py-1 text-xs rounded-lg transition-colors',
+                filterSource === sc.value
+                  ? 'bg-indigo-600 text-white'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+              )}
+            >
+              {sc.label}
+            </button>
+          ))}
           <select
             value={filterCompetitor}
             onChange={(e) => setFilterCompetitor(e.target.value)}
@@ -278,47 +326,43 @@ export function CompetitorMonitor() {
           {filteredNews.map((news) => {
             const config = tagConfig[news.tag] || tagConfig.report;
             return (
-              <div key={news.id} className="p-4 hover:bg-slate-50 transition-colors border-b border-slate-100 last:border-b-0">
+              <div key={news.id} className="p-3 hover:bg-slate-50 transition-colors border-b border-slate-100 last:border-b-0">
                 {/* 顶部行：标签·企业 + 标题 + 时间 + 操作 */}
-                <div className="flex items-center gap-2 mb-2 flex-wrap">
+                <div className="flex items-center gap-1.5 mb-1 flex-wrap">
                   {/* 标签 */}
-                  <span className={clsx('px-2 py-0.5 rounded text-xs font-medium shrink-0', config.bg, config.color)}>
+                  <span className={clsx('px-1.5 py-0.5 rounded text-xs font-medium shrink-0', config.bg, config.color)}>
                     {config.label}
                   </span>
-                  <span className="text-slate-300 shrink-0">·</span>
                   {/* 企业名 */}
-                  <span className="font-medium text-sm text-slate-800 shrink-0">{news.competitorName}</span>
+                  <span className="font-medium text-xs text-slate-800 shrink-0">{news.competitorName}</span>
                   {/* 标题 */}
-                  <span className="text-sm text-slate-600 truncate flex-1 min-w-0">{news.title}</span>
+                  <span className="text-sm text-slate-700 flex-1 min-w-0">{news.title}</span>
                   {/* 时间 */}
                   <span className="text-xs text-slate-400 shrink-0">
                     {new Date(news.publishedAt).toLocaleDateString('zh-CN')}
                   </span>
                   {/* 操作 */}
                   <div className="flex gap-0.5 shrink-0">
-                    <button onClick={() => handleRetag(news.id)} className="p-1.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="重新打标签">
-                      <Bookmark size={14} />
-                    </button>
-                    <button onClick={() => handleShare(news.id)} className="p-1.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="分享">
-                      <Share2 size={14} />
+                    <button onClick={() => handleRetag(news.id)} className="p-1 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="重新打标签">
+                      <Bookmark size={13} />
                     </button>
                     {news.sourceUrl ? (
-                      <button onClick={() => handleOpenSource(news.sourceUrl)} className="p-1.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="查看原文">
-                        <ExternalLink size={14} />
+                      <button onClick={() => handleOpenSource(news.sourceUrl)} className="p-1 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded" title="查看原文">
+                        <ExternalLink size={13} />
                       </button>
                     ) : null}
                   </div>
                 </div>
 
-                {/* 内容摘要 */}
-                <p className="text-sm text-slate-600 mb-2 line-clamp-2">{news.content}</p>
-
-                {/* 影响分析 */}
-                {news.impactAnalysis && (
-                  <div className="bg-amber-50 border-l-3 border-amber-400 px-3 py-2 rounded-r mb-2">
-                    <p className="text-xs text-amber-800">{news.impactAnalysis}</p>
-                  </div>
-                )}
+                {/* 内容摘要（截断80字） */}
+                <p className="text-xs text-slate-500 mb-1">
+                  {expandedIds.has(news.id) ? news.content : truncate(news.content, 80).short}
+                  {truncate(news.content, 80).truncated && (
+                    <button onClick={() => toggleExpand(news.id)} className="text-blue-500 hover:text-blue-700 ml-1 text-xs">
+                      {expandedIds.has(news.id) ? '收起' : '展开'}
+                    </button>
+                  )}
+                </p>
 
                 {/* 来源 */}
                 <div className="text-xs text-slate-400">{news.source}</div>
