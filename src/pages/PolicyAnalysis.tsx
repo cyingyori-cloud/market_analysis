@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { FileText, ExternalLink, RefreshCw, Check } from 'lucide-react';
 import { useAppStore, fetchPolicies } from '../store/appStore';
 import clsx from 'clsx';
@@ -10,14 +10,43 @@ const impactFilters = [
   { value: 'low', label: '低影响' },
 ];
 
-const sourceFilters = [
-  { value: 'all', label: '全部来源' },
-  { value: 'gov', label: '国家政策(20)' },
-  { value: 'local', label: '地方政府(31)' },
-  { value: 'industry', label: '行业网站(17)' },
-];
+// 根据实际数据动态计算来源分类
+function getSourceFilters(policies: any[]) {
+  const sourceCount: Record<string, number> = {};
+  policies.forEach(p => {
+    sourceCount[p.source] = (sourceCount[p.source] || 0) + 1;
+  });
+  
+  // 分类统计
+  const govSources = ['能源局', '发改委', '工信部', '生态环境部', '人民政府网', '政府网', '人民政府'];
+  const industrySources = ['北极星', '电力网', '能源网', '电网技术', '中国节能', '数据中心', '电力网'];
+  
+  let govCount = 0, localCount = 0, industryCount = 0, otherCount = 0;
+  Object.entries(sourceCount).forEach(([source, count]) => {
+    if (govSources.some(g => source.includes(g))) govCount += count;
+    else if (source.includes('人民政府') || source.includes('政府网')) localCount += count;
+    else if (industrySources.some(i => source.includes(i))) industryCount += count;
+    else otherCount += count;
+  });
 
-// 监控的68个官方数据来源
+  return [
+    { value: 'all', label: '全部来源', count: policies.length },
+    ...(govCount > 0 ? [{ value: 'gov', label: `国家政策(${govCount})`, count: govCount }] : []),
+    ...(localCount > 0 ? [{ value: 'local', label: `地方政府(${localCount})`, count: localCount }] : []),
+    ...(industryCount > 0 ? [{ value: 'industry', label: `行业网站(${industryCount})`, count: industryCount }] : []),
+  ];
+}
+
+function getSourceType(source: string) {
+  const govSources = ['能源局', '发改委', '工信部', '生态环境部', '人民政府网', '政府网'];
+  const industrySources = ['北极星', '电力网', '能源网', '电网技术', '中国节能', '数据中心'];
+  if (govSources.some(g => source.includes(g))) return 'gov';
+  if (source.includes('人民政府') || source.includes('政府网')) return 'local';
+  if (industrySources.some(i => source.includes(i))) return 'industry';
+  return 'other';
+}
+
+// 监控的官方数据来源
 const monitorSources = [
   // 国家政策网址
   { name: '中国人民政府网', url: 'http://www.gov.cn/', type: 'gov' },
@@ -88,6 +117,9 @@ export function PolicyAnalysis() {
   const [isScanning, setIsScanning] = useState(false);
   const [toast, setToast] = useState({ show: false, message: '' });
 
+  // 动态计算来源分类（根据实际数据）
+  const sourceFilters = useMemo(() => getSourceFilters(policies), [policies]);
+
   const showToast = (message: string) => {
     setToast({ show: true, message });
     setTimeout(() => setToast({ show: false, message: '' }), 3000);
@@ -115,13 +147,10 @@ export function PolicyAnalysis() {
 
   const filtered = policies.filter(p => {
     if (impactFilter !== 'all' && p.impactLevel !== impactFilter) return false;
-    // 来源筛选：支持按URL关键词匹配
+    // 来源筛选：根据source字段分类
     if (sourceFilter !== 'all') {
-      const url = (p.sourceUrl || '').toLowerCase();
-      const source = (p.source || '').toLowerCase();
-      if (sourceFilter === 'gov' && !url.includes('gov.cn') && !url.includes('ndrc') && !url.includes('nea.') && !url.includes('miit') && !url.includes('dsm.gov')) return false;
-      if (sourceFilter === 'local' && !url.match(/beijing|shanghai|gd\.gov|zj\.gov|jiangsu|shandong|henan|sc\.gov/)) return false;
-      if (sourceFilter === 'industry' && !url.includes('bjx') && !url.includes('chinapower') && !url.includes('cnenergy')) return false;
+      const sourceType = getSourceType(p.source);
+      if (sourceType !== sourceFilter) return false;
     }
     return true;
   });
@@ -148,13 +177,13 @@ export function PolicyAnalysis() {
       <div className="flex items-center justify-between gap-4">
         <div className="flex-1">
           <p className="text-sm text-slate-500">
-            监控68个政府官网及行业网站，自动解读政策影响并关联中电电力销售线索
+            共{policies.length}条政策，自动解读政策影响并关联中电电力销售线索
           </p>
           <button
             onClick={() => setShowSources(!showSources)}
             className="text-xs text-blue-500 hover:text-blue-700 mt-1"
           >
-            {showSources ? '收起数据来源' : '查看68个数据来源'}
+            {showSources ? '收起数据来源' : '查看数据来源'}
           </button>
         </div>
         <div className="flex gap-2 shrink-0 flex-wrap">
@@ -201,7 +230,7 @@ export function PolicyAnalysis() {
       {/* 数据来源列表 */}
       {showSources && (
         <div className="bg-slate-50 rounded-lg border border-slate-200 p-4">
-          <div className="text-sm font-semibold text-slate-700 mb-3">📋 监控的68个数据来源</div>
+          <div className="text-sm font-semibold text-slate-700 mb-3">📋 监控的数据来源</div>
           <div className="grid grid-cols-3 gap-2 text-xs">
             {monitorSources.map((src, i) => (
               <a
