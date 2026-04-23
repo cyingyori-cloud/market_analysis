@@ -1,6 +1,13 @@
 import { useEffect, useState } from 'react';
 import { RefreshCw, ExternalLink, Bookmark, Share2, X, Check } from 'lucide-react';
-import { useAppStore, fetchCompetitorNews, fetchCompetitors } from '../store/appStore';
+import {
+  useAppStore,
+  fetchCompetitorNews,
+  fetchCompetitors,
+  updateCompetitorNewsRecord,
+  createScanJob,
+  fetchScanJob,
+} from '../store/appStore';
 import clsx from 'clsx';
 
 const tagConfig: Record<string, { label: string; bg: string; color: string }> = {
@@ -25,12 +32,18 @@ function truncate(text: string, maxLen = 80) {
   return { short: text.slice(0, maxLen) + '...', truncated: true };
 }
 
+function sleep(ms: number) {
+  return new Promise((resolve) => window.setTimeout(resolve, ms));
+}
+
 export function CompetitorMonitor() {
-  const { competitors, competitorNews, setLoading, isLoading, updateNews } = useAppStore();
+  const { competitors, competitorNews, setLoading } = useAppStore();
   const [filterTag, setFilterTag] = useState<string>('all');
   const [filterCompetitor, setFilterCompetitor] = useState<string>('all');
   const [filterTimeRange, setFilterTimeRange] = useState<string>('week');
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
+  const [isSavingTag, setIsSavingTag] = useState(false);
+  const [isSavingShare, setIsSavingShare] = useState(false);
 
   // 模态框状态
   const [tagModal, setTagModal] = useState<{ open: boolean; newsId: string | null; currentTag: string }>({
@@ -111,11 +124,20 @@ export function CompetitorMonitor() {
   };
 
   const handleSaveTag = () => {
-    if (tagModal.newsId) {
-      updateNews(tagModal.newsId, { tag: tagModal.currentTag as any });
-      showToast('标签已更新');
-      setTagModal({ open: false, newsId: null, currentTag: '' });
-    }
+    if (!tagModal.newsId) return;
+
+    setIsSavingTag(true);
+    updateCompetitorNewsRecord(tagModal.newsId, { tag: tagModal.currentTag as any })
+      .then(() => {
+        showToast('标签已更新');
+        setTagModal({ open: false, newsId: null, currentTag: '' });
+      })
+      .catch((error) => {
+        showToast(error instanceof Error ? error.message : '标签更新失败');
+      })
+      .finally(() => {
+        setIsSavingTag(false);
+      });
   };
 
   // 分享
@@ -136,12 +158,21 @@ export function CompetitorMonitor() {
   };
 
   const handleSaveShare = () => {
-    if (shareModal.newsId) {
-      updateNews(shareModal.newsId, { pushedTo: shareModal.sharedTo } as any);
-      const count = shareModal.sharedTo.length;
-      showToast(count > 0 ? `已分享到 ${count} 个渠道` : '已取消分享');
-      setShareModal({ open: false, newsId: null, sharedTo: [] });
-    }
+    if (!shareModal.newsId) return;
+
+    setIsSavingShare(true);
+    updateCompetitorNewsRecord(shareModal.newsId, { pushedTo: shareModal.sharedTo })
+      .then(() => {
+        const count = shareModal.sharedTo.length;
+        showToast(count > 0 ? `已分享到 ${count} 个渠道` : '已取消分享');
+        setShareModal({ open: false, newsId: null, sharedTo: [] });
+      })
+      .catch((error) => {
+        showToast(error instanceof Error ? error.message : '分享更新失败');
+      })
+      .finally(() => {
+        setIsSavingShare(false);
+      });
   };
 
   // 跳转原文
@@ -163,18 +194,31 @@ export function CompetitorMonitor() {
   const [isScanning, setIsScanning] = useState(false);
   const handleScan = async () => {
     setIsScanning(true);
-    showToast('正在扫描竞争对手官网...');
     try {
-    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/crawler/run`, {
-      method: 'POST',
-    });
-    const result = await res.json();
-    showToast(result.message || '扫描完成！');
-    // 刷新数据
-    await fetchCompetitorNews({ competitorId: filterCompetitor === 'all' ? undefined : filterCompetitor });
-  } catch {
-    showToast('扫描失败，请检查网络');
-  }
+      showToast('已创建扫描任务，正在排队...');
+      const job = await createScanJob({ scope: 'competitor' });
+
+      let resultJob = job;
+      for (let i = 0; i < 30; i += 1) {
+        resultJob = await fetchScanJob(job.id);
+        if (resultJob.status === 'completed') {
+          showToast(String(resultJob.resultSnapshot.message || '扫描完成！'));
+          await fetchCompetitorNews({ competitorId: filterCompetitor === 'all' ? undefined : filterCompetitor });
+          setIsScanning(false);
+          return;
+        }
+
+        if (resultJob.status === 'failed') {
+          throw new Error(resultJob.errorMessage || '扫描失败');
+        }
+
+        await sleep(2000);
+      }
+
+      throw new Error('扫描任务超时，请稍后查看结果');
+    } catch (error) {
+      showToast(error instanceof Error ? error.message : '扫描失败，请检查网络');
+    }
     setIsScanning(false);
   };
 
@@ -306,6 +350,9 @@ export function CompetitorMonitor() {
                   <button onClick={() => handleRetag(news.id)} className="p-1 text-slate-400 hover:text-blue-600 ml-2" title="重新打标签">
                     <Bookmark size={14} />
                   </button>
+                  <button onClick={() => handleShare(news.id)} className="p-1 text-slate-400 hover:text-blue-600" title="分享渠道">
+                    <Share2 size={14} />
+                  </button>
                   {news.sourceUrl && (
                     <button onClick={() => handleOpenSource(news.sourceUrl)} className="p-1 text-slate-400 hover:text-blue-600" title="查看原文">
                       <ExternalLink size={14} />
@@ -374,9 +421,10 @@ export function CompetitorMonitor() {
               </button>
               <button
                 onClick={handleSaveTag}
-                className="px-4 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                disabled={isSavingTag}
+                className="px-4 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50"
               >
-                保存
+                {isSavingTag ? '保存中...' : '保存'}
               </button>
             </div>
           </div>
@@ -422,9 +470,10 @@ export function CompetitorMonitor() {
               </button>
               <button
                 onClick={handleSaveShare}
-                className="px-4 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                disabled={isSavingShare}
+                className="px-4 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50"
               >
-                确认分享
+                {isSavingShare ? '提交中...' : '确认分享'}
               </button>
             </div>
           </div>

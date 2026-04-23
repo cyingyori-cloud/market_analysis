@@ -1,5 +1,14 @@
 # 4S竞品情报系统 - 自动化部署指南
 
+## 当前运行约定
+
+- 当前唯一主后端入口是 `/server/index.ts`
+- `/server/index.cjs` 已进入冻结状态，仅保留作历史参考
+- 新功能、部署脚本、接口变更请一律基于 TypeScript 后端实现
+- `.env.example` 仅保留占位符，不应提交任何真实密钥
+
+如果需要了解后续收敛方向，请参考 [docs/REFACTOR_BLUEPRINT.md](./docs/REFACTOR_BLUEPRINT.md)。
+
 ## 架构概览
 
 ```

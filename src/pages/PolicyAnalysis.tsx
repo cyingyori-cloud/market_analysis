@@ -1,6 +1,6 @@
-import { useEffect, useState, useMemo } from 'react';
-import { FileText, ExternalLink, RefreshCw, Check } from 'lucide-react';
-import { useAppStore, fetchPolicies } from '../store/appStore';
+import { useEffect, useState } from 'react';
+import { ExternalLink, RefreshCw, Check } from 'lucide-react';
+import { useAppStore, fetchPolicies, createScanJob, fetchScanJob } from '../store/appStore';
 import clsx from 'clsx';
 
 const impactFilters = [
@@ -108,6 +108,10 @@ function truncate(text: string, maxLen = 150) {
   return { short: text.slice(0, maxLen) + '...', full: text, truncated: true };
 }
 
+function sleep(ms: number) {
+  return new Promise((resolve) => window.setTimeout(resolve, ms));
+}
+
 export function PolicyAnalysis() {
   const { policies, setLoading } = useAppStore();
   const [impactFilter, setImpactFilter] = useState('all');
@@ -128,16 +132,33 @@ export function PolicyAnalysis() {
   // 立即扫描
   const handleScan = async () => {
     setIsScanning(true);
-    showToast('正在扫描政策数据源...');
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/crawler/run`, { method: 'POST' });
-      const result = await res.json();
-      showToast(result.message || '扫描完成！');
-      await fetchPolicies();
-    } catch {
-      showToast('扫描失败，请检查后端连接');
+      showToast('已创建政策同步任务，正在排队...');
+      const job = await createScanJob({ scope: 'policy' });
+
+      let resultJob = job;
+      for (let i = 0; i < 30; i += 1) {
+        resultJob = await fetchScanJob(job.id);
+        if (resultJob.status === 'completed') {
+          showToast(String(resultJob.resultSnapshot.message || '政策同步完成！'));
+          await fetchPolicies();
+          setIsScanning(false);
+          return;
+        }
+
+        if (resultJob.status === 'failed') {
+          throw new Error(resultJob.errorMessage || '政策同步失败');
+        }
+
+        await sleep(2000);
+      }
+
+      throw new Error('政策同步任务超时，请稍后刷新');
+    } catch (error) {
+      showToast(error instanceof Error ? error.message : '扫描失败，请检查后端连接');
+    } finally {
+      setIsScanning(false);
     }
-    setIsScanning(false);
   };
 
   const filtered = policies.filter(p => {

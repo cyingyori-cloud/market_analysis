@@ -1,9 +1,13 @@
 /**
- * 4S竞品情报系统 - API Server
- * 智能竞品情报系统后端服务
- * 
- * 启动：npm run api
- * 同时运行前端和API：npm run api:dev
+ * Legacy API server kept only for reference during the refactor.
+ *
+ * Canonical backend entrypoint:
+ * - server/index.ts
+ *
+ * Freeze policy:
+ * - Do not add new features here
+ * - Do not treat this file as the production API path
+ * - Remove after the TypeScript backend fully replaces it
  */
 
 // 加载环境变量
@@ -13,6 +17,8 @@ const jsonServer = require('json-server');
 const path = require('path');
 const { requireAuth } = require('./middleware/auth.cjs');
 const { validateCompetitorParams } = require('./middleware/validator.cjs');
+
+console.warn('[legacy] server/index.cjs is frozen. Use server/index.ts as the primary backend.');
 
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, 'db/db.json'));

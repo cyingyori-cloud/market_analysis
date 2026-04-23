@@ -1,6 +1,11 @@
 #!/usr/bin/env node
+const fs = require('fs');
+const path = require('path');
 const { execSync } = require('child_process');
-const db = require('./public/db.json');
+
+const repoRoot = path.resolve(__dirname, '..', '..');
+const dbPath = path.join(repoRoot, 'public', 'db.json');
+const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
 
 const news = db.competitorNews;
 const results = [];

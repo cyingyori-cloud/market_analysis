@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 const fs = require('fs');
-const db = JSON.parse(fs.readFileSync('./public/db.json', 'utf8'));
+const path = require('path');
+
+const repoRoot = path.resolve(__dirname, '..', '..');
+const dbPath = path.join(repoRoot, 'public', 'db.json');
+const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
 
 // 最终真实链接替换
 const replacements = {
@@ -80,5 +84,5 @@ db.competitorNews.forEach(news => {
   }
 });
 
-fs.writeFileSync('./public/db.json', JSON.stringify(db, null, 2));
+fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
 console.log(`更新完成: ${fixed} 条`);

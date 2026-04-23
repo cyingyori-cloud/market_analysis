@@ -4,3 +4,4 @@ dist/
 .env.local
 .DS_Store
 *.log
+db/seeds/*.generated.sql

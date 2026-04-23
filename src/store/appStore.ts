@@ -128,6 +128,19 @@ export interface Report {
   }>;
 }
 
+export interface ScanJob {
+  id: string;
+  jobType: string;
+  triggerSource: string;
+  status: 'queued' | 'running' | 'completed' | 'failed';
+  payload: Record<string, unknown>;
+  resultSnapshot: Record<string, unknown>;
+  errorMessage: string | null;
+  createdAt: string;
+  startedAt: string | null;
+  finishedAt: string | null;
+}
+
 interface AppState {
   // Data
   competitors: Competitor[];
@@ -274,6 +287,112 @@ export async function fetchCompetitorNews(params?: { competitorId?: string; date
   if (params?.tag) data = data.filter((n: CompetitorNews) => n.tag === params.tag);
   useAppStore.getState().setCompetitorNews(data);
   return data;
+}
+
+export async function updateCompetitorNewsRecord(
+  id: string,
+  updates: Partial<Pick<CompetitorNews, 'tag' | 'pushedTo' | 'actionRequired' | 'status'>>,
+): Promise<CompetitorNews> {
+  if (USE_STATIC) {
+    const current = useAppStore.getState().competitorNews.find((item) => item.id === id);
+    if (!current) {
+      throw new Error('未找到对应动态');
+    }
+
+    const next: CompetitorNews = {
+      ...current,
+      ...updates,
+      tagLabel: updates.tag ? tagLabelMap[updates.tag] || current.tagLabel : current.tagLabel,
+    };
+
+    useAppStore.getState().updateNews(id, next);
+    if (staticDataCache?.competitorNews) {
+      staticDataCache.competitorNews = staticDataCache.competitorNews.map((item: CompetitorNews) =>
+        item.id === id ? next : item
+      );
+    }
+    return next;
+  }
+
+  const res = await fetch(`${API_BASE}/competitor-news/${id}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(updates),
+  });
+
+  if (!res.ok) {
+    const error = await res.json().catch(() => ({}));
+    throw new Error(error.error || '更新竞品动态失败');
+  }
+
+  const json = await res.json();
+  const item = Array.isArray(json) ? json[0] : (json.data || json.result || json);
+  const data = convertMongoId(item, true);
+  useAppStore.getState().updateNews(id, data);
+  return data;
+}
+
+export async function createScanJob(payload: Record<string, unknown> = {}): Promise<ScanJob> {
+  if (USE_STATIC) {
+    return {
+      id: `static_job_${Date.now()}`,
+      jobType: 'competitor_scan',
+      triggerSource: 'manual',
+      status: 'completed',
+      payload,
+      resultSnapshot: {
+        addedCount: 0,
+        message: '静态模式不支持实时扫描，已返回演示结果。',
+      },
+      errorMessage: null,
+      createdAt: new Date().toISOString(),
+      startedAt: new Date().toISOString(),
+      finishedAt: new Date().toISOString(),
+    };
+  }
+
+  const res = await fetch(`${API_BASE}/jobs/scan`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+
+  if (!res.ok) {
+    const error = await res.json().catch(() => ({}));
+    throw new Error(error.error || '创建扫描任务失败');
+  }
+
+  const json = await res.json();
+  return json.data || json.result || json;
+}
+
+export async function fetchScanJob(jobId: string): Promise<ScanJob> {
+  if (USE_STATIC) {
+    return {
+      id: jobId,
+      jobType: 'competitor_scan',
+      triggerSource: 'manual',
+      status: 'completed',
+      payload: {},
+      resultSnapshot: {
+        addedCount: 0,
+        message: '静态模式不支持实时扫描，已返回演示结果。',
+      },
+      errorMessage: null,
+      createdAt: new Date().toISOString(),
+      startedAt: new Date().toISOString(),
+      finishedAt: new Date().toISOString(),
+    };
+  }
+
+  const res = await fetch(`${API_BASE}/jobs/${jobId}`);
+  if (!res.ok) {
+    const error = await res.json().catch(() => ({}));
+    throw new Error(error.error || '获取扫描任务失败');
+  }
+
+  const json = await res.json();
+  return json.data || json.result || json;
 }
 
 export async function fetchPolicies(impactLevel?: string) {

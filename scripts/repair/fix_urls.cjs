@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 const fs = require('fs');
-const db = JSON.parse(fs.readFileSync('./public/db.json', 'utf8'));
+const path = require('path');
+
+const repoRoot = path.resolve(__dirname, '..', '..');
+const dbPath = path.join(repoRoot, 'public', 'db.json');
+const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
 
 // 映射: id -> 新URL
 const replacements = {
@@ -63,6 +67,6 @@ db.competitorNews.forEach(news => {
   }
 });
 
-fs.writeFileSync('./public/db.json', JSON.stringify(db, null, 2));
+fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
 console.log(`修复完成: ${fixed} 条`);
 console.log(`未匹配: ${notFound} 条`);
